@@ -84,7 +84,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
           this.$store.commit('SET_LOCALE', { lang: value })
         }
       },
-      getResults () {
+      getBanners () {
           console.log(this.$store.state.results);
          return this.$store.state;
       }
