@@ -85,7 +85,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         }
       },
       getBanners () {
-          console.log(this.$store.state.results);
+          console.log(this.$store.state.);
          return this.$store.state;
       }
     },
