@@ -89,7 +89,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
          return this.$store.state.results.banners;
       },
       getMainBanner () {
-          this.getBanners
+          _.filter(this.getBanners, { 'age': 36, 'active': true });
       }
     },
     methods: {
