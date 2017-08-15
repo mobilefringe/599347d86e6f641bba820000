@@ -5,7 +5,7 @@ hr{
   max-width: 100%;
 }
 .relative {
-    
+    position:relative;
 }
 /******Index.html *******/
 #banner {
