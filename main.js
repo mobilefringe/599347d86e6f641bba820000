@@ -88,6 +88,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
           console.log(this.$store.state.results.banners);
          return this.$store.state.results.banners;
       }
+      getMainBanner () {
+          
+      }
     },
     methods: {
       // utility method to allow user to change locale value
