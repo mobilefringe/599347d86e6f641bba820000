@@ -109,7 +109,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 // console.log(this.$store.getters.getTodayHours);
             },
             windowWidth : function () {
-                if(this.windowWidth > 1300) {
+                if(this.windowWidth > 1200) {
                     console.log(this.windowWidth,this.showBigBanner)
                    this.showBigBanner = true;
                 }
