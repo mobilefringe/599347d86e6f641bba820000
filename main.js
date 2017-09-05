@@ -20,7 +20,7 @@ require.config({
         'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
         'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
         'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext'
-  }
+    }
 });
 
 require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta"], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta) {
