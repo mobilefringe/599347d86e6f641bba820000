@@ -70,7 +70,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                     },
                     {
                         name: "Contact Us",
-                        id: "map",
+                        id: "contact_us",
                         class_list: "all_caps menu_btn_label",
                         href: "/events"
                     }
