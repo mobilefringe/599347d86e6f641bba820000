@@ -31,8 +31,8 @@
                     <div>
                        Contact Us
                     </div>
-                    <router-link tag="div" :to="item.href" active-class="active" class="menu_btn" exact>
-                       <label :class="item.class_list" @click="show_menu = !show_menu" :id="item.name">{{ item.name }}</label>
+                    <router-link tag="div" :to="item.href" active-class="active"  exact>
+                       <label :id="item.name">{{ item.name }}</label>
                     </router-link>
                     <search-component placeholder="Find Your Store" autocomplete="false"></search-component>
                     <div class="btn" role="button"> Search Stores <i class="fa fa-search pull-right"></i></div>
