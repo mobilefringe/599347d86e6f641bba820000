@@ -109,7 +109,12 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 // console.log(this.$store.getters.getTodayHours);
             },
             windowWidth : function () {
-                console.log(window.innerWidth);
+                if(this.windowWidth > 1200) {
+                   this.showBigBanner = true;
+                }
+                else {
+                   this.showBigBanner = false;
+                }
             }
         },
         computed: {
