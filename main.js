@@ -144,7 +144,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             getWindowWidth(event) {
                 console.log(window.innerWidth);
-                this.windowWidth = document.width;
+                this.windowWidth = window.innerWidth;
             }
         },
         router: router,
