@@ -126,7 +126,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             checkWidth: function() {
                if(window.width() > 1200) {
-                   
+                   this.showBigBanner = true;
                }
                else {
                    this.showBigBanner = false;
