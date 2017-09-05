@@ -98,21 +98,21 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         watch: {
             // watcher to update vue-i18n when the locale has been changed by the user
             locale: function (val, oldVal) {
-            this.$i18n.locale = val;
-            moment.locale(val);
-            // console.log(moment().format('LLLL'));
-            // console.log(this.$store.getters.getTodayHours);
-        }
-    },
-    computed: {
-      // computed property for locale which returns locale value from data store and also updates the data store with new locale information
-      locale: {
-        get () {
-          return this.$store.state.locale
+                this.$i18n.locale = val;
+                moment.locale(val);
+                // console.log(moment().format('LLLL'));
+                // console.log(this.$store.getters.getTodayHours);
+            }
         },
-        set (value) {
-          this.$store.commit('SET_LOCALE', { lang: value })
-        }
+        computed: {
+        // computed property for locale which returns locale value from data store and also updates the data store with new locale information
+            locale: {
+            get () {
+                return this.$store.state.locale
+            },
+            set (value) {
+                this.$store.commit('SET_LOCALE', { lang: value })
+            }
       },
       getBanners () {
           console.log(this.$store.state.results.banners);
