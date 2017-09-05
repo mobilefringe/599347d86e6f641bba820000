@@ -55,13 +55,13 @@
         <div class="">
             <div class="menu page_container" id="menu_bar">
                 <a class="store_logo pull-left" href="/">Mall Maverick</a>
-                    <ul class="menu_list pull-right" >
-                      <li v-for="item in menu_items">
-                        <router-link :to="item.href" active-class="active" exact :id="item.name">
-                           {{ item.name }}
-                        </router-link>
-                      </li>
-                    </ul>
+                <ul class="menu_list pull-right" >
+                  <li v-for="item in menu_items">
+                    <router-link :to="item.href" active-class="active" exact :id="item.name">
+                       {{ item.name }}
+                    </router-link>
+                  </li>
+                </ul>
             </div>
             <hr class="hr_bold"/>
             <div class="sub_menu_bar page_container">
