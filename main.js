@@ -127,7 +127,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             // utility method to allow user to change locale value
             changeLocale: function(val) {
             this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
-      }
+        }
     },
     router: router,
     store,
