@@ -116,6 +116,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             getMainBanner () {
                 console.log( _.filter(this.getBanners, { 'position': 1})[0]);
+                console.log(window.width());
                 return  _.filter(this.getBanners, { 'position': 1})[0];
             }
         },
