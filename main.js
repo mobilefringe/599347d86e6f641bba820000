@@ -69,7 +69,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         href: "/events"
                     },
                     {
-                        name: "Events",
+                        name: "Contact Us",
                         id: "map",
                         class_list: "all_caps menu_btn_label",
                         href: "/events"
