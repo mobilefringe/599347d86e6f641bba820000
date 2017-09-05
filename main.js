@@ -107,6 +107,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 moment.locale(val);
                 // console.log(moment().format('LLLL'));
                 // console.log(this.$store.getters.getTodayHours);
+            },
+            windowWidth : function () {
+                console.log(window.innerWidth);
             }
         },
         computed: {
@@ -144,12 +147,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             getWindowWidth(event) {
                 this.windowWidth = document.documentElement.clientWidth;
-                if(this.windowWidth > 1200) {
-                   this.showBigBanner = true;
-                }
-                else {
-                   this.showBigBanner = false;
-                }
             }
         },
         router: router,
