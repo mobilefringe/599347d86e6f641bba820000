@@ -114,9 +114,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                     this.$store.commit('SET_LOCALE', { lang: value })
                 }
             },
-      getBanners () {
-          console.log(this.$store.state.results.banners);
-         return this.$store.state.results.banners;
+            getBanners () {
+                console.log(this.$store.state.results.banners);
+                return this.$store.state.results.banners;
       },
       getMainBanner () {
          console.log( _.filter(this.getBanners, { 'position': 1})[0]);
