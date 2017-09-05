@@ -1,31 +1,31 @@
 <template>
   <div class="row page_container">
-    <div class="large-6 columns">
-      <div>
-        <h1>{{title}}</h1>
-        <p>{{description}}</p>
-        <hr/>
-        <h5>Translated text example:</h5>
-        <p>{{ $t("message.hello") }}</p>
-        <p>{{property.name}}</p>
-        <hr/>
-        <today-hours></today-hours>
-        <search-component v-model="search" :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
-          <template slot="item" scope="option">
-            <article class="media">
+    <!--<div class="large-6 columns">-->
+    <!--  <div>-->
+    <!--    <h1>{{title}}</h1>-->
+    <!--    <p>{{description}}</p>-->
+    <!--    <hr/>-->
+    <!--    <h5>Translated text example:</h5>-->
+    <!--    <p>{{ $t("message.hello") }}</p>-->
+    <!--    <p>{{property.name}}</p>-->
+    <!--    <hr/>-->
+    <!--    <today-hours></today-hours>-->
+    <!--    <search-component v-model="search" :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">-->
+    <!--      <template slot="item" scope="option">-->
+    <!--        <article class="media">-->
               <!--<figure class="media-left">
                 <p class="image is-64x64">
                   <img :src="option.data.store_front_url_abs">
                 </p>
               </figure>-->
-              <p>
-                <strong>{{ option.data.name }}</strong>
-              </p>
-            </article>
-          </template>
-        </search-component>
-      </div>
-    </div>
+    <!--          <p>-->
+    <!--            <strong>{{ option.data.name }}</strong>-->
+    <!--          </p>-->
+    <!--        </article>-->
+    <!--      </template>-->
+    <!--    </search-component>-->
+    <!--  </div>-->
+    <!--</div>-->
   </div>
 </template>
 
