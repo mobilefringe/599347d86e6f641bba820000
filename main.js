@@ -101,7 +101,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 // console.log(moment().format('LLLL'));
                 // console.log(this.$store.getters.getTodayHours);
             },
-            window.innerWidth : function () {
+            windowWidth : function () {
                 
             }
         },
