@@ -98,8 +98,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
               window.addEventListener('resize', this.getWindowHeight);
         
               //Init
-              this.getWindowWidth()
-                this.getWindowHeight()
+              this.getWindowWidth();
     });
         },
         watch: {
