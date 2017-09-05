@@ -113,7 +113,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                    this.showBigBanner = true;
                 }
                 else {
-                    console.log(this.windowWidth,showBigBanner)
+                    console.log(this.windowWidth,this.showBigBanner)
                    this.showBigBanner = false;
                 }
             }
