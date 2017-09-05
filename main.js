@@ -121,7 +121,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             getMainBanner () {
                 console.log( _.filter(this.getBanners, { 'position': 1})[0]);
                 return  _.filter(this.getBanners, { 'position': 1})[0];
-      }
+            }
     },
     methods: {
       // utility method to allow user to change locale value
