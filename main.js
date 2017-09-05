@@ -95,7 +95,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         mounted () {
             this.$nextTick(function() {
               window.addEventListener('resize', this.getWindowWidth);
-              window.addEventListener('resize', this.getWindowHeight);
         
               //Init
               this.getWindowWidth();
