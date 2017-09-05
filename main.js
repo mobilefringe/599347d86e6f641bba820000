@@ -48,7 +48,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         data: function () {
             return {
                 dataLoaded: false,
-                showBigBanner:false,
+                showBigBanner: true,
                 menu_items: [
                     {
                         name: "Stores",
