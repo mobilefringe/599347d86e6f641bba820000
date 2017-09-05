@@ -87,7 +87,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     
             // make an async call to load mall data
             this.$store.dispatch('LOAD_MALL_DATA', {url:"https://www.mallmaverick.com/api/v4/twinpines/all.json"}).then(response => {
-                console.log(window.innerWidth);
                 this.dataLoaded = true;
             }, error => {
                 console.error("Could not retrieve data from server. Please check internet connection and try again.");
@@ -102,7 +101,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 // console.log(this.$store.getters.getTodayHours);
             },
             windowWidth : function () {
-                console.log(window.innerWidth)
+                console.log(window.innerWidth);
             }
         },
         computed: {
