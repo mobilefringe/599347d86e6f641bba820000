@@ -144,7 +144,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             getWindowWidth(event) {
                 this.windowWidth = document.documentElement.clientWidth;
-                if(window.width() > 1200) {
+                if(this.windowWidth > 1200) {
                    this.showBigBanner = true;
                 }
                 else {
