@@ -68,7 +68,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         name: "Events",
                         id: "map",
                         class_list: "all_caps menu_btn_label",
-                        href: "/map",
+                        href: "/events",
                         is_inHome: true
                     }
                 ]
