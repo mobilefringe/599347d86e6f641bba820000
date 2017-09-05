@@ -132,5 +132,5 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     router: router,
     store,
     i18n
-  });
+    });
 });
