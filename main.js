@@ -134,7 +134,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
             },
             checkWidth: function() {
-            console.log("changing width");
+                console.log("changing width");
                if(window.width() > 1200) {
                    this.showBigBanner = true;
                }
@@ -144,6 +144,12 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             getWindowWidth(event) {
                 this.windowWidth = document.documentElement.clientWidth;
+                if(window.width() > 1200) {
+                   this.showBigBanner = true;
+                }
+                else {
+                   this.showBigBanner = false;
+                }
             }
         },
         router: router,
