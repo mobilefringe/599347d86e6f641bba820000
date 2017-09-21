@@ -148,7 +148,10 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 _.filter(this.$store.state.results.hours, function(o) { return o.store_ids==null && o.is_holiday==0 })
                 console.log(hours);
                 return hours;
-            }
+            },
+            timezone () {
+          return this.$store.getters.getTimezone;
+        }
         },
         methods: {
             // utility method to allow user to change locale value
