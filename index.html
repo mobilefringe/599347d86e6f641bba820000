@@ -103,7 +103,7 @@
                                             </span>
                                             <span class="pull-right col-md-6"> 
                                              {{hour.day_of_week}}
-                                                {{hour.open_time | moment("LT", timezone)}} - {{hour.close_time | moment("LT", timezone)}}
+                                                {{hour.open_time | moment("h:mma", timezone)}} - {{hour.close_time | moment("LT", timezone)}}
                                             </span>
                                         </li>
                                     </ul>
