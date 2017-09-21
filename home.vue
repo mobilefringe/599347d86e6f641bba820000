@@ -26,7 +26,7 @@
         }
       },
       created () {
-          feature_items
+          this.feature_items
       }
       computed: {
         property(){
