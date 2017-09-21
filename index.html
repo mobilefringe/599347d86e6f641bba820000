@@ -97,10 +97,9 @@
                                 <div class="col-md-4">
                                     <p class="menu_header">REGULAR HOURS</p>
                                     <ul class="menu_content">
-                                        <li v-for="item in hours">
-                                            <router-link :to="item.href" active-class="active" exact :id="item.id">
-                                               {{ item.id }}
-                                            </router-link>
+                                        <li v-for="hour in hours">
+                                            {{hour.open_time | moment("LT", timezone)}} - {{hour.close_time | moment("LT", timezone)}}
+                                       
                                         </li>
                 
                                     </ul>
