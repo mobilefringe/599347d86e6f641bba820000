@@ -4,10 +4,10 @@
           <img :src="feature_items[0].image_url" class="" alt="">
       </div>
       <div class="col-md-4 home_shortcut">
-          
+          <img :src="feature_items[1].image_url" class="" alt="">
       </div>
       <div class="col-md-4 home_shortcut">
-          
+          <img :src="feature_items[2].image_url" class="" alt="">
       </div>
 
   </div>
