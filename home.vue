@@ -1,12 +1,12 @@
 <template>
   <div class="row page_container">
-  <div class="col-md-4">
+  <div class="col-md-4 home_shortcut">
       
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4 home_shortcut">
       
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4 home_shortcut">
       
   </div>
     <!--<div class="large-6 columns">-->
