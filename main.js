@@ -151,6 +151,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             timezone () {
               return this.$store.getters.getTimezone;
+            },
+            day_of_the_week(val-day){
+                
             }
         },
         methods: {
