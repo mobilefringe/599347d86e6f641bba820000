@@ -83,7 +83,7 @@
                         </div>
                         <div class="footer_menu">
                             <div class="row page_container">
-                                <div class="col-md-3 col-sm-12 col-xs-12">
+                                <div class="col-md-4 col-sm-12 col-xs-12">
                                     <p class="menu_header text_left">{{property.name}}</p>
                                     <ul class="menu_content text_left">
                                         <li v-for="item in menu_items">
@@ -96,21 +96,21 @@
                                 </div>
                                 <!--<div class="col-md-1 hidden_phone" height="200px" style="margin: 20px 0px;"><div class="vertical_line_left"></div></div>-->
                                 
-                                <div class="col-md-6 hidden_phone">
+                                <div class="col-md-4 hidden_phone">
                                     <p class="menu_content text_center">REGULAR HOURS</p>
                                     <ul class="menu_content text_left">
                                         <li v-for="hour in hours">
-                                            <span class="pull-left col-md-6"> 
+                                            <span class="pull-left col-md-5"> 
                                                {{day_of_the_week(hour.day_of_week)}}
                                             </span>
-                                            <span class="pull-right col-md-6">
+                                            <span class="pull-right col-md-7">
                                                 {{hour.open_time | moment("h:mma", timezone)}} - {{hour.close_time | moment("h:mma", timezone)}}
                                             </span>
                                         </li>
                                     </ul>
                                 </div>
                                 <!--<div class="col-md-1 hidden_phone" height="200px" style="margin: 20px 0px;"><div class="vertical_line_right"></div></div>-->
-                                <div class="col-md-3 hidden_phone">
+                                <div class="col-md-4 hidden_phone">
                                     <p class="menu_header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
                                     <p class="menu_header text_center ">{{property.contact_phone}}</p>
                                     <br/>
