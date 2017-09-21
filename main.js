@@ -144,6 +144,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
               return this.$store.getters.getProperty;
             },
             hours(){
+                var hours = this.$store.state.results.hours
                 console.log(this.$store.state.results.hours);
                 return this.$store.state.results.hours;
             }
