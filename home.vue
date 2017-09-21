@@ -1,6 +1,7 @@
 <template>
   <div class="row page_container">
       <div class="col-md-4 home_shortcut">
+      {{feature_items[0]}}
           <img :src="feature_items[0].img_url" class="" alt="">
       </div>
       <div class="col-md-4 home_shortcut">
