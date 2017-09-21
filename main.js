@@ -139,6 +139,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             copyright_year() {
                 return moment().year();
+            },
+            property(){
+              return this.$store.getters.getProperty;
             }
         },
         methods: {
