@@ -145,8 +145,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             hours(){
                 var hours = this.$store.state.results.hours
-                console.log(this.$store.state.results.hours);
-                return this.$store.state.results.hours;
+                console.log(hours);
+                return hours;
             }
         },
         methods: {
