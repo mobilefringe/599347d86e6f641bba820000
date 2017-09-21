@@ -98,6 +98,7 @@
                                     <p class="menu_header">REGULAR HOURS</p>
                                     <ul class="menu_content">
                                         <li v-for="hour in hours">
+                                        {{hour}}
                                           {{hour.open_time | moment("dddd LT", timezone)}} - {{hour.close_time | moment("LT", timezone)}}
                                        
                                         </li>
