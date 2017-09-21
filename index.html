@@ -100,10 +100,10 @@
                                     <p class="menu_content text_center">REGULAR HOURS</p>
                                     <ul class="menu_content text_left">
                                         <li v-for="hour in hours">
-                                            <span class="pull-left col-md-6"> 
+                                            <span class="pull-left col-md-5"> 
                                                {{day_of_the_week(hour.day_of_week)}}
                                             </span>
-                                            <span class="pull-right col-md-6">
+                                            <span class="pull-right col-md-7">
                                                 {{hour.open_time | moment("h:mma", timezone)}} - {{hour.close_time | moment("h:mma", timezone)}}
                                             </span>
                                         </li>
