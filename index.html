@@ -99,7 +99,7 @@
                                     <ul class="menu_content ">
                                         <li v-for="hour in hours">
                                             <span class="pull-left "> 
-                                               {{day_of_the_week(hour.day_of_week)}} {{hour.day_of_week}}
+                                               {{day_of_the_week(hour.day_of_week)}}
                                             </span>
                                             <span class="pull-right "> 
                                                 {{hour.open_time | moment("LT", timezone)}} - {{hour.close_time | moment("LT", timezone)}}
