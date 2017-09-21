@@ -141,7 +141,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 return moment().year();
             },
             property(){
-              return this.$store.getters.getProperty;
+                return this.$store.getters.getProperty;
             },
             hours(){
                 var hours = 
@@ -153,7 +153,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 return this.$store.getters.getTodayHours;
             },
             timezone () {
-              return this.$store.getters.getTimezone;
+                return this.$store.getters.getTimezone;
             }
         },
         methods: {
