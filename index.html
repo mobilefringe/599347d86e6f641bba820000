@@ -36,7 +36,7 @@
         </div>
         <div class="">
             <div class="menu page_container" id="menu_bar">
-                <a class="store_logo pull-left" href="/">Mall Maverick</a>
+                <a class="store_logo pull-left" href="/">{{property.name}}</a>
                 <ul class="menu_list pull-right" >
                   <li v-for="item in menu_items">
                     <router-link :to="item.href" active-class="active" exact :id="item.name">
@@ -84,7 +84,7 @@
                         <div class="footer_menu">
                             <div class="row page_container">
                                 <div class="col-md-4">
-                                    
+                                    <p>Mall Ma</p>
                                 </div>
                                 <div class="col-md-4">
                                     
