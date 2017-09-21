@@ -144,8 +144,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
               return this.$store.getters.getProperty;
             },
             hours(){
-            console.log(this.$store.state.results.banners);
-              return this.$store.getters.getProperty;
+                console.log(this.$store.state.results.banners);
+                return this.$store.getters.getProperty;
             }
         },
         methods: {
