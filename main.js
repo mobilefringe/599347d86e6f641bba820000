@@ -149,7 +149,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 console.log(hours);
                 return hours;
             },
-            today_hours () {
+            todays_hour () {
                 return this.$store.getters.getTodayHours;
             },
             timezone () {
