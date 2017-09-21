@@ -38,7 +38,7 @@
         feature_items(){
             
             console.log(this.$store.state.results);
-            return this.$store.state.results;
+            return this.$store.state.results.feature_items;
         }
       },
       methods: {
