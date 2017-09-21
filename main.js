@@ -162,6 +162,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 this.windowWidth = window.innerWidth;
             },
             day_of_the_week(val_day){
+                weekday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
                 return moment().weekday(val_day)
             }
         },
