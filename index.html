@@ -96,7 +96,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <p class="menu_header center_text">REGULAR HOURS</p>
-                                    <ul class="menu_content">
+                                    <ul class="menu_content center_text">
                                         <li v-for="hour in hours">
                                            {{day_of_the_week(hour.day_of_week)}} {{hour.open_time | moment("LT", timezone)}} - {{hour.close_time | moment("LT", timezone)}}
                                        
