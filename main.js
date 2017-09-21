@@ -145,7 +145,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             hours(){
                 var hours = 
-                _.filter(this.$store.state.results.hours, function(o) { return o.store_ids==null && })
+                _.filter(this.$store.state.results.hours, function(o) { return o.store_ids==null && o.is_holiday==0 })
                 console.log(hours);
                 return hours;
             }
