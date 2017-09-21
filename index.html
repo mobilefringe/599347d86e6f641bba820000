@@ -100,8 +100,7 @@
                                         <li v-for="hour in hours">
                                         <span class="pull-left center_vertical"> 
                                            {{day_of_the_week(hour.day_of_week)}} 
-                                               
-                                           </span>
+                                        </span>
                                         <span class="pull-left center_vertical"> 
                                         {{hour.open_time | moment("LT", timezone)}} - {{hour.close_time | moment("LT", timezone)}}
                                        </span>
