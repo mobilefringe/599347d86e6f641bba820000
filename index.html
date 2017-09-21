@@ -86,7 +86,12 @@
                                 <div class="col-md-4">
                                     <p class="menu_header">{{property.name}}</p>
                                     <ul class="menu_content">
-                                        <li>HOME</li>
+                                        <li v-for="item in menu_items">
+                                            <router-link :to="item.href" active-class="active" exact :id="item.name">
+                                               {{ item.name }}
+                                            </router-link>
+                                        </li>
+                
                                     </ul>
                                 </div>
                                 <div class="col-md-4">
