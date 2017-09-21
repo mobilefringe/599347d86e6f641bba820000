@@ -25,7 +25,7 @@
           search: ''
         }
       },
-      created () {
+      mounted () {
           this.feature_items
       }
       computed: {
