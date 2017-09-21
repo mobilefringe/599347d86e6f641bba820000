@@ -144,7 +144,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
               return this.$store.getters.getProperty;
             },
             hours(){
-                var hours = this.$store.state.results.hours
+                var hours = 
+                _.filter(this.$store.state.results.hours, function(o) { return _.includes(dine_cats, _.toString(o.categories[0])); })
                 console.log(hours);
                 return hours;
             }
