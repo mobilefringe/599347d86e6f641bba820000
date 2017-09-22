@@ -42,7 +42,7 @@
         <div class="row contact_info page_container">
             <div class="col-md-3">
             <p class="menu_header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
-            <p class="menu_header text_center ">{{property.contact_phone}}</p>
+            <h3 class="menu_header text_center ">{{property.contact_phone}}</h3>
                                     
             </div>
             <div class="col-md-1">
