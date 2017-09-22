@@ -22,7 +22,7 @@
   </div>
   <hr/>
     <div class="row newsletter_subscription page_container">
-        <div class="col-md-8"></div>
+        <div class="col-md-8">
             <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
             <p class="subscribe_text">
                 For Events, Promotions and Shopping Centre News<br/>
