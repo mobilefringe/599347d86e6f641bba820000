@@ -69,12 +69,7 @@
             <div class="col-md-3">
             <p class="menu_header text_center "><i class="fa fa-envelope-open" aria-hidden="true"></i></p>
             <p class="menu_header text_center ">{{property.contact_phone}}</p>
-                                    
-                <!--<h5 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h5>-->
-                <!--<p class="subscribe_text">-->
-                <!--    For Events, Promotions and Shopping Centre News<br/>-->
-                <!--    Disclaimer: You will receive Promotion E-mails.-->
-                <!--</p>-->
+                  
             </div>
         </div>
         <hr/>
