@@ -78,7 +78,9 @@
                 </div>
         </div>
         <hr/>
-        <div class="new_stores"
+        <div class="new_stores">
+            
+        </div>
     </div>
 </template>
 
