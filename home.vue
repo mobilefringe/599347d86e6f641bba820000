@@ -70,7 +70,9 @@
             </div>
         </div>
         <div class="home_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13280.307401459362!2d-118.0038994!3d33.6810742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbfd841bf3f8670f!2sSeacliff+Village+Shopping+Center!5e0!3m2!1sen!2sca!4v1464729056583" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe title="Map" width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="http://maps.google.nl/maps?q={{property.address1}}  {{property.city}} {{property.country}} {{property.province_state}} {{property.province_state}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{address1}}  {{city}} {{country}} {{province}} {{postal_code}}&amp;z=13&amp;output=embed">
+                    Map
+                </iframe>
         </div>
         <hr/>
     </div>
