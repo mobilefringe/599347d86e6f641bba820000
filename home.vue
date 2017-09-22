@@ -67,7 +67,6 @@
           return this.$store.getters.processedStores;
         },
         feature_items(){
-            
             console.log(this.$store.state.results);
             return this.$store.state.results.feature_items;
         }
