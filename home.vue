@@ -68,7 +68,7 @@
             </div>
             <div class="col-md-3">
             <p class="menu_header text_center "><i class="fa fa-envelope-open" aria-hidden="true"></i></p>
-            <p class="menu_header text_center ">{{property.contact_phone}}</p>
+            <p class="menu_header text_center ">{{property.contact_email}}</p>
                   
             </div>
         </div>
