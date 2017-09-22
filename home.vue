@@ -21,6 +21,7 @@
       </div>
   </div>
   <hr/>
+  </div>
 </template>
 
 <script>
