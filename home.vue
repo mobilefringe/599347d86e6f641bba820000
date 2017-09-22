@@ -20,7 +20,7 @@
             </div>
       </div>
   </div>
-  <hr/>
+        <hr/>
         <div class="row newsletter_subscription page_container">
             <div class="col-md-8 text_left">
                 <h5 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h5>
