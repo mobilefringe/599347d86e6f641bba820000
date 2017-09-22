@@ -80,7 +80,12 @@
         <hr/>
         <div class="new_stores page_container">
             <div class="row">
-                
+                <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100892000/Peoples.png" class="" alt="">
+                <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100902000/Roots.png" class="" alt="">
+                <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100908000/AA.png" class="" alt="">
+                <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100918000/UNQ.png" class="" alt="">
+                <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100932000/Best Buy.png" class="" alt="">
+                <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100952000/Indigo.png" class="" alt="">
             </div>
         </div>
         <hr/>
