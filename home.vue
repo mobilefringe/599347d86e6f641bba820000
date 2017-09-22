@@ -22,7 +22,7 @@
   </div>
   <hr/>
     <div class="newsletter_subscription">
-    <h3 class="subscribe_heading all_caps"></h3>
+        <h3 class="subscribe_heading all_caps"></h3>
         <p class="subscribe_text all_caps">
         Subscribe to {{property.name}} newsletter
         </p>
