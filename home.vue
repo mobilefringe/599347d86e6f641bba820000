@@ -41,6 +41,10 @@
         </div>
         <div class="row contact_info page_container">
             <div class="col-md-3">
+            <p class="menu_header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
+                                    <p class="menu_header text_center ">{{property.contact_phone}}</p>
+                                    <br/>
+                                    
                 <!--<h5 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h5>-->
                 <!--<p class="subscribe_text">-->
                 <!--    For Events, Promotions and Shopping Centre News<br/>-->
