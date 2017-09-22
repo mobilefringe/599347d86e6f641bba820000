@@ -15,7 +15,7 @@
       <div class="col-md-4 home_shortcut">
           <img :src="feature_items[2].image_url" class="" alt="">
           <div class="hover_see_more_btn">
-                <h3 class="hover_text">View Full Design </h3>
+                <p class="hover_text">View Full Design </p>
             </div>
       </div>
 
