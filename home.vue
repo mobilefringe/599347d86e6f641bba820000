@@ -23,7 +23,7 @@
   <hr/>
     <div class="newsletter_subscription">
         <p class="subscribe_text all_caps">
-        Subscribe t
+        Subscribe to {{property.name}} newsletter
         </p>
         <div class="newsletter_div">
             <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
