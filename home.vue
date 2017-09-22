@@ -90,7 +90,8 @@
           description: "An example of integration of Mall Maverick with Vue.js",
           suggestionAttribute: 'name',
           search: '',
-          success_subscribe : false
+          success_subscribe : false,
+          full_address: this.property.city this.property.country this.property.province_state this.property.province_state
         }
       },
       mounted () {
