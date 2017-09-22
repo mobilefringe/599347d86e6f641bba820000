@@ -33,7 +33,7 @@
             <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
                 <input name="cm-ithdul-ithdul" type="text" placeholder="Enter E-mail Here" class="newsletter_control" required /><br/>
                 <button class="newsletter_btn animated_btn">Submit</button>
-                <p class="hidden_now" id="success_subscribe">
+                <p v-show="success_subscribe" id="success_subscribe">
                     Thank you for subscribing.
                 </p>
             </form>
