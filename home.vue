@@ -22,7 +22,8 @@
   </div>
   <hr/>
     <div class="newsletter_subscription">
-        <p class="subscribe_text">
+        <p class="subscribe_text all_caps">
+        Subscribe t
         </p>
         <div class="newsletter_div">
             <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
