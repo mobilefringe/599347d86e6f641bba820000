@@ -73,7 +73,7 @@
             <iframe title="Map" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'http://maps.google.nl/maps?q='+full_address  +'&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear='+full_address  +'&amp;z=13&amp;output=embed'">
                     Map
                 </iframe>
-                <div class="row">
+                <div class="row get_directions">
                     <button class="newsletter_btn animated_btn all_caps red_btn">Submit</button>
                 </div>
         </div>
