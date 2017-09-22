@@ -21,11 +21,12 @@
       </div>
   </div>
   <hr/>
-    <div class="newsletter_subscription">
+    <div class="row newsletter_subscription page_container">
+    
         <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
         <p class="subscribe_text">
             For Events, Promotions and Shopping Centre News<br/>
-            Disclaimer: You will receive Promotion E-mails
+            Disclaimer: You will receive Promotion E-mails.
         </p>
         <div class="newsletter_div">
             <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
