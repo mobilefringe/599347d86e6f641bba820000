@@ -57,6 +57,9 @@
                 <!--    Disclaimer: You will receive Promotion E-mails.-->
                 <!--</p>-->
             </div>
+            <div class="col-md-1">
+                <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">
+            </div>
             <div class="col-md-3">
                 <!--<h5 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h5>-->
                 <!--<p class="subscribe_text">-->
