@@ -28,8 +28,8 @@
             For Events, Promotions and Shopping Centre News<br/>
             Disclaimer: You will receive Promotion E-mails.
         </p>
-         <div class="col-md-4"></div>
-        <div class="newsletter_div">
+         <div class="col-md-4">
+             <div class="newsletter_div">
             <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
                 <input name="cm-ithdul-ithdul" type="text" placeholder="Your Email" class="newsletter_control" required />
                 <button class="newsletter_btn animated_btn">{{$t("message.submit")}}</button>
@@ -38,6 +38,8 @@
                 </p>
             </form>
         </div>
+         </div>
+        
     </div>
   </div>
 </template>
