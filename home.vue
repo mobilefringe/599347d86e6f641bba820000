@@ -37,7 +37,7 @@
                     Thank you for subscribing.
                 </p>
             </form>
-         </div>
+            </div>
         </div>
         <hr/>
     </div>
