@@ -79,9 +79,9 @@
         </div>
         <hr/>
         <div class="new_stores page_container">
-            <div class="col-md-3">
+            <!--<div class="col-md-3">-->
                 
-            </div>
+            <!--</div>-->
         </div>
         <hr/>
     </div>
