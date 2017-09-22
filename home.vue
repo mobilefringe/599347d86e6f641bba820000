@@ -1,25 +1,25 @@
 <template>
     <div class="home_page_container">
-  <div class="row page_container">
-      <div class="col-md-4 home_shortcut">
-          <img :src="feature_items[0].image_url" class="" alt="">
-          <div class="hover_see_more_btn">
-                <h5 class="hover_text">View Full Design </h5>
-            </div>
-      </div>
-      <div class="col-md-4 home_shortcut">
-          <img :src="feature_items[1].image_url" class="" alt="">
-          <div class="hover_see_more_btn">
-                <h5 class="hover_text">View Full Design </h5>
-            </div>
-      </div>
-      <div class="col-md-4 home_shortcut">
-          <img :src="feature_items[2].image_url" class="" alt="">
-          <div class="hover_see_more_btn">
-                <h5 class="hover_text">View Full Design </h5>
-            </div>
-      </div>
-  </div>
+        <div class="row page_container">
+          <div class="col-md-4 home_shortcut">
+              <img :src="feature_items[0].image_url" class="" alt="">
+              <div class="hover_see_more_btn">
+                    <h5 class="hover_text">View Full Design </h5>
+                </div>
+          </div>
+          <div class="col-md-4 home_shortcut">
+              <img :src="feature_items[1].image_url" class="" alt="">
+              <div class="hover_see_more_btn">
+                    <h5 class="hover_text">View Full Design </h5>
+                </div>
+          </div>
+          <div class="col-md-4 home_shortcut">
+              <img :src="feature_items[2].image_url" class="" alt="">
+              <div class="hover_see_more_btn">
+                    <h5 class="hover_text">View Full Design </h5>
+                </div>
+          </div>
+        </div>
         <hr/>
         <div class="row newsletter_subscription page_container">
             <div class="col-md-8 text_left">
