@@ -58,11 +58,6 @@
                     <p class="content text_center">{{property.city}}, {{property.province_state}} {{property.postal_code}}</p>
                     <p class="content text_center">{{property.country}}</p>
                 </div>
-                <!--<h5 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h5>-->
-                <!--<p class="subscribe_text">-->
-                <!--    For Events, Promotions and Shopping Centre News<br/>-->
-                <!--    Disclaimer: You will receive Promotion E-mails.-->
-                <!--</p>-->
             </div>
             <div class="col-md-1">
                 <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">
