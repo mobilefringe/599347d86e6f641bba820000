@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="row contact_info page_container">
-            <div class="col-md-8 text_left">
+            <div class="col-md-8">
                 <h5 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h5>
                 <p class="subscribe_text">
                     For Events, Promotions and Shopping Centre News<br/>
