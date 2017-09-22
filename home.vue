@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class="home_map">
-            <iframe title="Map" width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'http://maps.google.nl/maps?q='+property.address1  property.city property.country property.province_state property.province_state +'&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear='+property.address1  property.city property.country property.province_state property.province_state +'&amp;z=13&amp;output=embed'">
+            <iframe title="Map" width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'http://maps.google.nl/maps?q='+ property.address1 + '' +property.city + '' +property.country + '' +property.province_state + '' +property.province_state +'&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear='+property.address1 + '' +property.city + '' +property.country + '' +property.province_state + '' +property.province_state +'&amp;z=13&amp;output=embed'">
                     Map
                 </iframe>
         </div>
