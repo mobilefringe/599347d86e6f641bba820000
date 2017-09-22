@@ -54,6 +54,7 @@
                 <p class="header text_center"><i class="fa fa-location-arrow" aria-hidden="true"></i></p>
                 <p class="header text_center">{{property.address1}}</p>
                 <div class="content address">
+                    <p class="content text_center">{{property.address1}}</p>
                     <p class="content text_center">{{property.address2}}</p>
                     <p class="content text_center">{{property.city}}, {{property.province_state}}</p>
                     <p class="content text_center">{{property.postal_code}}</p>
