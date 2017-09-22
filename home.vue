@@ -78,7 +78,7 @@
                 </div>
         </div>
         <hr/>
-        <div class="new_stores">
+        <div class="new_storespage_container">
             
         </div>
         <hr/>
