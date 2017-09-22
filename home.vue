@@ -3,19 +3,19 @@
       <div class="col-md-4 home_shortcut">
           <img :src="feature_items[0].image_url" class="" alt="">
           <div class="hover_see_more_btn">
-                <p class="hover_text">View Full Design </p>
+                <h5 class="hover_text">View Full Design </h5>
             </div>
       </div>
       <div class="col-md-4 home_shortcut">
           <img :src="feature_items[1].image_url" class="" alt="">
           <div class="hover_see_more_btn">
-                <p class="hover_text">View Full Design </p>
+                <h5 class="hover_text">View Full Design </h5>
             </div>
       </div>
       <div class="col-md-4 home_shortcut">
           <img :src="feature_items[2].image_url" class="" alt="">
           <div class="hover_see_more_btn">
-                <p class="hover_text">View Full Design </p>
+                <h5 class="hover_text">View Full Design </h5>
             </div>
       </div>
 
