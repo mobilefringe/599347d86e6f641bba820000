@@ -68,7 +68,7 @@
             </div>
             <div class="col-md-3">
             <p class="header text_center "><i class="fa fa-envelope-open" aria-hidden="true"></i></p>
-            <p class="header text_center ">{{property.contact_email}}</p>
+            <p class="header text_center ">Email Contacts</p>
             <p class="content text_center ">{{property.contact_email}}</p>
                   
             </div>
