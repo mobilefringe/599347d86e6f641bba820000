@@ -104,7 +104,6 @@
         <div class="row go_to_directory text_center">
             <button class="newsletter_btn animated_btn all_caps red_btn">Store Directory</button>
         </div>
-        <hr/>
     </div>
 </template>
 
