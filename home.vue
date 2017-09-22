@@ -1,5 +1,5 @@
 <template>
-<div class="home_page_container">
+    <div class="home_page_container">
   <div class="row page_container">
       <div class="col-md-4 home_shortcut">
           <img :src="feature_items[0].image_url" class="" alt="">
@@ -41,7 +41,7 @@
         
     </div>
     <hr/>
-  </div>
+    </div>
 </template>
 
 <script>
