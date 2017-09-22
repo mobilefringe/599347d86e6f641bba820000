@@ -81,7 +81,7 @@
         <div class="new_stores page_container">
             <div class="row">
             <div class="col-md-3">
-            <.div>
+            </div>
                 <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100892000/Peoples.png" class="" alt="">
                 <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100902000/Roots.png" class="" alt="">
                 <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100908000/AA.png" class="" alt="">
