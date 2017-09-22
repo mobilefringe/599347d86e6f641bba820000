@@ -39,6 +39,7 @@
                 </form>
             </div>
         </div>
+        <hr/>
         <div class="row contact_info page_container">
             <div class="col-md-3">
             <p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
