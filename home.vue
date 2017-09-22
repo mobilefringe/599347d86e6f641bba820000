@@ -32,7 +32,7 @@
          <div class="newsletter_div col-md-4">
             <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
                 <input name="cm-ithdul-ithdul" type="text" placeholder="Your Email" class="newsletter_control" required />
-                <button class="newsletter_btn animated_btn">{{$t("message.submit")}}</button>
+                <button class="newsletter_btn animated_btn">Submit</button>
                 <p class="hidden_now" id="success_subscribe">
                     Thank you for subscribing.
                 </p>
