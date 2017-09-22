@@ -55,8 +55,8 @@
                 <p class="header text_center">{{property.address1}}</p>
                 <div class="content address">
                     <p class="content text_center">{{property.address1}} {{property.address2}}</p>
-                    <p class="content text_center">{{property.city}}, {{property.province_state}}</p>
-                    <p class="content text_center">{{property.postal_code}}</p>
+                    <p class="content text_center">{{property.city}}, {{property.province_state}} {{property.postal_code}}</p>
+                    <p class="content text_center"></p>
                     <p class="content text_center">{{property.country}}</p>
                 </div>
                 <!--<h5 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h5>-->
