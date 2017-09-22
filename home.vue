@@ -41,15 +41,15 @@
         </div>
         <div class="row contact_info page_container">
             <div class="col-md-3">
-            <p class="menu_header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
-            <p class="menu_header text_center ">{{property.contact_phone}}</p>
+            <p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
+            <p class="header text_center ">{{property.contact_phone}}</p>
                                     
             </div>
             <div class="col-md-1">
                 <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">
             </div>
             <div class="col-md-3">
-                <p class="menu_header text_center"><i class="fa fa-location-arrow" aria-hidden="true"></i></p>
+                <p class="header text_center"><i class="fa fa-location-arrow" aria-hidden="true"></i></p>
                 <div class="address">
                     <p class="menu_content text_center">{{property.address1}}</p>
                     <p class="menu_content text_center">{{property.address2}}</p>
@@ -67,8 +67,8 @@
                 <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">
             </div>
             <div class="col-md-3">
-            <p class="menu_header text_center "><i class="fa fa-envelope-open" aria-hidden="true"></i></p>
-            <p class="menu_header text_center ">{{property.contact_email}}</p>
+            <p class="header text_center "><i class="fa fa-envelope-open" aria-hidden="true"></i></p>
+            <p class="header text_center ">{{property.contact_email}}</p>
                   
             </div>
         </div>
