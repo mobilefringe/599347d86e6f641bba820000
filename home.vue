@@ -21,6 +21,20 @@
       </div>
   </div>
   <hr/>
+    <div class="newsletter_subscription">
+        <p class="subscribe_text">
+                            
+                        </p>
+                        <div class="newsletter_div">
+                            <!--<form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">-->
+                            <!--    <input name="cm-ithdul-ithdul" type="text" placeholder="Your Email" class="newsletter_control" required />-->
+                            <!--    <button class="newsletter_btn animated_btn">{{$t("message.submit")}}</button>-->
+                            <!--    <p class="hidden_now" id="success_subscribe">-->
+                            <!--        {{$t("message.thankYouMessage")}}-->
+                            <!--    </p>-->
+                            <!--</form>-->
+                        </div>
+    </div>
   </div>
 </template>
 
