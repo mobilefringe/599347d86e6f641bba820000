@@ -22,12 +22,13 @@
   </div>
   <hr/>
     <div class="row newsletter_subscription page_container">
-    
+        <div class="col-md-8"></div>
         <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
         <p class="subscribe_text">
             For Events, Promotions and Shopping Centre News<br/>
             Disclaimer: You will receive Promotion E-mails.
         </p>
+         <div class="col-md-4"></div>
         <div class="newsletter_div">
             <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
                 <input name="cm-ithdul-ithdul" type="text" placeholder="Your Email" class="newsletter_control" required />
