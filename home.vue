@@ -18,8 +18,8 @@
                 <h5 class="hover_text">View Full Design </h5>
             </div>
       </div>
-<hr class="hr_bold"/>
   </div>
+  <hr/>
 </template>
 
 <script>
