@@ -38,7 +38,6 @@
                 </p>
             </form>
          </div>
-        
         </div>
         <hr/>
     </div>
