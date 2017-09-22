@@ -34,7 +34,7 @@
                 <input name="cm-ithdul-ithdul" type="text" placeholder="Your Email" class="newsletter_control" required />
                 <button class="newsletter_btn animated_btn">{{$t("message.submit")}}</button>
                 <p class="hidden_now" id="success_subscribe">
-                    {{$t("message.thankYouMessage")}}
+                    Thank you for subscribing,
                 </p>
             </form>
          </div>
