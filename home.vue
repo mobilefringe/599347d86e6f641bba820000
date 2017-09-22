@@ -43,7 +43,7 @@
             <div class="col-md-3">
             <p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
             <p class="header text_center ">{{property.contact_phone}}</p>
-             <p class="content text_center ">{{property.contact_phone}}</p>
+             <p class="content text_center ">Mall Security:</p>
              <p class="content text_center ">{{property.contact_phone}}</p>
             </div>
             <div class="col-md-1">
