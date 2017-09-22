@@ -106,6 +106,10 @@
         feature_items(){
             console.log(this.$store.state.results);
             return this.$store.state.results.feature_items;
+        },
+        full_address() {
+            return this.property.address1 +''+this.property.city +''+ this.property.country +''+this.property.province_state +''+this.property.province_state
+            
         }
       },
       methods: {
