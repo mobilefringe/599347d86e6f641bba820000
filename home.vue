@@ -54,7 +54,7 @@
                 <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">
             </div>
             <div class="col-md-3">
-                <p class="menu_header text_center"><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                <p class="menu_header text_center"><i class="fa fa-location-arrow" aria-hidden="true"></i></i></p>
                 <div class="address">
                     <p class="menu_content text_center">{{property.address1}}</p>
                     <p class="menu_content text_center">{{property.address2}}</p>
