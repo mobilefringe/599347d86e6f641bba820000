@@ -69,7 +69,7 @@
                   
             </div>
         </div>
-        <div>
+        <div class="home_map">
             
         </div>
         <hr/>
