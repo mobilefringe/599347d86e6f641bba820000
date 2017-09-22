@@ -43,7 +43,8 @@
             <div class="col-md-3">
             <p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
             <p class="header text_center ">{{property.contact_phone}}</p>
-                                    
+             <p class="content text_center ">{{property.contact_phone}}</p>
+             <p class="content text_center ">{{property.contact_phone}}</p>
             </div>
             <div class="col-md-1">
                 <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">
@@ -52,10 +53,10 @@
                 <p class="header text_center"><i class="fa fa-location-arrow" aria-hidden="true"></i></p>
                 <p class="header text_center">{{property.address1}}</p>
                 <div class="content address">
-                    <p class="menu_content text_center">{{property.address2}}</p>
-                    <p class="menu_content text_center">{{property.city}}, {{property.province_state}}</p>
-                    <p class="menu_content text_center">{{property.postal_code}}</p>
-                    <p class="menu_content text_center">{{property.country}}</p>
+                    <p class="content text_center">{{property.address2}}</p>
+                    <p class="content text_center">{{property.city}}, {{property.province_state}}</p>
+                    <p class="content text_center">{{property.postal_code}}</p>
+                    <p class="content text_center">{{property.country}}</p>
                 </div>
                 <!--<h5 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h5>-->
                 <!--<p class="subscribe_text">-->
