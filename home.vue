@@ -101,6 +101,10 @@
             </div>
         </div>
         <hr/>
+        <div class="row get_directions">
+                    <button class="newsletter_btn animated_btn all_caps red_btn">Get Directions</button>
+                </div>
+        <hr/>
     </div>
 </template>
 
