@@ -111,6 +111,16 @@
   define(["Vue", "vue!today_hours", "vue!search-component"], function(Vue, TodayHoursComponent, SearchComponent) {
     return Vue.component("home-component", {
       template: template, // the variable template will be injected
+       props: {
+            menu_items: {
+                type: Array,
+                required: true
+            },
+            show_menu: {
+                type: Boolean,
+                required: true
+            }
+        },
       data: function() {
         return {
           title: "MM with Vue.js!",
