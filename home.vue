@@ -133,6 +133,9 @@
         feature_items(){
             console.log(this.$store.state.results);
             var features = _.slice(this.$store.state.results.feature_items, [start=0], [end=3]);
+            _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+              console.log(key);
+            });
             return features;
         },
         full_address() {
