@@ -59,7 +59,8 @@
           listMode: "alphabetical"
         }
       },
-      mounted : {
+      mounted () {
+        //   this.feature_items;
           this.$emit('switchBanner',true);
       },
       methods: {
