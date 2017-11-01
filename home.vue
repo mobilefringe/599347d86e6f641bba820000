@@ -112,10 +112,6 @@
     return Vue.component("home-component", {
       template: template, // the variable template will be injected
        props: {
-            menu_items: {
-                type: Array,
-                required: true
-            },
             show_menu: {
                 type: Boolean,
                 required: true
