@@ -61,7 +61,7 @@
       },
       mounted () {
         //   this.feature_items;
-          this.$emit('switchBanner',true);
+          this.$emit('switchBanner',false);
       },
       methods: {
         changeMode (mode) {
