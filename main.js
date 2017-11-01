@@ -75,7 +75,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         class_list: "all_caps menu_btn_label",
                         href: "/contact_us"
                     }
-                ]
+                ],
+                show_hero_banner : false
             }
         },
         created() {
