@@ -133,15 +133,15 @@
         feature_items(){
             console.log(this.$store.state.results);
             var features = _.slice(this.$store.state.results.feature_items, [start=0], [end=3]);
-            _.forEach(features, function(value, key) {
-            //   console.log(key);
-            if(key == 1){
-                value.padding_class = "padding_30 col-md-4 home_shortcut"
-            }
-            else {
-                value.padding_class = "padding_tb_30 col-md-4 home_shortcut"
-            }
-            });
+            // _.forEach(features, function(value, key) {
+            // //   console.log(key);
+            // if(key == 1){
+            //     value.padding_class = "padding_30 col-md-4 home_shortcut"
+            // }
+            // else {
+            //     value.padding_class = "padding_tb_30 col-md-4 home_shortcut"
+            // }
+            // });
             return features;
         },
         full_address() {
