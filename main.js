@@ -102,7 +102,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
               
               console.log(window.location);
               if(){
-                  show_hero_banner
+                  this.show_hero_banner = true;
               }
             });
         },
