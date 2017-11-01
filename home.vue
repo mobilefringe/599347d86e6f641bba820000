@@ -139,7 +139,7 @@
                 value.padding_class = "padding_30"
             }
             else {
-                value.padding_class = "padding_30"
+                value.padding_class = "padding_tb-30"
             }
             });
             return features;
