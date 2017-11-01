@@ -171,6 +171,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             //this function helps home Page show and hide menu using the prop showMenu
             toggleBanner (val) {
+                console.log("received emit");
                 this.show_hero_banner = val;
             }
         },
