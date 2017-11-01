@@ -132,7 +132,7 @@
         },
         feature_items(){
             console.log(this.$store.state.results);
-            return this.$store.state.results.feature_items;
+            return _.slice(array, [start=0], [end=array.length]);
         },
         full_address() {
             return this.property.address1 +''+this.property.city +''+ this.property.country +''+this.property.province_state +''+this.property.province_state
