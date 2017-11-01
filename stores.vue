@@ -61,7 +61,7 @@
       },
       mounted : {
           this.$emit('switchBanner',true);
-      }
+      },
       methods: {
         changeMode (mode) {
           this.listMode = mode;
