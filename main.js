@@ -168,6 +168,10 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             day_of_the_week(val_day){
                 weekday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
                 return weekday[val_day];
+            },
+            //this function helps home Page show and hide menu using the prop showMenu
+            toggleMenu () {
+                this.show_menu = !this.show_menu;
             }
         },
         router: router,
