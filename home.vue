@@ -136,7 +136,7 @@
             _.forEach(features, function(value, key) {
             //   console.log(key);
             if(key == 1){
-                
+                value.padding_class = "padding_30"
             }
             });
             return features;
