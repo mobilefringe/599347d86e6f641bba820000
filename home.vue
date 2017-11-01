@@ -112,7 +112,7 @@
     return Vue.component("home-component", {
       template: template, // the variable template will be injected
        props: {
-            show_menu: {
+            show_hero_banner: {
                 type: Boolean,
                 required: true
             }
