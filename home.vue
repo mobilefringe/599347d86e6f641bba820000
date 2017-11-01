@@ -1,7 +1,7 @@
 <template>
     <div class="home_page_container">
         <div class="row page_container">
-            <div :class=padding_class+"col-md-4 home_shortcut " v-for="item in feature_items">
+            <div :class='padding_class' "col-md-4 home_shortcut "'' v-for="item in feature_items">
                 <img src="//via.placeholder.com/360x275" class="" alt=""><!--<img :src="feature_items[0].image_url" class="" alt="">-->
                 <div class="hover_see_more_btn">
                     <h5 class="hover_text">{{item.name}} </h5>
