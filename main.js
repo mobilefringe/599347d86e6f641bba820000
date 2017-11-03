@@ -23,7 +23,7 @@ require.config({
     }
 });
 
-require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'vue!search-component','vue-moment'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, SearchComponent) {
+require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'vue!search-component','vue-moment'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, SearchComponent, vueMoment) {
     Vue.use(Meta);
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
