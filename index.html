@@ -72,63 +72,63 @@
             <hr/>
             <router-view :show_hero_banner="show_hero_banner" @switchBanner="toggleBanner"></router-view>
             <section class="copyright_footer main_container">
-                    <div class="text-center">
-                        <div class="footer_menu">
-                            <div class="row page_container">
-                                <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <p class="menu_header text_left">{{property.name}}</p>
-                                    <ul class="menu_content text_left">
-                                        <li v-for="item in menu_items">
-                                            <router-link :to="item.href" active-class="active" exact :id="item.name">
-                                               {{ item.name }}
-                                            </router-link>
-                                        </li>
-                
-                                    </ul>
+                <div class="text-center">
+                    <div class="footer_menu">
+                        <div class="row page_container">
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <p class="menu_header text_left">{{property.name}}</p>
+                                <ul class="menu_content text_left">
+                                    <li v-for="item in menu_items">
+                                        <router-link :to="item.href" active-class="active" exact :id="item.name">
+                                           {{ item.name }}
+                                        </router-link>
+                                    </li>
+            
+                                </ul>
+                            </div>
+                            <!--<div class="col-md-1 hidden_phone" height="200px" style="margin: 20px 0px;"><div class="vertical_line_left"></div></div>-->
+                            
+                            <div class="col-md-4 hidden_phone footer_hours_container">
+                                <p class="menu_content text_center">REGULAR HOURS</p>
+                                <ul class="menu_content text_center">
+                                    <li v-for="hour in hours">
+                                        <span class="pull-left col-md-6"> 
+                                           {{day_of_the_week(hour.day_of_week)}}
+                                        </span>
+                                        <span class="pull-right col-md-6">
+                                            {{hour.open_time | moment("h:mma", timezone)}} - {{hour.close_time | moment("h:mma", timezone)}}
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--<div class="col-md-1 hidden_phone" height="200px" style="margin: 20px 0px;"><div class="vertical_line_right"></div></div>-->
+                            <div class="col-md-4 hidden_phone">
+                                <p class="menu_header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
+                                <p class="menu_header text_center ">{{property.contact_phone}}</p>
+                                <br/>
+                                <p class="menu_header text_center"><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                                <div class="address">
+                                    <p class="menu_content text_center">{{property.address1}}</p>
+                                    <p class="menu_content text_center">{{property.address2}}</p>
+                                    <p class="menu_content text_center">{{property.city}}, {{property.province_state}}</p>
+                                    <p class="menu_content text_center">{{property.postal_code}}</p>
+                                    <p class="menu_content text_center">{{property.country}}</p>
                                 </div>
-                                <!--<div class="col-md-1 hidden_phone" height="200px" style="margin: 20px 0px;"><div class="vertical_line_left"></div></div>-->
                                 
-                                <div class="col-md-4 hidden_phone footer_hours_container">
-                                    <p class="menu_content text_center">REGULAR HOURS</p>
-                                    <ul class="menu_content text_center">
-                                        <li v-for="hour in hours">
-                                            <span class="pull-left col-md-6"> 
-                                               {{day_of_the_week(hour.day_of_week)}}
-                                            </span>
-                                            <span class="pull-right col-md-6">
-                                                {{hour.open_time | moment("h:mma", timezone)}} - {{hour.close_time | moment("h:mma", timezone)}}
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--<div class="col-md-1 hidden_phone" height="200px" style="margin: 20px 0px;"><div class="vertical_line_right"></div></div>-->
-                                <div class="col-md-4 hidden_phone">
-                                    <p class="menu_header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
-                                    <p class="menu_header text_center ">{{property.contact_phone}}</p>
-                                    <br/>
-                                    <p class="menu_header text_center"><i class="fa fa-map-marker" aria-hidden="true"></i></p>
-                                    <div class="address">
-                                        <p class="menu_content text_center">{{property.address1}}</p>
-                                        <p class="menu_content text_center">{{property.address2}}</p>
-                                        <p class="menu_content text_center">{{property.city}}, {{property.province_state}}</p>
-                                        <p class="menu_content text_center">{{property.postal_code}}</p>
-                                        <p class="menu_content text_center">{{property.country}}</p>
-                                    </div>
-                                    
-                                </div>
                             </div>
                         </div>
-                        <div class="footer_text">
-                        <p class=" page_container ">
-                            <span class="pull-left center_vertical"> 
-                                &copy; {{copyright_year}} {{property.name | uppercase}}. All rights reserved. <a>Privacy Policy</a> | <a>Terms & Conditions</a></span>
-                            <span class="pull-right center_vertical"> 
-                                Powered by <a href="http://mallmaverick.com/" targer="_blank">Mall Maverick</a>
-                            </span>
-                        </p>
-                        </div>
                     </div>
-                </section>
+                    <div class="footer_text">
+                    <p class=" page_container ">
+                        <span class="pull-left center_vertical"> 
+                            &copy; {{copyright_year}} {{property.name | uppercase}}. All rights reserved. <a>Privacy Policy</a> | <a>Terms & Conditions</a></span>
+                        <span class="pull-right center_vertical"> 
+                            Powered by <a href="http://mallmaverick.com/" targer="_blank">Mall Maverick</a>
+                        </span>
+                    </p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
