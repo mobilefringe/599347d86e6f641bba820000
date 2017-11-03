@@ -175,7 +175,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 this.show_hero_banner = val;
             },
             onOptionSelect(option) {
-                // console.log('Selected option:', option);
+                console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
                 
                 // console.log("counted_stores is",counted_stores[option.name]);
