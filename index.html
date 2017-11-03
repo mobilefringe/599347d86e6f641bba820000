@@ -65,7 +65,7 @@
                     <span class="social_link_box instagram_link"></span>
                 </div>
                 <div class="search pull-right">
-                    <search-component placeholder="Search For Stores" :suggestion-attribute="suggestionAttribute" v-model="search"></search-component>
+                    <search-component placeholder="Search For Stores" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"></search-component>
                     <!--<today-hours></today-hours>-->
                 </div>
             </div>
