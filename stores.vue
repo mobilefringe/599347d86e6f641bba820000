@@ -128,7 +128,7 @@
                     map = $('#map').mapSvg({
                         source: getSVGMapURL(),//'//mallmaverick.com/' + property.svgmap_url,    // Path to SVG map
                         colors: {stroke: '#cccccc', selected: -20, hover: "#cccccc"},
-                        height:800,
+                        height:600,
                         width:1140,
                         viewBox:[0, 0, 1174, 724],
                         regions: reg,
