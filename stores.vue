@@ -110,6 +110,19 @@
       methods: {
         changeMode (mode) {
           this.listMode = mode;
+        },
+        {
+            reg = {};
+    		$.each( stores , function( key, val ) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    obj = {};
+                    obj["tooltip"] = "<label class='store_name_map'> "+val.name +"</label>"
+                    obj["attr"] = {}
+                    obj["attr"]["href"] = '/stores/'+val.slug 
+                    reg[val.svgmap_region] = obj
+                }
+            });
+            init_map(reg);
         }
       },
       computed: {
