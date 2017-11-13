@@ -140,7 +140,7 @@
                         zoomLimit: [0,10]
                     });
                 }
-      },
+            },
       computed: {
         storesByAlphaIndex() {
           return this.$store.getters.storesByAlphaIndex;
