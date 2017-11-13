@@ -123,19 +123,19 @@
                 }
             });
             map = $('#map').mapSvg({
-            source: getSVGMapURL(),//'//mallmaverick.com/' + property.svgmap_url,    // Path to SVG map
-            colors: {stroke: '#cccccc', selected: -20, hover: "#cccccc"},
-            height:800,
-            width:1140,
-            viewBox:[0, 0, 1174, 724],
-            regions: reg,
-            tooltipsMode:'custom',
-            zoom: true,
-            pan:true,
-            cursor:'pointer',
-            responsive:true,
-            zoomLimit: [0,10]
-        });
+                source: getSVGMapURL(),//'//mallmaverick.com/' + property.svgmap_url,    // Path to SVG map
+                colors: {stroke: '#cccccc', selected: -20, hover: "#cccccc"},
+                height:800,
+                width:1140,
+                viewBox:[0, 0, 1174, 724],
+                regions: reg,
+                tooltipsMode:'custom',
+                zoom: true,
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,10]
+            });
         }
       },
       computed: {
