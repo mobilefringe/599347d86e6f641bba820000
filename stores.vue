@@ -38,10 +38,10 @@
             </div>
             <div class="col-md-8">
                 <div class="map_container">
-        <div id="map" class="hidden_phone">
-            <!--<img alt="map" id="map_image" src="">-->
-        </div>
-    </div>
+                    <div id="map" class="hidden_phone">
+                        <!--<img alt="map" id="map_image" src="">-->
+                    </div>
+                </div>
             </div>
         </div>
     <!--<ul class="menu">-->
