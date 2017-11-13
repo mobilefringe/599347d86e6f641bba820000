@@ -121,32 +121,32 @@
                 changeMode (mode) {
                   this.listMode = mode;
                 },
-                init_map(){
-                    reg = {};
-            		$.each( stores , function( key, val ) {
-                        if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                            obj = {};
-                            obj["tooltip"] = "<label class='store_name_map'> "+val.name +"</label>"
-                            obj["attr"] = {}
-                            obj["attr"]["href"] = '/stores/'+val.slug 
-                            reg[val.svgmap_region] = obj
-                        }
-                    });
-                    map = $('#map').mapSvg({
-                        source: getSVGMapURL(),//'//mallmaverick.com/' + property.svgmap_url,    // Path to SVG map
-                        colors: {stroke: '#cccccc', selected: -20, hover: "#cccccc"},
-                        height:600,
-                        width:1140,
-                        viewBox:[0, 0, 1174, 724],
-                        regions: reg,
-                        tooltipsMode:'custom',
-                        zoom: true,
-                        pan:true,
-                        cursor:'pointer',
-                        responsive:true,
-                        zoomLimit: [0,10]
-                    });
-                },
+            //     init_map(){
+            //         reg = {};
+            // 		$.each( stores , function( key, val ) {
+            //             if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+            //                 obj = {};
+            //                 obj["tooltip"] = "<label class='store_name_map'> "+val.name +"</label>"
+            //                 obj["attr"] = {}
+            //                 obj["attr"]["href"] = '/stores/'+val.slug 
+            //                 reg[val.svgmap_region] = obj
+            //             }
+            //         });
+            //         map = $('#map').mapSvg({
+            //             source: getSVGMapURL(),//'//mallmaverick.com/' + property.svgmap_url,    // Path to SVG map
+            //             colors: {stroke: '#cccccc', selected: -20, hover: "#cccccc"},
+            //             height:600,
+            //             width:1140,
+            //             viewBox:[0, 0, 1174, 724],
+            //             regions: reg,
+            //             tooltipsMode:'custom',
+            //             zoom: true,
+            //             pan:true,
+            //             cursor:'pointer',
+            //             responsive:true,
+            //             zoomLimit: [0,10]
+            //         });
+            //     },
                 onOptionSelect(option) {
                     console.log('Selected option:', option);
                     // var counted_stores = _.countBy(this.allStores,'name');
