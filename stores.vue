@@ -90,15 +90,6 @@
     <!--</div>-->
 </template>
 
-<style>
-  .center{
-    text-align: center
-  }
-  .store-section a{
-    color: #708090;
-  }
-</style>
-
 <script>
     define(["Vue","jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component","vue!svg-map"], function(Vue, $, Raphael, mapSvg,mousewheel,SearchComponent,SVGMapComponent) {
         return Vue.component("stores-component", {
