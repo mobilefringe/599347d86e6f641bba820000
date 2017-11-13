@@ -37,7 +37,11 @@
                  <search-component placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"></search-component>
             </div>
             <div class="col-md-8">
-                
+                <div class="map_container">
+        <div id="map" class="hidden_phone">
+            <!--<img alt="map" id="map_image" src="">-->
+        </div>
+    </div>
             </div>
         </div>
     <!--<ul class="menu">-->
