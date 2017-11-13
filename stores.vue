@@ -141,27 +141,27 @@
                     });
                 },
                 onOptionSelect(option) {
-                console.log('Selected option:', option);
-                // var counted_stores = _.countBy(this.allStores,'name');
-                
-                // // console.log("counted_stores is",counted_stores[option.name]);
-                // if(option.type==="click") {
-                //     console.log($(".input").val());
-                // }
-                
-                // else {
-                //     if( counted_stores[option.name] >1) {
-                //         var route = '/map/' + option.name;
-                //         console.log(route);
-                //         this.$router.push(route);
-                //     }
-                //     else {
-                //         var route = '/stores/' + option.slug;
-                //         console.log(route);
-                //         this.$router.push(route);
-                //     }
-                // }
-            }
+                    console.log('Selected option:', option);
+                    // var counted_stores = _.countBy(this.allStores,'name');
+                    
+                    // // console.log("counted_stores is",counted_stores[option.name]);
+                    // if(option.type==="click") {
+                    //     console.log($(".input").val());
+                    // }
+                    
+                    // else {
+                    //     if( counted_stores[option.name] >1) {
+                    //         var route = '/map/' + option.name;
+                    //         console.log(route);
+                    //         this.$router.push(route);
+                    //     }
+                    //     else {
+                    //         var route = '/stores/' + option.slug;
+                    //         console.log(route);
+                    //         this.$router.push(route);
+                    //     }
+                    // }
+                }
             },
             computed: {
                 property (){
