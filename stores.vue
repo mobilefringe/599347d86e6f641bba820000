@@ -186,6 +186,9 @@
                 getSVGurl () {
                     return "https://www.mallmaverick.com" + this.property.svgmap_url;
                 },
+                allStores() {
+                    return this.$store.getters.processedStores;
+                }
             }
         });
     });
