@@ -95,7 +95,7 @@
 </style>
 
 <script>
-  define(["Vue","vue!search-component"], function(Vue, SearchComponent) {
+  define(["Vue","jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component","vue!svg-map"], function(Vue, SearchComponent) {
     return Vue.component("stores-component", {
       template: template, // the variable template will be injected
       data: function() {
