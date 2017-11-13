@@ -38,9 +38,7 @@
             </div>
             <div class="col-md-8">
                 <div class="map_container">
-                    <div id="map" class="hidden_phone">
-                        <!--<img alt="map" id="map_image" src="">-->
-                    </div>
+                    <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl"></svg-map>
                 </div>
             </div>
         </div>
