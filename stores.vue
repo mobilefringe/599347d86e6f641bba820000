@@ -100,7 +100,7 @@
                 return {
                     listMode: "alphabetical",
                     suggestionAttribute: 'name',
-                search : ""
+                    search : ""
                 }
             },
             created (){
