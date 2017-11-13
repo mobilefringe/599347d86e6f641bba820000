@@ -89,7 +89,7 @@
 </style>
 
 <script>
-  define(["Vue","vue!search-component"], function(Vue, SearchCompoentn) {
+  define(["Vue","vue!search-component"], function(Vue, SearchComponent) {
     return Vue.component("stores-component", {
       template: template, // the variable template will be injected
       data: function() {
