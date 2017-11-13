@@ -161,6 +161,9 @@
                     //         this.$router.push(route);
                     //     }
                     // }
+                },
+                updateSVGMap (map) {
+                    this.map = map;
                 }
             },
             computed: {
