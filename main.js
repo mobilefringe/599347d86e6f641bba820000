@@ -163,6 +163,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             timezone () {
                 return this.$store.getters.getTimezone;
+            },
+            allStores() {
+                return this.$store.getters.processedStores;
             }
         },
         methods: {
