@@ -34,7 +34,7 @@
         </div>
         <div class="stores_container">
             <div class="col-md-4 col-sm-4">
-            <div class="search_container"></div>
+                <div class="search_container"></div>
                  <search-component placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"></search-component>
                  
             </div>
