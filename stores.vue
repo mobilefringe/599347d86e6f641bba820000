@@ -42,7 +42,6 @@
                         <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}</router-link>
                     </div>
                 </div>
-                 
             </div>
             <div class="col-md-8 col-sm-8">
                 <div class="map_container">
