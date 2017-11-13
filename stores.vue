@@ -39,7 +39,7 @@
                 </div>
                 <div class="store_list_container">
                     <div class="store-section" v-for="store in allStores">
-                        <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}</router-link>
+                        <a :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}</a>
                     </div>
                 </div>
             </div>
