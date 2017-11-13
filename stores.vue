@@ -33,12 +33,12 @@
             </div>
         </div>
         <div class="stores_container">
-        <div class="col-md-4">
-             <search-component placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"></search-component>
-        </div>
-        <div class="col-md-8">
-            
-        </div>
+            <div class="col-md-4">
+                 <search-component placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"></search-component>
+            </div>
+            <div class="col-md-8">
+                
+            </div>
         </div>
     <!--<ul class="menu">-->
     <!--  <li><a v-on:click="changeMode('alphabetical')">Alphabetical</a></li>-->
