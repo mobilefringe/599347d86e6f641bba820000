@@ -145,7 +145,10 @@
                 },
                 storesByCategoryName() {
                     return this.$store.getters.storesByCategoryName;
-                }
+                },
+                getSVGurl () {
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                },
             }
         });
     });
