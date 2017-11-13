@@ -53,7 +53,7 @@
     <!--  <li><a v-on:click="changeMode('alphabetical')">Alphabetical</a></li>-->
     <!--  <li><a v-on:click="changeMode('category')">Category</a></li>-->
     <!--</ul>-->
-    <hr/>
+    <!--<hr/>-->
     <!--<div class="columns large-12" v-for="(stores, index) in storesByAlphaIndex" v-if="listMode === 'alphabetical'">-->
     <!--  <div class="list_header">-->
     <!--    <b>{{index}}</b>-->
