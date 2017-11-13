@@ -39,7 +39,7 @@
                 </div>
                 <div class="store_list_container">
                     <div class="store-section" v-for="store in allStores">
-                        <a @click="dropPin">{{store.name}}</a>
+                        <a @click="dropPin(store)">{{store.name}}</a>
                     </div>
                 </div>
             </div>
