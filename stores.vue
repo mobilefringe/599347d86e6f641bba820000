@@ -142,12 +142,12 @@
                 }
             },
             computed: {
-        storesByAlphaIndex() {
-          return this.$store.getters.storesByAlphaIndex;
-        },
-        storesByCategoryName() {
-          return this.$store.getters.storesByCategoryName;
-        }
+                storesByAlphaIndex() {
+                  return this.$store.getters.storesByAlphaIndex;
+                },
+                storesByCategoryName() {
+                  return this.$store.getters.storesByCategoryName;
+                }
       }
     });
   });
