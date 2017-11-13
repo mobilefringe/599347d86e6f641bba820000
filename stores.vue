@@ -140,6 +140,9 @@
                 }
             },
             computed: {
+                property (){
+                    return this.$store.getters.getProperty;
+                },
                 storesByAlphaIndex() {
                     return this.$store.getters.storesByAlphaIndex;
                 },
