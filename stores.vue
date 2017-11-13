@@ -38,7 +38,7 @@
                     <search-component placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"></search-component>
                 </div>
                 <div class="store_list_container">
-                    <div class="store-section" v-for="store in stores">
+                    <div class="store-section" v-for="store in allStores">
                         <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}</router-link>
                     </div>
                 </div>
