@@ -162,6 +162,9 @@
                 },
                 updateSVGMap (map) {
                     this.map = map;
+                },
+                dropPin(store) {
+                    
                 }
             },
             computed: {
