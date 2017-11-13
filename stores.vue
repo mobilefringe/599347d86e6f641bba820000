@@ -111,7 +111,7 @@
         changeMode (mode) {
           this.listMode = mode;
         },
-        {
+        init_map(){
             reg = {};
     		$.each( stores , function( key, val ) {
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
