@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            
+             <search-component placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"></search-component>
         </div>
         <div class="col-md-8">
             
