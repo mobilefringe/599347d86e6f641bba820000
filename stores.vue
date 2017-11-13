@@ -88,7 +88,7 @@
     <!--    <hr/>-->
     <!--  </div>-->
     <!--</div>-->
-  </div>
+    </div>
 </template>
 
 <style>
