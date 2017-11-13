@@ -39,7 +39,7 @@
                 </div>
                 <div class="store_list_container">
                     <div class="store-section" v-for="store in allStores">
-                        <a :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}</a>
+                        <a @click="droppin">{{store.name}}</a>
                     </div>
                 </div>
             </div>
