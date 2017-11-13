@@ -111,9 +111,9 @@
                 this.$emit('switchBanner',false);
             },
             methods: {
-        changeMode (mode) {
-          this.listMode = mode;
-        },
+                changeMode (mode) {
+                  this.listMode = mode;
+                },
         init_map(){
             reg = {};
     		$.each( stores , function( key, val ) {
