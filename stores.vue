@@ -1,6 +1,6 @@
 <template>
   <div class="container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
-  <hr/>
+
    <div class="col-md-12">
             <div class="alpha_list">
                 <a href="#7" id="all_stores_a">all</a>
@@ -33,7 +33,7 @@
                 <a href="#Z">Z</a>
             </div>
         </div>
-        <hr/>
+    
     <ul class="menu">
       <li><a v-on:click="changeMode('alphabetical')">Alphabetical</a></li>
       <li><a v-on:click="changeMode('category')">Category</a></li>
