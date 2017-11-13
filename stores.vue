@@ -32,6 +32,7 @@
                 <a href="#Z">Z</a>
             </div>
         </div>
+        <div class="store_container"></div>
         <div class="col-md-4">
              <search-component placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"></search-component>
         </div>
