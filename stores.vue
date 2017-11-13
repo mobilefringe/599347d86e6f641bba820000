@@ -97,7 +97,7 @@
 <script>
     define(["Vue","jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component","vue!svg-map"], function(Vue, $, Raphael, mapSvg,mousewheel,SearchComponent,SVGMapComponent) {
         return Vue.component("stores-component", {
-      template: template, // the variable template will be injected
+            template: template, // the variable template will be injected
       data: function() {
         return {
           listMode: "alphabetical"
