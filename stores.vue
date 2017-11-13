@@ -39,6 +39,7 @@
         <div class="col-md-8">
             
         </div>
+        </div>
     <!--<ul class="menu">-->
     <!--  <li><a v-on:click="changeMode('alphabetical')">Alphabetical</a></li>-->
     <!--  <li><a v-on:click="changeMode('category')">Category</a></li>-->
