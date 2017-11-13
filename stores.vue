@@ -110,7 +110,7 @@
                 //   this.feature_items;
                 this.$emit('switchBanner',false);
             },
-      methods: {
+            methods: {
         changeMode (mode) {
           this.listMode = mode;
         },
