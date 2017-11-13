@@ -37,6 +37,9 @@
                 <div class="search_container"></div>
                  <search-component placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"></search-component>
                  </div>
+                 <div class="store_list_container">
+                     
+                 </div>
                  
             </div>
             <div class="col-md-8 col-sm-8">
