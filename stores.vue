@@ -141,7 +141,7 @@
                     });
                 }
             },
-      computed: {
+            computed: {
         storesByAlphaIndex() {
           return this.$store.getters.storesByAlphaIndex;
         },
