@@ -49,6 +49,9 @@
                     <div class="store-section" v-for="store in processedStores">
                         <a @click="dropPin(store)">{{store.name}}</a>
                     </div>
+                    <div v-if="processedStores.length <= 0>
+                        
+                    </div>
                 </div>
             </div>
             <div class="col-md-8 col-sm-8">
