@@ -182,10 +182,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 return weekday[val_day];
             },
             //this function helps home Page show and hide menu using the prop showMenu
-            toggleBanner (payload) {
-                console.log("received emit");
-                this.show_hero_banner = payload[0];
-            },
+            
             onOptionSelect(option) {
                 console.log('Selected option:', option);
                 // var counted_stores = _.countBy(this.allStores,'name');
