@@ -179,7 +179,7 @@
                     this.svgMapRef.setViewBox(store)
                 },
                 filterStore (letter) {
-                    allStores()
+                    this.allStores()
                 }
             },
             computed: {
