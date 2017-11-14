@@ -148,7 +148,7 @@
             //     },
                 onOptionSelect(option) {
                     console.log('Selected option:', option);
-                    dropPin(option)
+                    dropPin(option);
                     // var counted_stores = _.countBy(this.allStores,'name');
                     
                     // // console.log("counted_stores is",counted_stores[option.name]);
