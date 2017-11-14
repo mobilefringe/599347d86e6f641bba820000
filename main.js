@@ -211,6 +211,12 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 $(".search-component .options-list").show();
             }
         },
+        events : {
+            toggleBanner (payload) {
+                console.log("received emit");
+                this.show_hero_banner = payload[0];
+            },
+        }
         router: router,
         store,
         i18n
