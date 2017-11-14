@@ -74,7 +74,7 @@
                     Map
             </iframe>
             <div class="row get_directions">
-                <button class="newsletter_btn animated_btn all_caps red_btn">Get Directions</button>
+                <button class="newsletter_btn animated_btn all_caps ">Get Directions</button>
             </div>
         </div>
         <hr/>
