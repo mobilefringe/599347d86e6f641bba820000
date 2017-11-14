@@ -3,11 +3,11 @@
         <div class="col-md-12">
             <div class="alpha_list">
                 <!--<a href="#7" id="all_stores_a">all</a>-->
-                <a href="#7" @click="filterStores('#')">#</a>
-                <a href="#A" @click="filterStores('A')">A</a>
-                <a href="#B">B</a>
-                <a href="#C">C</a>
-                <a href="#D">D</a>
+                <a href="" @click="filterStores('#')">#</a>
+                <a href="" @click="filterStores('A')">A</a>
+                <a @click="filterStores('B">B</a>
+                <a @click="filterStores('C">C</a>
+                <a @click="filterStores('D">D</a>
                 <a href="#E">E</a>
                 <a href="#F">F</a>
                 <a href="#G">G</a>
