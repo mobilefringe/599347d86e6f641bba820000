@@ -191,7 +191,7 @@
                     else {
                         this.processedStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
                     }
-                    console.log(this.processedStores);
+                    // console.log(this.processedStores);
                 }
             },
             computed: {
