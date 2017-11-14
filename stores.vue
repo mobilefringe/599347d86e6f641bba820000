@@ -179,7 +179,7 @@
                     this.svgMapRef.setViewBox(store)
                 },
                 filterStore (letter) {
-                    this.allStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == ; });
+                    this.allStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
                 }
             },
             computed: {
