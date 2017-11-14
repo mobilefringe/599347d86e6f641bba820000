@@ -2,34 +2,34 @@
     <div class="container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="col-md-12">
             <div class="alpha_list">
-                <!--<a href="#7" id="all_stores_a">all</a>-->
+                <!--<a @click="filterStores('7" id="all_stores_a">all</a>-->
                 <a href="" @click="filterStores('#')">#</a>
                 <a href="" @click="filterStores('A')">A</a>
                 <a @click="filterStores('B">B</a>
                 <a @click="filterStores('C">C</a>
                 <a @click="filterStores('D">D</a>
-                <a href="#E">E</a>
-                <a href="#F">F</a>
-                <a href="#G">G</a>
-                <a href="#H">H</a>
-                <a href="#I">I</a>
-                <a href="#J">J</a>
-                <a href="#K">K</a>
-                <a href="#L">L</a>
-                <a href="#M">M</a>
-                <a href="#N">N</a>
-                <a href="#O">O</a>
-                <a href="#P">P</a>
-                <a href="#Q">Q</a>
-                <a href="#R">R</a>
-                <a href="#S">S</a>
-                <a href="#T">T</a>
-                <a href="#U">U</a>
-                <a href="#V">V</a>
-                <a href="#W">W</a>
-                <a href="#X">X</a>
-                <a href="#Y">Y</a>
-                <a href="#Z">Z</a>
+                <a @click="filterStores('E">E</a>
+                <a @click="filterStores('F">F</a>
+                <a @click="filterStores('G">G</a>
+                <a @click="filterStores('H">H</a>
+                <a @click="filterStores('I">I</a>
+                <a @click="filterStores('J">J</a>
+                <a @click="filterStores('K">K</a>
+                <a @click="filterStores('L">L</a>
+                <a @click="filterStores('M">M</a>
+                <a @click="filterStores('N">N</a>
+                <a @click="filterStores('O">O</a>
+                <a @click="filterStores('P">P</a>
+                <a @click="filterStores('Q">Q</a>
+                <a @click="filterStores('R">R</a>
+                <a @click="filterStores('S">S</a>
+                <a @click="filterStores('T">T</a>
+                <a @click="filterStores('U">U</a>
+                <a @click="filterStores('V">V</a>
+                <a @click="filterStores('W">W</a>
+                <a @click="filterStores('X">X</a>
+                <a @click="filterStores('Y">Y</a>
+                <a @click="filterStores('Z">Z</a>
             </div>
         </div>
         <div class="stores_container">
