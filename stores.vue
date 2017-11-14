@@ -154,6 +154,7 @@
                 onOptionSelect(option) {
                     console.log('Selected option:', option);
                     this.dropPin(option);
+                    this.processedStores = this.allStores;
                     // var counted_stores = _.countBy(this.allStores,'name');
                     
                     // // console.log("counted_stores is",counted_stores[option.name]);
