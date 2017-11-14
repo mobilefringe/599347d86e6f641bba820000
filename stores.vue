@@ -50,7 +50,7 @@
                         <a @click="dropPin(store)">{{store.name}}</a>
                     </div>
                     <div v-if="processedStores.length <= 0">
-                        
+                        No stores avalaible
                     </div>
                 </div>
             </div>
