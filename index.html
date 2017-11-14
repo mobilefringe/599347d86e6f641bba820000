@@ -34,7 +34,14 @@
                            {{ item.name }}
                         </router-link>
                     </div>
-                    <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="bannerSearch" @select="onOptionSelect"></search-component>
+                    <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="bannerSearch" @select="onOptionSelect"><template slot="item" scope="option">
+                        <article class="media">
+                            <p>
+                                <strong>{{ option.data.name }}</strong>
+                            </p>
+                        </article>
+                    </template>
+                </search-component>
                     <div class="btn" role="button"> Search Stores <i class="fa fa-search pull-right"></i></div>
                 </div>
             </div>
