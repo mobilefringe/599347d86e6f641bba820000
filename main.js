@@ -86,7 +86,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 suggestionAttribute: 'name',
                 bannerSearch : "",
                 search : "",
-                show_search_list : falase
+                show_search_list : false
             }
         },
         created() {
