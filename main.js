@@ -182,9 +182,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 return weekday[val_day];
             },
             //this function helps home Page show and hide menu using the prop showMenu
-            toggleBanner () {
+            toggleBanner (val) {
                 console.log("received emit");
-                this.show_hero_banner = !this.show_hero_banner;
+                this.show_hero_banner = val;
             },
             onOptionSelect(option) {
                 console.log('Selected option:', option);
