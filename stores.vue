@@ -180,7 +180,7 @@
                     this.svgMapRef.addMarker(store,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
                     this.svgMapRef.setViewBox(store)
                 },
-                filterStore (letter) {
+                filterStores (letter) {
                     this.allStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
                     console.log(this.allStores);
                 }
