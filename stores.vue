@@ -106,7 +106,7 @@
                 return {
                     listMode: "alphabetical",
                     suggestionAttribute: 'name',
-                    search : "",
+                    storeSearch : "",
                     processedStores : []
                 }
             },
