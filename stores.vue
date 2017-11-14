@@ -118,7 +118,7 @@
             },
             mounted () {
                 //   this.feature_items;
-                this.$emit('switchBanner');
+                this.$emit('switchBanner',false);
                 console.log("emited!");
                 this.processedStores = this.allStores;
             },
