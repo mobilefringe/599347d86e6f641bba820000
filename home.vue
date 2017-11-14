@@ -129,6 +129,7 @@
       mounted () {
           this.feature_items;
           this.$emit('switchBanner',true);
+          console.log("emited!");
       },
       computed: {
         property(){
