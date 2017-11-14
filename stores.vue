@@ -182,7 +182,7 @@
                 },
                 filterStores (letter) {
                     if(letter == "#"){
-                        this.processedStores = _.filter(this.allStores, function(o) { return _.inRange(3, 2, 4) == _.lowerCase(letter); });
+                        this.processedStores = _.filter(this.allStores, function(o) { return _.inRange(3, 2, 4)); });
                     }
                     else {
                         this.processedStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
