@@ -3,8 +3,8 @@
         <div class="col-md-12">
             <div class="alpha_list">
                 <!--<a href="#7" id="all_stores_a">all</a>-->
-                <a href="#7" @click="filterStores(#)">#</a>
-                <a href="#A" @click="filterStores(A)">A</a>
+                <a href="#7" @click="filterStores('#')">#</a>
+                <a href="#A" @click="filterStores('A')">A</a>
                 <a href="#B">B</a>
                 <a href="#C">C</a>
                 <a href="#D">D</a>
