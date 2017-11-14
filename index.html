@@ -65,7 +65,14 @@
                     <span class="social_link_box instagram_link"></span>
                 </div>
                 <div class="search pull-right">
-                    <search-component :list="allStores" placeholder="Search For Stores" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"></search-component>
+                    <search-component :list="allStores" placeholder="Search For Stores" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect"><template slot="item" scope="option">
+                        <article class="media">
+                            <p>
+                                <strong>{{ option.data.name }}</strong>
+                            </p>
+                        </article>
+                    </template>
+                </search-component>
                     <!--<today-hours></today-hours>-->
                 </div>
             </div>
