@@ -176,6 +176,7 @@
                     this.svgMapRef.hideMarkers();
                     console.log(store);
                     this.svgMapRef.addMarker(store,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
+                    this.svgMapRef.setViewBox(val)
                 }
             },
             computed: {
