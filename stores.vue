@@ -116,6 +116,7 @@
             mounted () {
                 //   this.feature_items;
                 this.$emit('switchBanner',false);
+                processedStores - this.allStores();
             },
             methods: {
                 changeMode (mode) {
