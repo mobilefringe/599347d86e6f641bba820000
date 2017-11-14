@@ -180,7 +180,6 @@
                 },
                 filterStore (letter) {
                     this.allStores = _.filter(this.allStores, function(o) { return !o.active; });
-                    
                 }
             },
             computed: {
