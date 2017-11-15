@@ -29,7 +29,7 @@
                 <p></p>
                 
                 
-                {{currentStore.email}}
+                
             </div>
         </div>
         <hr/>
