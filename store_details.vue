@@ -70,10 +70,7 @@
             watch:{
                 map : function (){
                     setTimeout(function () {
-                        // Pass the component definition to the resolve callback
-                        resolve({
-                          template: '<div>I am async!</div>'
-                        })
+                        dropPin();
                       }, 100)
                 }
             },
