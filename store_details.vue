@@ -70,7 +70,9 @@
             },
             watch:{
                 map : function (){
-                    
+                    setTimeout(function () {
+                        this.dropPin();
+                      }, 100);
                 }
             },
             computed: {
@@ -90,11 +92,8 @@
             methods: {
                 updateSVGMap (map) {
                     this.map = map;
-                    setTimeout(function () {
-                        this.dropPin("rand");
-                      }, 100);
                 },
-                dropPin(rand){
+                dropPin(){
                     console.log(this.currentStore.svgmap_region);
                     // this.svgMapRef.hideMarkers();
                     this.svgMapRef.addMarker(this.currentStore,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
