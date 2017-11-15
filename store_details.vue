@@ -37,7 +37,7 @@
                 }
             },
             beforeRouteEnter (to, from, next) {
-        next(vm => {
+                next(vm => {
           // access to component instance via `vm`
           vm.currentStore = vm.findStoreBySlug(to.params.id);
           if (vm.currentStore === null || vm.currentStore === undefined){
