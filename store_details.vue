@@ -111,7 +111,7 @@
                       }, 500);
                 },
                 currentStore : function (){
-                    console.log("currentStore promo",this.currentStore.promotions );
+                    console.log("currentStore promo",this.currentStore );
                     var vm = this;
                     var temp = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
