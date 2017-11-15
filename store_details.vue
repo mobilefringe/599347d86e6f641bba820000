@@ -1,7 +1,8 @@
 <style>
-    #mapsvg {
-        /*max-height:200px;*/
-        overflow:hidden;
+   .demo_1.map3 {
+        position: relative;
+        max-width: 100% !important;
+        max-height: 150px !important;
     }
 </style>
 
