@@ -37,9 +37,6 @@
             <p class="title text_left">About us</p>
                 <p class="description_text text_left">{{currentStore.description}}</p>
             </div>
-            <div class="col-md-5">
-                <img src="//via.placeholder.com/458x276" class="" alt="">
-            </div>
             
         </div>
     </div>
