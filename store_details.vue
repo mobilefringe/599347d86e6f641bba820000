@@ -1,3 +1,10 @@
+<style>
+    #mapsvg {
+        max-height:200px;
+    }
+</style>
+
+
 <template>
     <div class="page_container">
         <div class="row" v-if="currentStore">
