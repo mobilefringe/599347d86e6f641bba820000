@@ -72,7 +72,7 @@
                 map : function (){
                     setTimeout(function () {
                         this.dropPin();
-                      }, 100);
+                      }, 500);
                 }
             },
             computed: {
