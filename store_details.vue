@@ -42,7 +42,7 @@
                 <p class="sub_title text_left">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
                 <p class="description_text text_left">{{promo.description}}</p> </div>
                 
-                <button class="newsletter_btn animated_btn all_caps text-center">Submit</button>
+                <button class="newsletter_btn animated_btn all_caps text_center">Submit</button>
             </div>
             
         </div>
