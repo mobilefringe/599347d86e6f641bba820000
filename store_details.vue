@@ -35,7 +35,7 @@
           description: "An example of integration of Mall Maverick with Vue.js",
           currentStore: null
         }
-      },
+        },
         beforeRouteEnter (to, from, next) {
         next(vm => {
           // access to component instance via `vm`
