@@ -24,7 +24,7 @@
         <div class="row is-table-row padding_tb_50" v-if="currentStore && currentStore.description">
             <div class="col-md-7" style="vertical-align:top;">
                 <p class="title text_left">About us</p>
-                <p class="title text_left">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+                <p class="sub_title text_left">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
                 
                 <p class="description_text text_left">{{currentStore.description}}</p>
             </div>
