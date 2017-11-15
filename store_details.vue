@@ -2,7 +2,7 @@
    .demo_1.map3 {
         position: relative;
         max-width: 100% !important;
-        max-height: 150px !important;
+        max-height: 250px !important;
     }
 </style>
 
