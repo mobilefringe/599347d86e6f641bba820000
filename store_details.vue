@@ -5,15 +5,15 @@
             <div class="col-md-6"></div>
             <div class="col-md-3"></div>
         </div>
-    <div class="row" v-if="currentStore">
-        <div class="large-6 columns">
-          <div>
-            <h1>{{currentStore.name}}</h1>
-            <p>{{currentStore.description}}</p>
-            <a v-bind:href="currentStore.website">{{currentStore.website}}</a>
-          </div>
+        <div class="row" v-if="currentStore">
+            <div class="large-6 columns">
+              <div>
+                <h1>{{currentStore.name}}</h1>
+                <p>{{currentStore.description}}</p>
+                <a v-bind:href="currentStore.website">{{currentStore.website}}</a>
+              </div>
+            </div>
         </div>
-    </div>
     </div>
 </template>
 
