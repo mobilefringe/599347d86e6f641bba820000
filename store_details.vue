@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-6">
                 <div class="map_container">
-                    <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl" height="100%" width="100%"></svg-map>
+                    <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl" height="100%" width="400px"></svg-map>
                 </div>
             </div>
             <div class="col-md-3"></div>
