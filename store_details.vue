@@ -1,7 +1,7 @@
 <style>
-    /*#mapsvg {*/
-    /*    max-height:200px;*/
-    /*}*/
+    #mapsvg {
+        max-height:200px;
+    }
 </style>
 
 
