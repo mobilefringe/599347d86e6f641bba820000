@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="col-md-8 col-sm-8">
-                <div class="map_container">
+                <div class="map_container full_border">
                     <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl"></svg-map>
                 </div>
             </div>
