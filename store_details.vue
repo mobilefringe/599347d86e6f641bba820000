@@ -71,7 +71,7 @@
             watch:{
                 map : function (){
                     setTimeout(function () {
-                        this.dropPin();
+                        this.dropPin("rand");
                       }, 100);
                 }
             },
