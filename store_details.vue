@@ -42,7 +42,7 @@
             
         </div>
         <hr/>
-        <div class="row page_container newsletter_subscription" style="margin:30px auto">
+        <div class="row  newsletter_subscription" style="margin:30px auto">
             <div class="col-md-8 text_left">
                 <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
                 <p class="subscribe_text">
