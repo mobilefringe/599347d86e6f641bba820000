@@ -26,7 +26,7 @@
 </template>
 
 <script>
-  define(["Vue"], function(Vue) {
+  define(["Vue","Raphael", "mm_mapsvg","mousewheel","vue!search-component","vue!svg-map"], function(Vue) {
     return Vue.component("store-details-component", {
       template: template, // the variable template will be injected,
       data: function() {
