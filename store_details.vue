@@ -33,7 +33,7 @@
         </div>
         <hr/>
         <div class="row is-table-row padding_tb_50" v-if="currentStore.total_published_promos > 0">
-            <div class="col-md-7" style="vertical-align:top;">
+            <div class="col-md-6" style="vertical-align:top;">
             <p class="title text_left">About us</p>
                 <p class="description_text text_left">{{currentStore.description}}</p>
             </div>
