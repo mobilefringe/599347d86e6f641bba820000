@@ -1,6 +1,6 @@
 <template>
     <div class="page_container">
-        <div class="row">
+        <div class="row" v-if="currentStore">
             <div class="col-md-3">
                 {{currentStore.store_front_url_abs}}
                 {{currentStore.name}}
