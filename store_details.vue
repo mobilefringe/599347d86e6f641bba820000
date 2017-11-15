@@ -30,12 +30,6 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <p class="title">{{currentStore.phone}}</p>
-                <p class="sub_title">{{currentStore.website}}</p>
-                <p class="sub_title">{{currentStore.email}}</p>
-                
-                
-                
             </div>
             
         </div>
