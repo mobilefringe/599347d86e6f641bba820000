@@ -76,7 +76,7 @@
             mounted () {
                 
             },
-            watch:{
+            watch : {
                 map : function (){
                     setTimeout(function () {
                         console.log(this);
