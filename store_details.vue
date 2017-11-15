@@ -1,6 +1,6 @@
 <template>
     <div class="page_container" id="store_detail_container">
-        <div class="row is-table-row padding_tb_30" v-if="currentStore">
+        <div class="row is-table-row padding_tb_50" v-if="currentStore">
             <div class="col-md-3">
                 <img :src="currentStore.store_front_url_abs" class="store_logo" alt="">
                 <p class="title">{{currentStore.name}}</p>
