@@ -25,7 +25,7 @@
             </div>
             <div class="col-md-3">
                 {{currentStore.phone}}
-                {{currentStore.category_name}}
+                {{currentStore.website}}
             </div>
         </div>
         <hr/>
