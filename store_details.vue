@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <p></p>
+                <p>{{currentStore.phone}}</p>
                 <p></p>
                 <p></p>
                 
