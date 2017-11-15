@@ -11,7 +11,6 @@
 
 
 <template>
-    <div class="page_container">
         <div class="row is-table-row" v-if="currentStore">
             <div class="col-md-3">
                 <img :src="currentStore.store_front_url_abs" class="" alt="">
