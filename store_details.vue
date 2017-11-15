@@ -24,7 +24,19 @@
         </div>
         <hr/>
         <div class="row is-table-row padding_tb_50" v-if="currentStore">
-        
+            <div class="col-md-6">
+                <div class="map_container ">
+                    <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl" ></svg-map>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p class="title">{{currentStore.phone}}</p>
+                <p class="sub_title">{{currentStore.website}}</p>
+                <p class="sub_title">{{currentStore.email}}</p>
+                
+                
+                
+            </div>
             
         </div>
         <div class="row" v-if="currentStore">
