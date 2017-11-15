@@ -5,7 +5,7 @@
         max-height: 300px !important;
     }
     .map_container{
-        
+        vertical_align:middle;
     }
 </style>
 
