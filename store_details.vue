@@ -67,6 +67,9 @@
             mounted () {
                 
             },
+            watch:{
+                
+            },
             computed: {
                 findStoreBySlug () {
                     return this.$store.getters.findStoreBySlug;
