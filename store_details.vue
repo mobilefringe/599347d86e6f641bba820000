@@ -32,7 +32,7 @@
             
         </div>
         <hr/>
-        <div class="row is-table-row padding_tb_50" v-if="currentStore.description">
+        <div class="row is-table-row padding_tb_50" v-if="currentStore.promotions">
             <div class="col-md-7" style="vertical-align:top;">
             <p class="title text_left">About us</p>
                 <p class="description_text text_left">{{currentStore.description}}</p>
