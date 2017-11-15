@@ -84,7 +84,10 @@
                       }, 500);
                 },
                 currentStore : {
-                    
+                    findPromoById
+                    _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+                        console.log(key);
+                    });
                 }
             },
             computed: {
