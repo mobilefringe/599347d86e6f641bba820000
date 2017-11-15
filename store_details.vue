@@ -63,6 +63,15 @@
             computed: {
                 findStoreBySlug () {
                     return this.$store.getters.findStoreBySlug;
+                },
+                property (){
+                    return this.$store.getters.getProperty;
+                },
+                getSVGurl () {
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                },
+                svgMapRef() {
+                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                 }
             },
             methods: {
