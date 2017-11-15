@@ -14,9 +14,9 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <p>{{currentStore.phone}}</p>
-                <p>{{currentStore.website}}</p>
-                <p>{{currentStore.email}}</p>
+                <p class="title">{{currentStore.phone}}</p>
+                <p class="title">{{currentStore.website}}</p>
+                <p class="title">{{currentStore.email}}</p>
                 
                 
                 
