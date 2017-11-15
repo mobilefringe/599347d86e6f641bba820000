@@ -25,7 +25,7 @@
         <hr/>
         <div class="row is-table-row padding_tb_50" v-if="currentStore">
             <div class="col-md-7">
-                <p class="title">{{currentStore.name}}</p>
+                <p class="title">{{currentStore.description}}</p>
             </div>
             <div class="col-md-5">
             </div>
