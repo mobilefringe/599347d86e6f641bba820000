@@ -71,7 +71,7 @@
             watch:{
                 map : function (){
                     setTimeout(function () {
-                        dropPin();
+                        this.dropPin();
                       }, 100)
                 }
             },
