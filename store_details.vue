@@ -13,7 +13,7 @@
         <a v-bind:href="currentStore.website">{{currentStore.website}}</a>
       </div>
     </div>
-  </div>
+    </div>
     </div>
 </template>
 
