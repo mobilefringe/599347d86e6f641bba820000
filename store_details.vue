@@ -97,7 +97,7 @@
                     return this.$store.getters.findStoreBySlug;
                 },
                 findPromoById () {
-                    
+                    return this.$store.getters.findPromoById;
                 },
                 property (){
                     return this.$store.getters.getProperty;
