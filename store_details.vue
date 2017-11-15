@@ -114,6 +114,7 @@
             methods: {
                 updateSVGMap (map) {
                     this.map = map;
+                    console.log("this",map);
                 },
                 dropPin () {
                     console.log(this.currentStore.svgmap_region);
