@@ -18,8 +18,6 @@
                 <p class="sub_title">{{currentStore.website}}</p>
                 <p class="sub_title">{{currentStore.email}}</p>
                 
-                
-                
             </div>
         </div>
         <hr/>
