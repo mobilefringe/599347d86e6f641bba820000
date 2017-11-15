@@ -62,6 +62,24 @@
             methods: {
                 updateSVGMap (map) {
                     this.map = map;
+                },
+                property (){
+                    return this.$store.getters.getProperty;
+                },
+                storesByAlphaIndex() {
+                    return this.$store.getters.storesByAlphaIndex;
+                },
+                storesByCategoryName() {
+                    return this.$store.getters.storesByCategoryName;
+                },
+                getSVGurl () {
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                },
+                allStores() {
+                    return this.$store.getters.processedStores;
+                },
+                svgMapRef() {
+                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                 }
             }
         });
