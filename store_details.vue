@@ -70,9 +70,7 @@
             },
             watch:{
                 map : function (){
-                    setTimeout(function () {
-                        this.dropPin("rand");
-                      }, 100);
+                    
                 }
             },
             computed: {
