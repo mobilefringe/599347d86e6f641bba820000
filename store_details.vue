@@ -33,7 +33,7 @@
         </div>
         <hr/>
         <div class="row is-table-row padding_tb_50" v-if="currentStore && currentStore.total_published_promos > 0">
-            <div class="col-md-6" style="vertical-align:top;" v-for="promo in promotions">
+            <div class="col-md-6" style="vertical-align:top;" v-for="promo in promotions" v-if="promotions">
                 <div class="col-md-6"> <img :src="promo.promo_image_url_abs" class="store_logo" alt=""> </div>
                 <div class="col-md-6"><p class="title">{{promo.title}}</p>  <p class="description_text text_left">{{promo.description}}</p> </div>
                 
