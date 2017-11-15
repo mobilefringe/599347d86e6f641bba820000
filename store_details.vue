@@ -1,8 +1,3 @@
-<style>
-   
-</style>
-
-
 <template>
     <div class="page_container" id="store_detail_container">
         <div class="row is-table-row" v-if="currentStore">
