@@ -83,7 +83,7 @@
                         this.dropPin();
                       }, 500);
                 },
-                currentStore : {
+                currentStore : function (){
                     
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         this.promotions.push(findPromoById(value));
