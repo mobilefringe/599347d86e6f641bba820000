@@ -23,7 +23,10 @@
                     <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl" ></svg-map>
                 </div>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                {{currentStore.name}}
+                {{currentStore.category_name}}
+            </div>
         </div>
         <hr/>
         <div class="row" v-if="currentStore">
