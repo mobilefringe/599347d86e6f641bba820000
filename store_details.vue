@@ -88,6 +88,7 @@
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         temp.push(findPromoById(value));
                     });
+                    this.promotions = temp;
                     console.log("promos",this.promotions);
                 }
             },
