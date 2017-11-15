@@ -22,6 +22,7 @@
             </div>
             <div class="col-md-3"></div>
         </div>
+        <hr/>
         <div class="row" v-if="currentStore">
             <div class="large-6 columns">
               <div>
