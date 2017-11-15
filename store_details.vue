@@ -54,7 +54,7 @@
             created (){
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
             },
-            mounted: {
+            mounted () {
                 this.svgMapRef.hideMarkers();
                 this.svgMapRef.addMarker(this.currentStore,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
                 this.svgMapRef.setViewBox(this.currentStore)
