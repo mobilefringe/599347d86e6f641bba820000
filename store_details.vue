@@ -4,7 +4,7 @@
             <div class="col-md-3">
                 {{currentStore.store_front_url_abs}}
                 {{currentStore.store_front_url_abs}}
-                {{currentStore.store_front_url_abs}}
+                {{currentStore.category_name}}
             </div>
             <div class="col-md-6"></div>
             <div class="col-md-3"></div>
