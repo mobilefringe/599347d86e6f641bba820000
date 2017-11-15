@@ -23,6 +23,8 @@
             </div>
         </div>
         <hr/>
+        <div class="row is-table-row padding_tb_50" v-if="currentStore">
+        >div>
         <div class="row" v-if="currentStore">
             <div class="large-6 columns">
               <div>
