@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="page_container">
   <div class="row" v-if="currentStore">
     <div class="large-6 columns">
       <div>
