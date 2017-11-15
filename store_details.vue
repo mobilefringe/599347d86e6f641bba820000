@@ -26,6 +26,7 @@
             <div class="col-md-3">
                 {{currentStore.phone}}
                 {{currentStore.website}}
+                {{currentStore.email}}
             </div>
         </div>
         <hr/>
