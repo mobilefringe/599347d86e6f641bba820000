@@ -28,7 +28,7 @@
                 <p></p>
                 <p></p>
                 
-                {{currentStore.website}}
+                
                 {{currentStore.email}}
             </div>
         </div>
