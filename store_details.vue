@@ -65,6 +65,7 @@
                 })
             },
             beforeRouteUpdate (to, from, next) {
+                console.log(this);
                 this.currentStore = this.findStoreBySlug(to.params.id);
                 if (this.currentStore === null || this.currentStore === undefined){
                     this.$router.replace({ name: '404'});
