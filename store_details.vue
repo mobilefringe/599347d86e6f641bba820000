@@ -91,7 +91,7 @@
                     var vm = this;
                     var temp = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
-                        console.log(vm);
+                        console.log(vm.findPromoById(value));
                         temp.push(vm.findPromoById(value));
                     });
                     this.promotions = temp;
