@@ -90,6 +90,9 @@
             methods: {
                 updateSVGMap (map) {
                     this.map = map;
+                    setTimeout(function () {
+                        this.dropPin("rand");
+                      }, 100);
                 },
                 dropPin(rand){
                     console.log(this.currentStore.svgmap_region);
