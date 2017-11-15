@@ -28,7 +28,7 @@
 <script>
     define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component","vue!svg-map"], function(Vue, $, Raphael, mapSvg,mousewheel,SearchComponent,SVGMapComponent) {
         return Vue.component("store-details-component", {
-      template: template, // the variable template will be injected,
+        template: template, // the variable template will be injected,
       data: function() {
         return {
           title: "MM with Vue.js!",
