@@ -23,7 +23,7 @@
         <hr/>
         <div class="row is-table-row padding_tb_50" v-if="currentStore">
             <div class="col-md-7">
-                <p class="description_text">{{currentStore.description}}</p>
+                <p class="description_text text_left">{{currentStore.description}}</p>
             </div>
             <div class="col-md-5">
                 <img src="//via.placeholder.com/458x276" class="" alt="">
