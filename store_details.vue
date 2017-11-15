@@ -18,7 +18,7 @@
                 <p>{{currentStore.name}}</p>
                 <p></p>
                 
-                {{currentStore.category_name}}
+                
             </div>
             <div class="col-md-6">
                 <div class="map_container ">
