@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-md-3">
                 {{currentStore.store_front_url_abs}}
-                 {{currentStore.store_front_url_abs}}
-                  {{currentStore.store_front_url_abs}}
+                {{currentStore.store_front_url_abs}}
+                {{currentStore.store_front_url_abs}}
             </div>
             <div class="col-md-6"></div>
             <div class="col-md-3"></div>
