@@ -85,7 +85,7 @@
                       }, 500);
                 },
                 currentStore : function (){
-                    console.log("currentStore this",this)
+                    console.log("currentStore this",this);
                     var temp = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         console.log(this);
