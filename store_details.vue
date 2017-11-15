@@ -16,7 +16,7 @@
             <div class="col-md-3">
                 <img :src="currentStore.store_front_url_abs" class="" alt="">
                 <p>{{currentStore.name}}</p>
-                <p></p>
+                <p>{{currentStore.category_name}}</p>
                 
                 
             </div>
