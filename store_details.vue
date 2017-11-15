@@ -41,7 +41,7 @@
                 <p class="title text_left">{{promo.name}}</p> 
                 <p class="sub_title text_left">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
                 <p class="description_text text_left">{{promo.description}}</p> 
-                    <button class="newsletter_btn animated_btn all_caps text_center">Read More</button>
+                    <router-link class="newsletter_btn animated_btn all_caps text_center">Read More</router-link>
                 </div>
                 
                 
