@@ -26,7 +26,7 @@
                 <p class="title">{{currentStore.description}}</p>
             </div>
             <div class="col-md-5">
-                <img src="//via.placeholder.com/360x275" class="" alt="">
+                <img src="//via.placeholder.com/458x276" class="" alt="">
             </div>
             
         </div>
