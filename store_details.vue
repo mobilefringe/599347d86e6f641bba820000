@@ -26,7 +26,7 @@
             <div class="col-md-3">
                 <p>{{currentStore.phone}}</p>
                 <p>{{currentStore.website}}</p>
-                <p></p>
+                <p>{{currentStore.email}}</p>
                 
                 
                 
