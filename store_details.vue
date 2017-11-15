@@ -2,7 +2,7 @@
     <div class="page_container">
         <div class="row" v-if="currentStore">
             <div class="col-md-3">
-                {{currentStore.store_front_url_abs}}
+                <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100908000/AA.png" class="" alt="">
                 {{currentStore.name}}
                 {{currentStore.category_name}}
             </div>
