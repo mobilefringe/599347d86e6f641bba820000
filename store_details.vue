@@ -15,7 +15,7 @@
         <div class="row is-table-row" v-if="currentStore">
             <div class="col-md-3">
                 <img :src="currentStore.store_front_url_abs" class="" alt="">
-                <p></p>
+                <p>{{currentStore.name}}</p>
                 <p></p>
                 
                 {{currentStore.category_name}}
