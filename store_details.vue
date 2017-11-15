@@ -56,7 +56,7 @@
             },
         computed: {
             findStoreBySlug () {
-          return this.$store.getters.findStoreBySlug;
+                return this.$store.getters.findStoreBySlug;
         }
       }
     });
