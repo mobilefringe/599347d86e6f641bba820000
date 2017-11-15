@@ -4,6 +4,9 @@
         max-width: 100% !important;
         max-height: 300px !important;
     }
+    .map_container{
+        
+    }
 </style>
 
 
