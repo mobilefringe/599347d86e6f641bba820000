@@ -17,7 +17,7 @@
                 <img :src="currentStore.store_front_url_abs" class="" alt="">
                 <p></p>
                 <p></p>
-                {{currentStore.name}}
+                
                 {{currentStore.category_name}}
             </div>
             <div class="col-md-6">
