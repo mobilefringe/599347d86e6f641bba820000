@@ -62,7 +62,7 @@
             methods: {
                 updateSVGMap (map) {
                     this.map = map;
-                },
+                }
             }
         });
     });
