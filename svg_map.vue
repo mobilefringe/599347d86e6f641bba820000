@@ -127,7 +127,7 @@
                 },
                 addMarker (val, image ) {
                     if ( val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
-                        console.log("map coords",val.svgmap_region)
+                        console.log("map coords",val.svgmap_region);
                         var coords = this.map.get_coords(val.svgmap_region);
                         var height = parseInt(coords["height"])
                         var width = parseInt(coords["width"])
