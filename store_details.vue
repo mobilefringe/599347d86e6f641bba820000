@@ -2,7 +2,7 @@
     <div class="page_container">
         <div class="row" v-if="currentStore">
             <div class="col-md-3">
-                <img :src="currentStore.store_front_url_abs"" class="" alt="">
+                <img :src="currentStore.store_front_url_abs" class="" alt="">
                 {{currentStore.name}}
                 {{currentStore.category_name}}
             </div>
