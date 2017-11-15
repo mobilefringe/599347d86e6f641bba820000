@@ -59,6 +59,6 @@
                     return this.$store.getters.findStoreBySlug;
                 }
             }
-    });
+        });
   });
 </script>
