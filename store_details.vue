@@ -82,6 +82,9 @@
                         console.log(this);
                         this.dropPin();
                       }, 500);
+                },
+                currentStore : {
+                    
                 }
             },
             computed: {
