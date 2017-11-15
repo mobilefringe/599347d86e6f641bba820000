@@ -31,9 +31,9 @@
             template: template, // the variable template will be injected,
             data: function() {
             return {
-              title: "MM with Vue.js!",
-              description: "An example of integration of Mall Maverick with Vue.js",
-              currentStore: null
+                title: "MM with Vue.js!",
+                description: "An example of integration of Mall Maverick with Vue.js",
+                currentStore: null
             }
         },
         beforeRouteEnter (to, from, next) {
