@@ -84,7 +84,7 @@
                       }, 500);
                 },
                 currentStore : function (){
-                    
+                    var temp = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         this.promotions.push(findPromoById(value));
                     });
