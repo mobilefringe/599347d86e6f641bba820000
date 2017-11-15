@@ -58,7 +58,6 @@
             beforeRouteEnter (to, from, next) {
                 next(vm => {
                     // access to component instance via `vm`
-                    console.log(vm);
                     vm.currentStore = vm.findStoreBySlug(to.params.id);
                     if (vm.currentStore === null || vm.currentStore === undefined){
                         vm.$router.replace({ name: '404'});
@@ -81,14 +80,14 @@
             watch : {
                 map : function (){
                     setTimeout(function () {
-                        // console.log(this);
+                        console.log(this);
                         this.dropPin();
                       }, 500);
                 },
                 currentStore : function (){
                     var temp = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
-                        // console.log(this);
+                        console.log(this);
                         temp.push(this.findPromoById(value));
                     });
                     this.promotions = temp;
