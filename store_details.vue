@@ -52,7 +52,7 @@
                     description: "An example of integration of Mall Maverick with Vue.js",
                     currentStore: null,
                     map: null,
-                    promotions : null
+                    promotions : []
                 }
             },
             beforeRouteEnter (to, from, next) {
