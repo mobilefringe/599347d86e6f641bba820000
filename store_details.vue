@@ -38,9 +38,9 @@
             <div class="col-md-6" style="vertical-align:top;" v-for="promo in promotions" v-if="promotions">
                 <div class="col-md-6"> <img :src="promo.promo_image_url_abs" class="store_logo" alt=""> </div>
                 <div class="col-md-6">
-                <p class="title text_left">{{promo.name}}</p> 
-                <p class="sub_title text_left">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
-                <p class="description_text text_left">{{promo.description}}</p> 
+                <p class="title ">{{promo.name}}</p> 
+                <p class="sub_title ">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+                <p class="description_text ">{{promo.description}}</p> 
                     <router-link class="newsletter_btn animated_btn all_caps text_center" :to="{ name: 'promotionDetails', params: { id: promo.slug }}">Read More</router-link>
                 </div>
                 
