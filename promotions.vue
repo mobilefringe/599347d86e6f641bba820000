@@ -1,7 +1,7 @@
 <template>
     <div class="page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="page_title"> Promotions </div>
-        <div class="row is-table-row">
+        <div class="row">
             <div class="col-md-3" v-for="promo in promotions">
                 <div class="">
                         <a :href="promo.image_url" target="_blank"><img :src="promo.image_url" class="promo_list_img"></a>
