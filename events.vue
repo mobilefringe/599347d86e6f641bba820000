@@ -7,7 +7,7 @@
                     <div class="promo_list_container">
                         <div class="promo_list_img_container">
                             <!--<a :href="promo.image_url" target="_blank">-->
-                            <img :src="promo.image_url" class="promo_list_img">
+                            <img :src="promo.event_image_url_abs" class="promo_list_img">
                                 
                             <!--</a>-->
                         </div>
