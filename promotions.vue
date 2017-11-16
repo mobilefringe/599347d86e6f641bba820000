@@ -21,8 +21,9 @@
             </div> 
             
         </div>
+         <hr/>
         <div>
-            <hr/>
+           
             <div class="new_stores page_container">
                 <div class="row">
                     <div class="col-md-2">
