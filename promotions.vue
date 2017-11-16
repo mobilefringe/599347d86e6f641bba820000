@@ -48,9 +48,9 @@
             
         </div>
         <hr/>
-            <div class="row go_to_directory text_center">
-                <button class="newsletter_btn animated_btn all_caps ">Store Directory</button>
-            </div>
+        <div class="row go_to_directory text_center">
+            <button class="newsletter_btn animated_btn all_caps ">Store Directory</button>
+        </div>
     </div>
     
 </template>
