@@ -79,7 +79,7 @@
         }
       },
       computed: {
-        findPromoBySlug () {
+        findEventBySlug () {
           return this.$store.getters.findPromoBySlug;
         },
         timezone() {
