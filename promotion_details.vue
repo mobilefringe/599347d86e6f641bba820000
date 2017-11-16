@@ -1,7 +1,7 @@
 <template>
     <div>
          <div class="page_container padding_30" v-if="currentPromo">
-            <div class="row"></div>
+            <div class="row">
             <div class="col-md-5 ">
                 <div>
                     <img :src="currentPromo.image_url">
