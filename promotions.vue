@@ -1,4 +1,7 @@
 <template>
+<div>
+    
+</div>
     <div class="page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="page_title"> Promotions </div>
         <div class="row">
