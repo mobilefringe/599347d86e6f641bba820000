@@ -1,6 +1,7 @@
 <template>
     <div>
          <div class="page_container padding_30" v-if="currentEvent">
+            <div class="page_title"> Events </div>
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="promo_img_container">
