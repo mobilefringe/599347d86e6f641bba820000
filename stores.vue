@@ -110,7 +110,8 @@
                     listMode: "alphabetical",
                     suggestionAttribute: 'name',
                     storeSearch : "",
-                    processedStores : []
+                    processedStores : [],
+                    map : null
                 }
             },
             created (){
