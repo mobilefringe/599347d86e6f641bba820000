@@ -11,6 +11,7 @@
                         <!--</a>-->
                     </div>
                         <p class="sub_title">{{ promo.name }}</p>
+                        <p class="sub_title">{{ promo.name }}</p>
                          <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
                     
                 </div>
