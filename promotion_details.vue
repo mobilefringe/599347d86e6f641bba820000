@@ -9,7 +9,13 @@
                 </div>
                 <div class="col-md-8 text_left promo_text_container">
                     <div class="col-md-9">
-                        
+                        <p class="title all_caps">
+                        <router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link>
+                    </p>
+                    <p class="title">{{currentPromo.name}}</p>
+                    <br/>
+                    <p class="promo_dates"> {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
+                    <br/>
                     </div>
                     
                     <p class="description_text"> {{currentPromo.description}}</p>
