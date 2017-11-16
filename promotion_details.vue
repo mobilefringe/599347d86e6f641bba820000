@@ -7,7 +7,7 @@
                 </div>
             </div>
             <div class="col-md-7 text_left">
-                <p class="title">
+                <p class="title all_caps">
                     <router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link>
                 </p>
                 <p class="title">{{currentPromo.name}}</p>
