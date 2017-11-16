@@ -9,8 +9,6 @@
                 <img :src="currentPromo.image_url">
               </div>
             </div>
-    
-    
         </div>
         <hr/>
         <div class="page_container">
