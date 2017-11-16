@@ -66,7 +66,7 @@
       beforeRouteEnter (to, from, next) {
         next(vm => {
           // access to component instance via `vm`
-          vm.currentEvent = vm.findPromoBySlug(to.params.id);
+          vm.currentEvent = vm.findEventBySlug(to.params.id);
           if (vm.currentEvent === null || vm.currentEvent === undefined){
             vm.$router.replace({ name: '404'});
           }
