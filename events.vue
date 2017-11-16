@@ -21,36 +21,29 @@
             </div> 
             
         </div>
-         <hr/>
+        <hr/>
         <div class="page_container">
-            <div class="new_stores page_container">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100892000/Peoples.png" class="" alt="">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100902000/Roots.png" class="" alt="">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100908000/AA.png" class="" alt="">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100918000/UNQ.png" class="" alt="">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100932000/Best Buy.png" class="" alt="">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100952000/Indigo.png" class="" alt="">
-                    </div>
+            <div class="row  newsletter_subscription" style="margin:30px auto">
+                <div class="col-md-8 text_left">
+                    <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
+                    <p class="subscribe_text">
+                        For Events, Promotions and Shopping Centre News<br/>
+                        Disclaimer: You will receive Promotion E-mails.
+                    </p>
+                </div>
+                 <div class="newsletter_div col-md-4 ">
+                    <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form" class="pull-right">
+                        <input name="cm-ithdul-ithdul" type="text" placeholder="Enter E-mail Here" class="newsletter_control" required /><br/>
+                        <button class="newsletter_btn animated_btn all_caps ">Submit</button>
+                        <p v-show="success_subscribe" id="success_subscribe">
+                            Thank you for subscribing.
+                        </p>
+                    </form>
                 </div>
             </div>
-            
         </div>
         <hr/>
-        <div class="row go_to_directory text_center">
-            <button class="newsletter_btn animated_btn all_caps ">Store Directory</button>
-        </div>
+        <div style="padding:20px 0;"></div>
     </div>
     
 </template>
