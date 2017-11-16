@@ -9,7 +9,7 @@
                 {{ promo.name }}
                 
             </div>
-            <div class="card-section center">
+            <div class="">
               <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
             </div>
             <div class="card-section">
