@@ -73,7 +73,7 @@
           
             vm.$store.dispatch('LOAD_PAGE_DATA', {url:vm.property.mm_host + "/pages/"+ to.params.id +".json"}).then(response => {
                 
-                vm.currentPage = response;
+                vm.currentPage = response.data;
                 console.log(vm.currentPage);
             }, error => {
                 console.error("Could not retrieve data from server. Please check internet connection and try again.");
