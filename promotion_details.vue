@@ -11,7 +11,7 @@
     </div>
     
     
-  </div>
+    </div>
     <hr/>
         <div class="page_container">
             <div class="row  newsletter_subscription" style="margin:30px auto">
