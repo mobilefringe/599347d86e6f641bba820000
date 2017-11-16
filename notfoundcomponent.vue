@@ -1,6 +1,6 @@
 <template>
   <div class="page_container">
-    <div class="large-6 columns">
+    <div class="">
       <h1>{{text}}</h1>
     </div>
   </div>
