@@ -13,7 +13,7 @@
     
   </div>
     <hr/>
-    <div class="page_container">
+        <div class="page_container">
         <div class="row  newsletter_subscription" style="margin:30px auto">
             <div class="col-md-8 text_left">
                 <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
@@ -34,7 +34,7 @@
         </div>
       
        
-  </div>
+        </div>
     <hr/>
      <div class="padding_tb_30"></div>
   </div>
