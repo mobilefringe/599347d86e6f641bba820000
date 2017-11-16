@@ -7,7 +7,7 @@
                 </div>
             </div>
             <div class="col-md-7">
-                <p class="description_text">
+                <p class="title">
                     <router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link>
                 </p>
                 <p class="description_text">{{currentPromo.name}}</p>
