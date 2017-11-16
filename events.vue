@@ -69,7 +69,7 @@
       },
       computed: {
         events() {
-            // var promos = this.$store.getters.processedPromos;
+            var promos = this.$store.getters.processedEvents;
             // console.log(promos);
             // _.forEach(promos, function (val) {
             //     if(val.description.length >50) {
