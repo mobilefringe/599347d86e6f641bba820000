@@ -12,6 +12,9 @@
                         <p class="title all_caps" v-if="currentEvent.store">
                             <router-link :to="{ name: 'storeDetails', params: { id: currentEvent.store.slug }}">{{currentEvent.store.name}}</router-link>
                         </p>
+                        <p class="title all_caps" v-else>
+                            <router-link :to="{ name: 'storeDetails', params: { id: currentEvent.store.slug }}">{{currentEvent.store.name}}</router-link>
+                        </p>
                         <p class="title">{{currentEvent.name}}</p>
                         <br/>
                         <p class="promo_dates"> {{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
