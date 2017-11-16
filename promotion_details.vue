@@ -1,5 +1,5 @@
 <template>
-<div></div>
+    <div></div>
   <div class="row page_container" v-if="currentPromo">
     <div class="large-6 columns">
       <div>
