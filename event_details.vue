@@ -13,7 +13,7 @@
                             <router-link :to="{ name: 'storeDetails', params: { id: currentEvent.store.slug }}">{{currentEvent.store.name}}</router-link>
                         </p>
                         <p class="title all_caps" v-else>
-                            <router-link :to="{ name: 'storeDetails', params: { id: currentEvent.store.slug }}">{{currentEvent.store.name}}</router-link>
+                           {{property.name}}
                         </p>
                         <p class="title">{{currentEvent.name}}</p>
                         <br/>
