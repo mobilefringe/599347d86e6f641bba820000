@@ -119,7 +119,7 @@
             },
             mounted () {
                 //   this.feature_items;
-                this.$emit('switchBanner',false);
+                this.$parent.$emit('switchBanner',false);
                 console.log("emited!");
                 this.processedStores = this.allStores;
             },
