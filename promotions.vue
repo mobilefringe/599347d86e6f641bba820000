@@ -1,5 +1,6 @@
 <template>
   <div class="page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
+  <div class="page_title"></div>
     <div class="columns large-3 medium 6" v-for="promo in promotions">
       <div class="card">
         <div class="card-divider">
