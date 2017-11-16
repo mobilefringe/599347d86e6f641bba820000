@@ -1,7 +1,7 @@
 <template>
     <div>
          <div class="page_container" v-if="currentPromo">
-            <div class="col-md-5">
+            <div class="col-md-5 text_left">
                 <div>
                     <img :src="currentPromo.image_url">
                 </div>
