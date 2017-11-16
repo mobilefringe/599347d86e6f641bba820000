@@ -3,32 +3,32 @@
          <div class="page_container padding_30" v-if="currentEvent">
             <div class="page_title" v-html="currentPage.title">  </div>
             <div class="row">
-                <div class="col-md-4 ">
-                    <div class="promo_img_container">
-                        <img :src="currentEvent.image_url" class="promo_img">
-                    </div>
-                </div>
-                <div class="col-md-8 text_left promo_text_container">
-                    <div class="col-md-9">
-                        <p class="title all_caps" v-if="currentEvent.store">
-                            <router-link :to="{ name: 'storeDetails', params: { id: currentEvent.store.slug }}">{{currentEvent.store.name}}</router-link>
-                        </p>
-                        <p class="title all_caps" v-else>
-                           {{property.name}}
-                        </p>
-                        <p class="title">{{currentEvent.name}}</p>
-                        <br/>
-                        <p class="promo_dates"> {{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
-                        <br/>
-                    </div>
-                    <div class="col-md-3" v-if="currentEvent.store">
-                        <img :src="currentEvent.store.store_front_url_abs" class="promo_store_logo" alt="">
-                    </div>
-                    <div class="col-md-12">
-                        <p class="description_text"> {{currentEvent.description}}</p>
-                    </div>
+                <!--<div class="col-md-4 ">-->
+                <!--    <div class="promo_img_container">-->
+                <!--        <img :src="currentEvent.image_url" class="promo_img">-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="col-md-8 text_left promo_text_container">-->
+                <!--    <div class="col-md-9">-->
+                <!--        <p class="title all_caps" v-if="currentEvent.store">-->
+                <!--            <router-link :to="{ name: 'storeDetails', params: { id: currentEvent.store.slug }}">{{currentEvent.store.name}}</router-link>-->
+                <!--        </p>-->
+                <!--        <p class="title all_caps" v-else>-->
+                <!--           {{property.name}}-->
+                <!--        </p>-->
+                <!--        <p class="title">{{currentEvent.name}}</p>-->
+                <!--        <br/>-->
+                <!--        <p class="promo_dates"> {{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>-->
+                <!--        <br/>-->
+                <!--    </div>-->
+                <!--    <div class="col-md-3" v-if="currentEvent.store">-->
+                <!--        <img :src="currentEvent.store.store_front_url_abs" class="promo_store_logo" alt="">-->
+                <!--    </div>-->
+                <!--    <div class="col-md-12">-->
+                <!--        <p class="description_text"> {{currentEvent.description}}</p>-->
+                <!--    </div>-->
                     
-                </div>
+                <!--</div>-->
             </div>
         </div>
         <hr/>
