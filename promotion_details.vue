@@ -1,6 +1,6 @@
 <template>
     <div>
-         <div class="row page_container" v-if="currentPromo">
+         <div class="page_container" v-if="currentPromo">
             <div class="large-6 columns">
               <div>
                 <h1>{{currentPromo.name}}</h1>
