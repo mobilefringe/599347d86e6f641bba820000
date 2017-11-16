@@ -109,7 +109,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
               //Init
               this.getWindowWidth();
             });
-            this.$on('switchBanner', toggleBanner(value));
+            this.$on('toggleBanner', function(value){
+                console.log(value);
+            });
         },
         watch: {
             // watcher to update vue-i18n when the locale has been changed by the user
