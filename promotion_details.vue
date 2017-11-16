@@ -3,9 +3,6 @@
          <div class="page_container" v-if="currentPromo">
             <div class="col-md-5">
                 <div>
-                    
-                    
-                    <p>{{currentPromo.description}}</p>
                     <img :src="currentPromo.image_url">
                 </div>
             </div>
