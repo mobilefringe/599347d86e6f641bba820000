@@ -7,8 +7,8 @@
                 </div>
             </div>
             <div class="col-md-7">
-                <h1><router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link></h1>
-                <h1>{{currentPromo.name}}</h1>
+                <p class="description_text">><router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link></h1>
+                <p class="description_text">{{currentPromo.name}}</h1>
                 <br/>
                 <p> {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
                 <br/>
