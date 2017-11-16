@@ -9,7 +9,7 @@
                     <img :src="currentPromo.image_url">
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-7">
                 
             </div>
         </div>
