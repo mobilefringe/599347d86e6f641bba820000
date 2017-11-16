@@ -16,7 +16,7 @@ require.config({
         'js-cookie': 'https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min',
         'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
         'Fuse': 'https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min',
-        'store': 'https://preview-mmvue.codecloudapp.com/store',
+        'store': 'https://mmvue.codecloudapp.com/store',
         'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
         'Raphael': 'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min', //'http://mallmaverick.com/javascripts/mapsvg/raphael',
         'mousewheel': 'https://mallmaverick.com/javascripts/mapsvg/jquery.mousewheel',
