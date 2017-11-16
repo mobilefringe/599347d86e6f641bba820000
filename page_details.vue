@@ -70,7 +70,7 @@
         next(vm => {
           // access to component instance via `vm`
           
-          `vm.$store.dispatch('LOAD_PAGE_DATA', {url:vm.property.mm_host + "pages/"+ to.params.id +".json"}).then(response => {
+            vm.$store.dispatch('LOAD_PAGE_DATA', {url:vm.property.mm_host + "pages/"+ to.params.id +".json"}).then(response => {
                 
             }, error => {
                 console.error("Could not retrieve data from server. Please check internet connection and try again.");
