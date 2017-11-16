@@ -36,6 +36,7 @@
       
         <div class="padding_tb_30"></div>
   </div>
+    <hr/>
   </div>
 </template>
 
