@@ -15,7 +15,7 @@
             <div class="card-section">
               <div class="center">
                 
-                <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}">Read More</router-link>
+                <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="newsltter_btn animated_btn">Read More</router-link>
               </div>
             </div>
           </div>
