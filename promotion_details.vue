@@ -49,7 +49,7 @@
             </div>
         </div>
         <hr/>
-        <div style="padding:20px 0;></div>
+        <div style="padding:20px 0;"></div>
     </div>
 </template>
 
@@ -87,7 +87,7 @@
         },
         property (){
             return this.$store.getters.getProperty;
-        },
+        }
       }
     });
   });
