@@ -1,22 +1,22 @@
 <template>
     <div class="page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="page_title"> Promotions </div>
-    <div class="col-md-3" v-for="promo in promotions">
-      <div class="">
-        <div class="card-divider">
-          {{ promo.name }}
-        </div>
-        <div class="card-section center">
-          <a :href="promo.image_url" target="_blank"><img :src="promo.image_url"></a>
-        </div>
-        <div class="card-section">
-          <div class="center">
-            <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
-            <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}">Read More</router-link>
+        <div class="col-md-3" v-for="promo in promotions">
+          <div class="">
+            <div class="card-divider">
+              {{ promo.name }}
+            </div>
+            <div class="card-section center">
+              <a :href="promo.image_url" target="_blank"><img :src="promo.image_url"></a>
+            </div>
+            <div class="card-section">
+              <div class="center">
+                <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+                <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}">Read More</router-link>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
   </div>
 </template>
 
