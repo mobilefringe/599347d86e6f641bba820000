@@ -3,6 +3,7 @@
          <div class="page_container padding_30" v-if="currentEvent">
             <div class="page_title" v-html="currentPage.title">  </div>
             <div class="row">
+            
                 <!--<div class="col-md-4 ">-->
                 <!--    <div class="promo_img_container">-->
                 <!--        <img :src="currentEvent.image_url" class="promo_img">-->
