@@ -118,10 +118,6 @@
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
             },
             mounted () {
-                //   this.feature_items;
-                this.$parent.$emit('switchBanner',false);
-                // this.$parent.$emit(this.eventName, this.result)
-                console.log("emited!");
                 this.processedStores = this.allStores;
             },
             methods: {
