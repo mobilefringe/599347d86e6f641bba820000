@@ -36,7 +36,7 @@
        
         </div>
         <hr/>
-     <div class="padding_tb_30"></div>
+        <div class="padding_tb_30"></div>
   </div>
 </template>
 
