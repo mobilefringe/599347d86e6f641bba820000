@@ -160,6 +160,7 @@
                 },
                 updateSVGMap (map) {
                     this.map = map;
+                    console.log("updating this map");
                 },
                 dropPin(store) {
                     this.svgMapRef.hideMarkers();
