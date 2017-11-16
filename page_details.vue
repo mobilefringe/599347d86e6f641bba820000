@@ -72,7 +72,7 @@
           // access to component instance via `vm`
           
             vm.$store.dispatch('LOAD_PAGE_DATA', {url:vm.property.mm_host + "pages/"+ to.params.id +".json"}).then(response => {
-                
+                vm.currentPage = response;
             }, error => {
                 console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 vm.$router.replace({ name: '404'});
