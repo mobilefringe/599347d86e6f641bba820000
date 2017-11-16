@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
+    <div><!-- for some reason if you do not put an outer container div this component template will not render -->
+        <div class="page_container"> 
             <div class="page_title"> Promotions </div>
             <div class="row">
                 <div class="col-md-3" v-for="promo in promotions">
