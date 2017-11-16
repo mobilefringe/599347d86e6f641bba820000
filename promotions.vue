@@ -3,7 +3,7 @@
         <div class="page_title"> Promotions </div>
         <div class="row"></div>
             <div class="col-md-3" v-for="promo in promotions">
-          <div class="">
+                <div class="">
             <div class="card-divider">
                 <a :href="promo.image_url" target="_blank"><img :src="promo.image_url"></a>
                 {{ promo.name }}
