@@ -49,7 +49,7 @@
             </div>
         </div>
         <hr/>
-        <div class="padding_tb_30"></div>
+        <div style="padding:20px 0;></div>
     </div>
 </template>
 
