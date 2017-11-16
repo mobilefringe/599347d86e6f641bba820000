@@ -109,8 +109,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
               //Init
               this.getWindowWidth();
             });
-            this.$on('switchBanner', function(value){
-                console.log(value);
+            this.$on('switchBanner', toggleBanner(value));
             });
         },
         watch: {
