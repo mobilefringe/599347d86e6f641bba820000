@@ -20,7 +20,10 @@
                     <div class="col-md-3">
                         
                     </div>
-                    <p class="description_text"> {{currentPromo.description}}</p>
+                    <div class="col-md-12">
+                        <p class="description_text"> {{currentPromo.description}}</p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
