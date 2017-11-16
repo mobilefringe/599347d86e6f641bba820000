@@ -13,7 +13,7 @@
             </div>
             <div class="card-section">
               <div class="center">
-                <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+                
                 <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}">Read More</router-link>
               </div>
             </div>
