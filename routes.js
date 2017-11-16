@@ -42,7 +42,7 @@ define([], function () {
       children: [
         {
           path: '',
-          component: view('promotions'),
+          component: view('events'),
           name: 'storeList'
         },
         {
