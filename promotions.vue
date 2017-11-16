@@ -12,7 +12,7 @@
                     </div>
                         <p class="sub_title">{{ promo.name }}</p>
                         <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
-                        <p class="description_text">{{ promo.name }}</p>
+                        <p class="description_text">{{ promo.description }}</p>
                          <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
                     
                 </div>
