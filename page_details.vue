@@ -64,7 +64,7 @@
         return {
           currentEvent: null,
           success_subscribe : false,
-          currentPage: null;
+          currentPage: null
         }
       },
       beforeRouteEnter (to, from, next) {
