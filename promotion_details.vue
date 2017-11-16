@@ -15,6 +15,7 @@
                 <br/>
                 <p> {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
                 <br/>
+                
             </div>
         </div>
         <hr/>
