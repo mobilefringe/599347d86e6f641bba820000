@@ -2,12 +2,12 @@
     <div>
          <div class="page_container padding_30" v-if="currentPromo">
             <div class="row">
-                <div class="col-md-5 ">
+                <div class="col-md-4 ">
                     <div class="promo_img_container">
                         <img :src="currentPromo.image_url" class="promo_img">
                     </div>
                 </div>
-                <div class="col-md-7 text_left">
+                <div class="col-md-8 text_left">
                     <p class="title all_caps">
                         <router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link>
                     </p>
