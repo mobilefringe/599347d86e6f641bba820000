@@ -23,7 +23,6 @@
         </div>
          <hr/>
         <div class="page_container">
-           
             <div class="new_stores page_container">
                 <div class="row">
                     <div class="col-md-2">
