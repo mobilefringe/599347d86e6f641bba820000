@@ -4,24 +4,24 @@
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="promo_img_container">
-                        <img :src="currentPromo.image_url" class="promo_img">
+                        <img :src="currentEvent.image_url" class="promo_img">
                     </div>
                 </div>
                 <div class="col-md-8 text_left promo_text_container">
                     <div class="col-md-9">
                         <p class="title all_caps">
-                            <router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link>
+                            <router-link :to="{ name: 'storeDetails', params: { id: currentEvent.store.slug }}">{{currentEvent.store.name}}</router-link>
                         </p>
-                        <p class="title">{{currentPromo.name}}</p>
+                        <p class="title">{{currentEvent.name}}</p>
                         <br/>
-                        <p class="promo_dates"> {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
+                        <p class="promo_dates"> {{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
                         <br/>
                     </div>
                     <div class="col-md-3">
-                        <img :src="currentPromo.store.store_front_url_abs" class="promo_store_logo" alt="">
+                        <img :src="currentEvent.store.store_front_url_abs" class="promo_store_logo" alt="">
                     </div>
                     <div class="col-md-12">
-                        <p class="description_text"> {{currentPromo.description}}</p>
+                        <p class="description_text"> {{currentEvent.description}}</p>
                     </div>
                     
                 </div>
@@ -66,15 +66,15 @@
       beforeRouteEnter (to, from, next) {
         next(vm => {
           // access to component instance via `vm`
-          vm.currentPromo = vm.findPromoBySlug(to.params.id);
-          if (vm.currentPromo === null || vm.currentPromo === undefined){
+          vm.currentEvent = vm.findPromoBySlug(to.params.id);
+          if (vm.currentEvent === null || vm.currentEvent === undefined){
             vm.$router.replace({ name: '404'});
           }
         })
       },
       beforeRouteUpdate (to, from, next) {
-        this.currentPromo = this.findPromoBySlug(to.params.id);
-        if (this.currentPromo === null || this.currentPromo === undefined){
+        this.currentEvent = this.findPromoBySlug(to.params.id);
+        if (this.currentEvent === null || this.currentEvent === undefined){
           this.$router.replace({ name: '404'});
         }
       },
