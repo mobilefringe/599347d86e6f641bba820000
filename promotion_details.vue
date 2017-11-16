@@ -13,7 +13,7 @@
                     </p>
                     <p class="title">{{currentPromo.name}}</p>
                     <br/>
-                    <p> {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
+                    <p class="promo_dates"> {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
                     <br/>
                     <p class="description_text"> {{currentPromo.description}}</p>
                 </div>
