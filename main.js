@@ -219,7 +219,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             toggleBanner (payload) {
                 console.log("received emit");
-                this.show_hero_banner = payload[0];
+                 = payload[0];
             }
         },
         router: router,
