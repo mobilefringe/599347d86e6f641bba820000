@@ -4,7 +4,7 @@
             <div class="col-md-5">
                 <div>
                     
-                    <p> | {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
+                    
                     <p>{{currentPromo.description}}</p>
                     <img :src="currentPromo.image_url">
                 </div>
