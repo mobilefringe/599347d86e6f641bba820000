@@ -53,6 +53,18 @@ define([], function () {
       ]
     },
     {
+      path: '/pages',
+      component: view('default'),
+      redirect: '/404',
+      children: [
+        {
+          path: ':id',
+          component: view('event_details'),
+          name: 'pageDetails'
+        }
+      ]
+    },
+    {
       path: '/404',
       name: '404',
       component: view('notfoundcomponent')
