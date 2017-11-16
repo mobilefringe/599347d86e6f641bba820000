@@ -3,7 +3,7 @@
          <div class="page_container padding_30" v-if="currentPromo">
             <div class="row">
                 <div class="col-md-5 ">
-                    <div>
+                    <div class="promo_img_container">
                         <img :src="currentPromo.image_url">
                     </div>
                 </div>
