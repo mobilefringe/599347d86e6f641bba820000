@@ -12,7 +12,7 @@
     
     
     </div>
-    <hr/>
+        <hr/>
         <div class="page_container">
             <div class="row  newsletter_subscription" style="margin:30px auto">
                 <div class="col-md-8 text_left">
