@@ -59,7 +59,7 @@
       template: template, // the variable template will be injected,
       data: function() {
         return {
-          currentPromo: null,
+          currentEvent: null,
           success_subscribe : false
         }
       },
