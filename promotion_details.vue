@@ -1,7 +1,7 @@
 <template>
     <div>
          <div class="page_container" v-if="currentPromo">
-            <div class="large-6 columns">
+            <div class="col-md-5">
               <div>
                 <h1>{{currentPromo.name}}</h1>
                 <p><router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link> | {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
