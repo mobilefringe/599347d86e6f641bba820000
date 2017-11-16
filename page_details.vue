@@ -75,10 +75,10 @@
             }, error => {
                 console.error("Could not retrieve data from server. Please check internet connection and try again.");
             });
-          vm.currentEvent = vm.findEventBySlug(to.params.id);
-          if (vm.currentEvent === null || vm.currentEvent === undefined){
-            vm.$router.replace({ name: '404'});
-          }
+            vm.currentEvent = vm.findEventBySlug(to.params.id);
+            if (vm.currentEvent === null || vm.currentEvent === undefined){
+                vm.$router.replace({ name: '404'});
+            }
         })
       },
       beforeRouteUpdate (to, from, next) {
