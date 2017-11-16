@@ -111,12 +111,6 @@
   define(["Vue", "vue!today_hours", "vue!search-component"], function(Vue, TodayHoursComponent, SearchComponent) {
     return Vue.component("home-component", {
       template: template, // the variable template will be injected
-    //   props: {
-    //         show_hero_banner: {
-    //             type: Boolean,
-    //             required: true
-    //         }
-    //     },
       data: function() {
         return {
           title: "MM with Vue.js!",
@@ -128,8 +122,7 @@
       },
       mounted () {
           this.feature_items;
-          this.$emit('switchBanner',true);
-          console.log("emited!");
+          
       },
       computed: {
         property(){
