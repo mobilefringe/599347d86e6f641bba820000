@@ -64,7 +64,6 @@
       template: template, // the variable template will be injected,
       data: function() {
         return {
-          currentEvent: null,
           success_subscribe : false,
           currentPage: null
         }
