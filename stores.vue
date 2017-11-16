@@ -160,7 +160,7 @@
                 },
                 updateSVGMap (map) {
                     this.map = map;
-                    console.log("updating this map");
+                    console.log("updating this map from emit");
                 },
                 dropPin(store) {
                     this.svgMapRef.hideMarkers();
