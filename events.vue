@@ -62,6 +62,11 @@
     Vue.use(Meta);
     return Vue.component("promos-component", {
       template: template, // the variable template will be injected
+      data: function() {
+        return {
+          success_subscribe : false
+        }
+      },
       computed: {
         events() {
             // var promos = this.$store.getters.processedPromos;
