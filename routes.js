@@ -59,7 +59,7 @@ define([], function () {
       children: [
         {
           path: ':id',
-          component: view('event_details'),
+          component: view('page_details'),
           name: 'pageDetails'
         }
       ]
