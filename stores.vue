@@ -1,5 +1,5 @@
 <template>
-    <div class="container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
+    <div class="page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="col-md-12">
             <div class="alpha_list">
                 <!--<a @click="filterStores('7" id="all_stores_a">all</a>-->
