@@ -7,7 +7,7 @@
                         <img :src="currentPromo.image_url" class="promo_img">
                     </div>
                 </div>
-                <div class="col-md-8 text_left">
+                <div class="col-md-8 text_left promo_text">
                     <p class="title all_caps">
                         <router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link>
                     </p>
