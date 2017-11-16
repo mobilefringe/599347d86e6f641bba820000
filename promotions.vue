@@ -22,7 +22,7 @@
             
         </div>
          <hr/>
-        <div>
+        <div class="page_container">
            
             <div class="new_stores page_container">
                 <div class="row">
