@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-8 text_left promo_text_container">
                     <div class="col-md-9">
-                        <p class="title all_caps">
+                        <p class="title all_caps" v-if="currentEvent.store">
                             <router-link :to="{ name: 'storeDetails', params: { id: currentEvent.store.slug }}">{{currentEvent.store.name}}</router-link>
                         </p>
                         <p class="title">{{currentEvent.name}}</p>
