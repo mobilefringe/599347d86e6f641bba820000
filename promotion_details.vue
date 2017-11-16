@@ -1,6 +1,7 @@
 <template>
     <div>
-         <div class="page_container padding_30" v-if="currentPromo">
+         <div class="page_container padding_30" v-if="currentPromo" style="    overflow: hidden;
+}">
             <div class="col-md-5 ">
                 <div>
                     <img :src="currentPromo.image_url">
