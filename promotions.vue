@@ -5,7 +5,7 @@
             <div class="col-md-3" v-for="promo in promotions">
                 <div class="">
                         <a :href="promo.image_url" target="_blank"><img :src="promo.image_url" class="promo_list_img"></a>
-                        <p></p>{{ promo.name }}
+                        <p>{{ promo.name }}
                          <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
                     
                 </div>
