@@ -4,14 +4,9 @@
         <div class="row">
             <div class="col-md-3" v-for="promo in promotions">
                 <div class="">
-                    <div class="card-divider">
                         <a :href="promo.image_url" target="_blank"><img :src="promo.image_url" class="promo_list_img"></a>
                         {{ promo.name }}
-                        
-                    </div>
-                     <div class="">
-                        <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
-                    </div>
+                         <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
                     
                 </div>
             </div>
