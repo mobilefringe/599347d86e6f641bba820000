@@ -20,7 +20,7 @@
                         <p class="promo_dates"> {{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
                         <br/>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" v-if="currentEvent.store">
                         <img :src="currentEvent.store.store_front_url_abs" class="promo_store_logo" alt="">
                     </div>
                     <div class="col-md-12">
