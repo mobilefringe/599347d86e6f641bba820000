@@ -1,12 +1,12 @@
 <template>
     <div>
          <div class="page_container" v-if="currentPromo">
-            <div class="col-md-5 text_left">
+            <div class="col-md-5 ">
                 <div>
                     <img :src="currentPromo.image_url">
                 </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 text_left">
                 <p class="title">
                     <router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link>
                 </p>
