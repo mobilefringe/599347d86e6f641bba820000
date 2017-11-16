@@ -8,7 +8,9 @@
                     </div>
                 </div>
                 <div class="col-md-8 text_left promo_text_container">
-                    <div class="col-md-9"></div>
+                    <div class="col-md-9">
+                        
+                    </div>
                     <p class="title all_caps">
                         <router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link>
                     </p>
