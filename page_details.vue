@@ -82,7 +82,7 @@
         })
       },
       beforeRouteUpdate (to, from, next) {
-          this.$store.dispatch('LOAD_PAGE_DATA', {url:vm.property.mm_host + "pages/"+ to.params.id +".json"}).then(response => {
+          this.$store.dispatch('LOAD_PAGE_DATA', {url:this.property.mm_host + "pages/"+ to.params.id +".json"}).then(response => {
                 this.dataLoaded = true;
             }, error => {
                 console.error("Could not retrieve data from server. Please check internet connection and try again.");
