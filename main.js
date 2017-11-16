@@ -47,9 +47,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         fallbackLocale: 'en-ca',
         messages,
     });
-    this.$on('switchBanner', function(value){
-                console.log("in parent on banner emit",value);
-            });
+    
     /* bootstrap app */
     const vm = new Vue({
         el: '#app',
