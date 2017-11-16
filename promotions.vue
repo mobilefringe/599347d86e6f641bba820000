@@ -40,7 +40,7 @@
             var promos = this.$store.getters.processedPromos;
             _.forEach(promos, function (val) {
                 if(val.description.length >50) {
-                   val.description = _.truncate(val.description, {'length':50})
+                   val.description = _.truncate(val.description, {'length':50,'separator': ' '})
                 }
             });
           return promos;//this.$store.getters.processedPromos;
