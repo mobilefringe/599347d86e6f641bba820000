@@ -10,7 +10,7 @@
                 <p class="title">
                     <router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link>
                 </p>
-                <p class="description_text">{{currentPromo.name}}</p>
+                <p class="title">{{currentPromo.name}}</p>
                 <br/>
                 <p> {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
                 <br/>
