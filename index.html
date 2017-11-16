@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="app" v-cloak v-if="dataLoaded" @resize="checkWidth()" @switchBanner="toggleBanner">
-        <div id="banner" class="relative" :v-if="show_hero_banner">
+        <div id="banner" class="relative" v-if="show_hero_banner">
             <div style="background-image:url('//codecloud.cdn.speedyrails.net/sites/599347d86e6f641bba820000/image/png/1502826685000/Home Hero Banner Image.png')" class="banner_image_div">
                 <a class="banner_image_li" >
                 </a>
