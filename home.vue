@@ -139,7 +139,7 @@
                             Thank you for subscribing.
                         </p>
                     </form>
-                    <p class="subscribe_text" style="font-size:8px">
+                    <p class="subscribe_text " style="font-size:8px;    line-height: 5px;">
                         Disclaimer: You will receive Promotion E-mails.
                     </p>
                 </div>
