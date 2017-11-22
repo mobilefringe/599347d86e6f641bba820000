@@ -125,7 +125,7 @@
                 </iframe>
             </div>
             <div class="row page_container newsletter_subscription" style="margin:30px auto">
-                <div class="col-md-8  col-xs-8 text_left">
+                <div class="col-xs-12 text_center">
                     <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
                     <p class="subscribe_text">
                         For Events, Promotions and Shopping Centre News<br/>
