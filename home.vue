@@ -140,6 +140,9 @@
                             Thank you for subscribing.
                         </p>
                     </form>
+                    <p class="subscribe_text">
+                        Disclaimer: You will receive Promotion E-mails.
+                    </p>
                 </div>
             </div>
         </div>
