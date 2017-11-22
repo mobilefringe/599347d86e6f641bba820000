@@ -47,7 +47,7 @@
              <p class="content text_center ">Mall Security:</p>
              <p class="content text_center ">{{property.contact_phone}}</p>
             </div>
-            <div class="col-md-1" style="margin: 10px auto;">
+            <div class="col-md-1  col-xs-1" style="margin: 10px auto;">
                 <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">
             </div>
             <div class="col-md-3 col-xs-3">
@@ -59,7 +59,7 @@
                     <p class="content text_center">{{property.country}}</p>
                 </div>
             </div>
-            <div class="col-md-1" style="margin: 10px auto;">
+            <div class="col-md-1 col-xs-1" style="margin: 10px auto;">
                 <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">
             </div>
             <div class="col-md-3 col-xs-3">
