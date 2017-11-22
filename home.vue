@@ -1,5 +1,6 @@
 <template>
     <div class="home_page_container">
+        <div class=" hidden_phone">
         <div class="row page_container">
             <div class=" col-md-4 col-xs-4 home_shortcut" v-for="item in feature_items">
                 <img src="//via.placeholder.com/360x275" class="" alt=""><!--<img :src="feature_items[0].image_url" class="" alt="">-->
@@ -21,7 +22,7 @@
             <!--</div>-->
         </div>
         <hr/>
-        <div class=" hidden_phone">
+        
             <div class="row page_container newsletter_subscription" style="margin:30px auto">
                 <div class="col-md-8  col-xs-8 text_left">
                     <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
