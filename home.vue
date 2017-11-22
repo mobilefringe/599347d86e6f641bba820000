@@ -120,9 +120,9 @@
                 <!--<p class="menu_content text_center "> <i class="fa fa-phone" aria-hidden="true"></i> {{property.contact_phone}}</p>-->
             </div>
             <div>
-                <div class="map_container full_border">
-                    <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl"></svg-map>
-                </div>
+                <iframe class="grayscale" title="Map" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'http://maps.google.nl/maps?q='+full_address  +'&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear='+full_address  +'&amp;z=16&amp;output=embed'">
+                        Map
+                </iframe>
             </div>
         </div>
     </div>
@@ -167,12 +167,6 @@
         full_address() {
             return this.property.address1 +''+this.property.city +''+ this.property.country +''+this.property.province_state +''+this.property.province_state
             
-        },
-        getSVGurl () {
-            return "https://www.mallmaverick.com" + this.property.svgmap_url;
-        },
-        svgMapRef() {
-            return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
         }
       },
       methods: {
