@@ -40,7 +40,7 @@
             </div>
         </div>
         <hr/>
-        <div class="row page_container contact_info  hidden_phone">
+        <div class="row page_container contact_info">
             <div class="col-md-4  col-xs-4">
             <p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
             <p class="header text_center ">{{property.contact_phone}}</p>
@@ -50,7 +50,7 @@
             <!--<div class="col-md-1  col-xs-1" style="margin: 10px auto;">-->
             <!--    <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">-->
             <!--</div>-->
-            <div class="col-md-4 col-xs-4 border_left_right  hidden_phone">
+            <div class="col-md-4 col-xs-4 border_left_right">
                 <p class="header text_center"><i class="fa fa-location-arrow" aria-hidden="true"></i></p>
                 <p class="header text_center">{{property.address1}}</p>
                 <div class="content address">
@@ -62,14 +62,14 @@
             <!--<div class="col-md-1 col-xs-1" style="margin: 10px auto;">-->
             <!--    <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">-->
             <!--</div>-->
-            <div class="col-md-4 col-xs-4  hidden_phone">
+            <div class="col-md-4 col-xs-4">
             <p class="header text_center "><i class="fa fa-envelope-open" aria-hidden="true"></i></p>
             <p class="header text_center ">Email Contacts</p>
             <p class="content text_center ">{{property.contact_email}}</p>
                   
             </div>
         </div>
-        <div class="home_map text_center  hidden_phone">
+        <div class="home_map text_center">
             <iframe class="grayscale" title="Map" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'http://maps.google.nl/maps?q='+full_address  +'&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear='+full_address  +'&amp;z=16&amp;output=embed'">
                     Map
             </iframe>
@@ -78,7 +78,7 @@
             </div>
         </div>
         <hr/>
-        <div class="new_stores page_container hidden_phone">
+        <div class="new_stores page_container">
             <div class="row">
                 <div class="col-md-2 col-xs-2">
                     <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100892000/Peoples.png" class="" alt="">
