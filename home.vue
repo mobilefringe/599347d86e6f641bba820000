@@ -1,27 +1,27 @@
 <template>
     <div class="home_page_container">
         <div class=" hidden_phone">
-        <div class="row page_container">
-            <div class=" col-md-4 col-xs-4 home_shortcut" v-for="item in feature_items">
-                <img src="//via.placeholder.com/360x275" class="" alt=""><!--<img :src="feature_items[0].image_url" class="" alt="">-->
-                <div class="hover_see_more_btn">
-                    <h5 class="hover_text">{{item.name}} </h5>
+            <div class="row page_container">
+                <div class=" col-md-4 col-xs-4 home_shortcut" v-for="item in feature_items">
+                    <img src="//via.placeholder.com/360x275" class="" alt=""><!--<img :src="feature_items[0].image_url" class="" alt="">-->
+                    <div class="hover_see_more_btn">
+                        <h5 class="hover_text">{{item.name}} </h5>
+                    </div>
                 </div>
+                <!--<div class="col-md-4 home_shortcut">-->
+                <!--    <img :src="feature_items[1].image_url" class="" alt="">-->
+                <!--    <div class="hover_see_more_btn">-->
+                <!--        <h5 class="hover_text">View Full Design </h5>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4 home_shortcut">-->
+                <!--    <img :src="feature_items[2].image_url" class="" alt="">-->
+                <!--    <div class="hover_see_more_btn">-->
+                <!--        <h5 class="hover_text">View Full Design </h5>-->
+                <!--    </div>-->
+                <!--</div>-->
             </div>
-            <!--<div class="col-md-4 home_shortcut">-->
-            <!--    <img :src="feature_items[1].image_url" class="" alt="">-->
-            <!--    <div class="hover_see_more_btn">-->
-            <!--        <h5 class="hover_text">View Full Design </h5>-->
-            <!--    </div>-->
-            <!--</div>-->
-            <!--<div class="col-md-4 home_shortcut">-->
-            <!--    <img :src="feature_items[2].image_url" class="" alt="">-->
-            <!--    <div class="hover_see_more_btn">-->
-            <!--        <h5 class="hover_text">View Full Design </h5>-->
-            <!--    </div>-->
-            <!--</div>-->
-        </div>
-        <hr/>
+            <hr/>
         
             <div class="row page_container newsletter_subscription" style="margin:30px auto">
                 <div class="col-md-8  col-xs-8 text_left">
