@@ -108,11 +108,11 @@
         </div>
         <div class=" visible_phone">
             <div class=" col-md-4 col-xs-4 home_shortcut" v-for="item in feature_items">
-                    <img src="//via.placeholder.com/360x275" class="" alt=""><!--<img :src="feature_items[0].image_url" class="" alt="">-->
-                    <div class="hover_see_more_btn">
-                        <h5 class="hover_text">{{item.name}} </h5>
-                    </div>
+                <img src="//via.placeholder.com/360x275" class="" alt=""><!--<img :src="feature_items[0].image_url" class="" alt="">-->
+                <div class="hover_see_more_btn">
+                    <h5 class="hover_text">{{item.name}} </h5>
                 </div>
+            </div>
         </div>
     </div>
 </template>
