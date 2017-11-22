@@ -44,8 +44,8 @@
             <div class="col-md-4  col-xs-4">
             <p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
             <p class="header text_center ">{{property.contact_phone}}</p>
-             <p class="content text_center ">Mall Security:</p>
-             <p class="content text_center ">{{property.contact_phone}}</p>
+             <p class="content text_center  hidden_phone">Mall Security:</p>
+             <p class="content text_center  hidden_phone">{{property.contact_phone}}</p>
             </div>
             <!--<div class="col-md-1  col-xs-1" style="margin: 10px auto;">-->
             <!--    <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">-->
