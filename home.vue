@@ -128,8 +128,7 @@
                 <div class="col-xs-12 text_center">
                     <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
                     <p class="subscribe_text">
-                        For Events, Promotions and Shopping Centre News<br/>
-                        Disclaimer: You will receive Promotion E-mails.
+                        For Events, Promotions and Shopping Centre News
                     </p>
                 </div>
                  <div class="text_center col-xs-12">
