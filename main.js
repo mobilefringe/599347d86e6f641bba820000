@@ -60,25 +60,25 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                     {
                         name: "Stores",
                         id: "stores",
-                        class_list: "all_caps menu_btn_label",
+                        class_list: " menu_btn_label",
                         href: "/stores"
                     },
                     {
                         name: "Promotions",
                         id: "promotions",
-                        class_list: "all_caps menu_btn_label",
+                        class_list: " menu_btn_label",
                         href: "/promotions"
                     },
                     {
                         name: "Events",
                         id: "map",
-                        class_list: "all_caps menu_btn_label",
+                        class_list: " menu_btn_label",
                         href: "/events"
                     },
                     {
                         name: "Contact Us",
                         id: "contact_us",
-                        class_list: "all_caps menu_btn_label",
+                        class_list: " menu_btn_label",
                         href: "/contact_us"
                     }
                 ],
