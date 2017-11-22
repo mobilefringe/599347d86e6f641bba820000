@@ -132,7 +132,7 @@
                         Disclaimer: You will receive Promotion E-mails.
                     </p>
                 </div>
-                 <div class="newsletter_div col-xs-12">
+                 <div class=" col-xs-12">
                     <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form" class="pull-right">
                         <input name="cm-ithdul-ithdul" type="text" placeholder="Enter E-mail Here" class="newsletter_control" required /><br/>
                         <button class="newsletter_btn animated_btn all_caps ">Submit</button>
