@@ -167,6 +167,12 @@
         full_address() {
             return this.property.address1 +''+this.property.city +''+ this.property.country +''+this.property.province_state +''+this.property.province_state
             
+        },
+        getSVGurl () {
+            return "https://www.mallmaverick.com" + this.property.svgmap_url;
+        },
+        svgMapRef() {
+            return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
         }
       },
       methods: {
