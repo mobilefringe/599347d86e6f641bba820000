@@ -40,7 +40,7 @@
             </div>
         </div>
         <hr/>
-        <div class="row contact_info page_container">
+        <div class="row page_container contact_info">
             <div class="col-md-4  col-xs-4">
             <p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
             <p class="header text_center ">{{property.contact_phone}}</p>
