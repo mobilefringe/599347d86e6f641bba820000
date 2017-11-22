@@ -41,7 +41,7 @@
         </div>
         <hr/>
         <div class="row contact_info page_container">
-            <div class="col-md-3  col-xs-3">
+            <div class="col-md-4  col-xs-4">
             <p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
             <p class="header text_center ">{{property.contact_phone}}</p>
              <p class="content text_center ">Mall Security:</p>
@@ -50,7 +50,7 @@
             <!--<div class="col-md-1  col-xs-1" style="margin: 10px auto;">-->
             <!--    <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">-->
             <!--</div>-->
-            <div class="col-md-3 col-xs-3 border_left_right">
+            <div class="col-md-4 col-xs-4 border_left_right">
                 <p class="header text_center"><i class="fa fa-location-arrow" aria-hidden="true"></i></p>
                 <p class="header text_center">{{property.address1}}</p>
                 <div class="content address">
@@ -62,7 +62,7 @@
             <!--<div class="col-md-1 col-xs-1" style="margin: 10px auto;">-->
             <!--    <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506095721000/vertical_line_1x.png" class="" alt="">-->
             <!--</div>-->
-            <div class="col-md-3 col-xs-3">
+            <div class="col-md-4 col-xs-4">
             <p class="header text_center "><i class="fa fa-envelope-open" aria-hidden="true"></i></p>
             <p class="header text_center ">Email Contacts</p>
             <p class="content text_center ">{{property.contact_email}}</p>
