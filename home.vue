@@ -78,7 +78,7 @@
             </div>
         </div>
         <hr/>
-        <div class="new_stores page_container">
+        <div class="new_stores page_container hidden_phone">
             <div class="row">
                 <div class="col-md-2 col-xs-2">
                     <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100892000/Peoples.png" class="" alt="">
