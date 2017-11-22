@@ -119,6 +119,11 @@
                 <p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i>{{property.contact_phone}}</p>
                 <!--<p class="menu_content text_center "> <i class="fa fa-phone" aria-hidden="true"></i> {{property.contact_phone}}</p>-->
             </div>
+            <div>
+                <div class="map_container full_border">
+                    <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl"></svg-map>
+                </div>
+            </div>
         </div>
     </div>
 </template>
