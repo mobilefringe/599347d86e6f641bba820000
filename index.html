@@ -78,7 +78,19 @@
                 <img @click="show_menu = !show_menu" src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/menu Button 2x.png" class="open_menu visible_phone menu-icon" alt="open menu" id="menu-icon">
                 
             </div>
-            
+            <div id="menu_page" v-if="show_menu">
+                    <div class="menu_page_content">
+                        <div class="menu_btn_holder">
+                            <div v-for="item in menu_items">
+                                <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
+                                    <a>
+                                        <label :class="item.class_list" @click="show_menu = !show_menu" :id="item.name">{{ item.name }}</label>
+                                    </a>
+                                </router-link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <hr/>
             <router-view ></router-view>
             <section class="copyright_footer main_container">
