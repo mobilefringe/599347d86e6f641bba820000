@@ -115,6 +115,9 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <p class="menu_content text_center "> <i class="fa fa-phone" aria-hidden="true"></i> {{property.contact_phone}}</p>
+            </div>
         </div>
     </div>
 </template>
