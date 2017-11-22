@@ -116,8 +116,8 @@
                 </div>
             </div>
             <div class="row  page_container contact_info">
-                <!--<p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>-->
-                <p class="menu_content text_center "> <i class="fa fa-phone" aria-hidden="true"></i> {{property.contact_phone}}</p>
+                <p class="header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
+                <!--<p class="menu_content text_center "> <i class="fa fa-phone" aria-hidden="true"></i> {{property.contact_phone}}</p>-->
             </div>
         </div>
     </div>
