@@ -106,6 +106,8 @@
                 <button class="newsletter_btn animated_btn all_caps ">Store Directory</button>
             </div>
         </div>
+         <div class=" hidden_phone">
+        </div>
     </div>
 </template>
 
