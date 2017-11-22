@@ -218,10 +218,10 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 //     }
                 // }
                 this.$router.push("/stores/"+option.slug);
-                $(".search-component .options-list").hide();
+                $(".bannerSearch .options-list").hide();
             },
             show_search_list () {
-                $(".search-component .options-list").show();
+                $(".bannerSearch .options-list").show();
             },
             toggleBanner (payload) {
                 console.log("received emit");
