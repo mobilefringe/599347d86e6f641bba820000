@@ -133,7 +133,7 @@
                     </p>
                 </div>
                  <div class="text_center col-xs-12">
-                    <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form" class="pull-right">
+                    <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form" class="">
                         <input name="cm-ithdul-ithdul" type="text" placeholder="Enter E-mail Here" class="newsletter_control" required /><br/>
                         <button class="newsletter_btn animated_btn all_caps ">Submit</button>
                         <p v-show="success_subscribe" id="success_subscribe">
