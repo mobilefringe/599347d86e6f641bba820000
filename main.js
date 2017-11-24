@@ -145,7 +145,17 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 }
             },
             show_menu : function () {
-                
+                if(!this.show_menu){
+                    if(this.$route.path == "/") {
+                        this.show_hero_banner = true;
+                    }
+                    else {
+                        this.show_hero_banner = false;
+                    }
+                }
+                else {
+                    this.show_hero_banner = false;
+                }
             }
         },
         computed: {
