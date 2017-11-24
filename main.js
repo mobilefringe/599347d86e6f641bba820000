@@ -136,7 +136,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             $route : function () {
                 console.log("Changed to route:",this.$route.path);
-                if(!show_menu){
+                if(!this.show_menu){
                     if(this.$route.path == "/") {
                         this.show_hero_banner = true;
                     }
