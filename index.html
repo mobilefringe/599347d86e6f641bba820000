@@ -28,7 +28,7 @@
                         </router-link>
                     </div>
                     <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="bannerSearch" @select="onOptionSelect" class="bannerSearch">
-                    <template slot="item" scope="option">
+                        <template slot="item" scope="option">
                             <article class="media">
                                 <p>
                                     <strong>{{ option.data.name }}</strong>
