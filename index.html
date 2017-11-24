@@ -98,15 +98,16 @@
                         </div>
                     </div>
                     <div class="search">
-                    <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="menuSearch" @select="onOptionSelect"><template slot="item" scope="option">
-                        <article class="media">
-                            <p>
-                                <strong>{{ option.data.name }}</strong>
-                            </p>
-                        </article>
-                    </template>
-                </search-component>
-                </div>
+                        <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="menuSearch" @select="onOptionSelect">
+                            <template slot="item" scope="option">
+                                <article class="media">
+                                    <p>
+                                        <strong>{{ option.data.name }}</strong>
+                                    </p>
+                                </article>
+                            </template>
+                        </search-component>
+                    </div>
                 </div>
             </div>
             <hr/>
