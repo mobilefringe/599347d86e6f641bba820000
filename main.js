@@ -153,7 +153,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         this.show_hero_banner = false;
                     }
                 }
-                if {
+                else {
                     this.show_hero_banner = false;
                 }
                 if(this.show_menu && this.show_hero_banner){
