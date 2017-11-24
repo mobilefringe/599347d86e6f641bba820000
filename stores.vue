@@ -1,66 +1,66 @@
 <template>
     <div class="page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
-    <div class="hidden_phone">
-        <div class="col-md-12">
-            <div class="alpha_list ">
-                <!--<a @click="filterStores('7" id="all_stores_a">all</a>-->
-                <a @click="filterStores('#')">#</a>
-                <a @click="filterStores('A')">A</a>
-                <a @click="filterStores('B')">B</a>
-                <a @click="filterStores('C')">C</a>
-                <a @click="filterStores('D')">D</a>
-                <a @click="filterStores('E')">E</a>
-                <a @click="filterStores('F')">F</a>
-                <a @click="filterStores('G')">G</a>
-                <a @click="filterStores('H')">H</a>
-                <a @click="filterStores('I')">I</a>
-                <a @click="filterStores('J')">J</a>
-                <a @click="filterStores('K')">K</a>
-                <a @click="filterStores('L')">L</a>
-                <a @click="filterStores('M')">M</a>
-                <a @click="filterStores('N')">N</a>
-                <a @click="filterStores('O')">O</a>
-                <a @click="filterStores('P')">P</a>
-                <a @click="filterStores('Q')">Q</a>
-                <a @click="filterStores('R')">R</a>
-                <a @click="filterStores('S')">S</a>
-                <a @click="filterStores('T')">T</a>
-                <a @click="filterStores('U')">U</a>
-                <a @click="filterStores('V')">V</a>
-                <a @click="filterStores('W')">W</a>
-                <a @click="filterStores('X')">X</a>
-                <a @click="filterStores('Y')">Y</a>
-                <a @click="filterStores('Z')">Z</a>
-            </div>
-        </div>
-        <div class="stores_container">
-            <div class="col-md-4 col-sm-4">
-                <div class="search_container">
-                    <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="storeSearch" @select="onOptionSelect"><template slot="item" scope="option">
-                        <article class="media">
-                            <p>
-                                <strong>{{ option.data.name }}</strong>
-                            </p>
-                        </article>
-                    </template>
-                </search-component>
-                   
+        <div class="hidden_phone">
+            <div class="col-md-12">
+                <div class="alpha_list ">
+                    <!--<a @click="filterStores('7" id="all_stores_a">all</a>-->
+                    <a @click="filterStores('#')">#</a>
+                    <a @click="filterStores('A')">A</a>
+                    <a @click="filterStores('B')">B</a>
+                    <a @click="filterStores('C')">C</a>
+                    <a @click="filterStores('D')">D</a>
+                    <a @click="filterStores('E')">E</a>
+                    <a @click="filterStores('F')">F</a>
+                    <a @click="filterStores('G')">G</a>
+                    <a @click="filterStores('H')">H</a>
+                    <a @click="filterStores('I')">I</a>
+                    <a @click="filterStores('J')">J</a>
+                    <a @click="filterStores('K')">K</a>
+                    <a @click="filterStores('L')">L</a>
+                    <a @click="filterStores('M')">M</a>
+                    <a @click="filterStores('N')">N</a>
+                    <a @click="filterStores('O')">O</a>
+                    <a @click="filterStores('P')">P</a>
+                    <a @click="filterStores('Q')">Q</a>
+                    <a @click="filterStores('R')">R</a>
+                    <a @click="filterStores('S')">S</a>
+                    <a @click="filterStores('T')">T</a>
+                    <a @click="filterStores('U')">U</a>
+                    <a @click="filterStores('V')">V</a>
+                    <a @click="filterStores('W')">W</a>
+                    <a @click="filterStores('X')">X</a>
+                    <a @click="filterStores('Y')">Y</a>
+                    <a @click="filterStores('Z')">Z</a>
                 </div>
-                <div class="store_list_container">
-                    <div class="store-section" v-for="store in processedStores">
-                        <a @click="dropPin(store)">{{store.name}}</a>
+            </div>
+            <div class="stores_container">
+                <div class="col-md-4 col-sm-4">
+                    <div class="search_container">
+                        <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="storeSearch" @select="onOptionSelect"><template slot="item" scope="option">
+                            <article class="media">
+                                <p>
+                                    <strong>{{ option.data.name }}</strong>
+                                </p>
+                            </article>
+                        </template>
+                    </search-component>
+                       
                     </div>
-                    <div v-if="processedStores.length <= 0">
-                        No stores avalaible.
+                    <div class="store_list_container">
+                        <div class="store-section" v-for="store in processedStores">
+                            <a @click="dropPin(store)">{{store.name}}</a>
+                        </div>
+                        <div v-if="processedStores.length <= 0">
+                            No stores avalaible.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <div class="map_container full_border">
+                        <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl"></svg-map>
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 col-sm-8">
-                <div class="map_container full_border">
-                    <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl"></svg-map>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
 </template>
