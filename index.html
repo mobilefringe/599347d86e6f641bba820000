@@ -98,7 +98,7 @@
                         </div>
                     </div>
                     <div class="search">
-                        <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="menuSearch" @select="onOptionSelect">
+                        <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="menuSearch" @select="onOptionSelect" class="large">
                             <template slot="item" scope="option">
                                 <article class="media">
                                     <p>
