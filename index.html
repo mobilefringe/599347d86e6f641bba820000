@@ -12,33 +12,35 @@
   </head>
   <body>
     <div id="app" v-cloak v-if="dataLoaded" @resize="checkWidth()">
-        <div id="banner" class="relative" v-if="show_hero_banner">
-            <div style="background-image:url('//codecloud.cdn.speedyrails.net/sites/599347d86e6f641bba820000/image/png/1502826685000/Home Hero Banner Image.png')" class="banner_image_div">
-                <a class="banner_image_li" ></a>
-            </div>
-            <div class="banner_menu page_container">
-                <div class="title">
-                    {{property.name}}
+        <transition name="slide-fade">
+            <div id="banner" class="relative" v-if="show_hero_banner">
+                <div style="background-image:url('//codecloud.cdn.speedyrails.net/sites/599347d86e6f641bba820000/image/png/1502826685000/Home Hero Banner Image.png')" class="banner_image_div">
+                    <a class="banner_image_li" ></a>
                 </div>
-                <div class="menu_content">
-                    <div v-for="item in menu_items">
-                        <router-link  :to="item.href" active-class="active" exact :id="item.name">
-                           {{ item.name }}
-                        </router-link>
+                <div class="banner_menu page_container">
+                    <div class="title">
+                        {{property.name}}
                     </div>
-                    <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="bannerSearch" @select="onOptionSelect" class="bannerSearch">
-                        <template slot="item" scope="option">
-                            <article class="media">
-                                <p>
-                                    <strong>{{ option.data.name }}</strong>
-                                </p>
-                            </article>
-                        </template>
-                    </search-component>
-                    <div class="btn" role="button" @click="show_search_list"> Search Stores <i class="fa fa-search pull-right"></i></div>
+                    <div class="menu_content">
+                        <div v-for="item in menu_items">
+                            <router-link  :to="item.href" active-class="active" exact :id="item.name">
+                               {{ item.name }}
+                            </router-link>
+                        </div>
+                        <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="bannerSearch" @select="onOptionSelect" class="bannerSearch">
+                            <template slot="item" scope="option">
+                                <article class="media">
+                                    <p>
+                                        <strong>{{ option.data.name }}</strong>
+                                    </p>
+                                </article>
+                            </template>
+                        </search-component>
+                        <div class="btn" role="button" @click="show_search_list"> Search Stores <i class="fa fa-search pull-right"></i></div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </transition>
         <div class="">
             <div class="menu page_container" id="menu_bar">
                 <router-link class="store_logo pull-left" to="/" >{{property.name}}</router-link>
