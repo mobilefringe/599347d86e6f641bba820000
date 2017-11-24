@@ -147,7 +147,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             show_menu : function () {
                 if(this.$route.path == "/") {
                     if( !this.show_menu){
-                    this.show_hero_banner = true;
+                        this.show_hero_banner = true;
                     }
                 }
                 else {
