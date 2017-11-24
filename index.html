@@ -81,7 +81,7 @@
             <div id="menu_page" v-if="show_menu">
                 <div class="menu_page_content">
                     <div class="menu_btn_holder">
-                        <div v-for="item in menu_items">
+                        <div v-for="item in menu_items" class="relative">
                             <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
                                 <a>
                                     <label :class="item.class_list" @click="show_menu = !show_menu" :id="item.name">{{ item.name }}</label>
