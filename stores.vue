@@ -1,7 +1,7 @@
 <template>
     <div class="page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
     <div class="hidden_phone"></div>
-        <div class="col-md-12 hidden_phone">
+        <div class="col-md-12">
             <div class="alpha_list ">
                 <!--<a @click="filterStores('7" id="all_stores_a">all</a>-->
                 <a @click="filterStores('#')">#</a>
