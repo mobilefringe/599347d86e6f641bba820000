@@ -53,43 +53,45 @@
             </div>
         </transition>
         <div class="">
-            <div class="menu page_container" id="menu_bar" :class="{sticky : stickyMenu}">
-                <router-link class="store_logo pull-left" to="/" >{{property.name}}</router-link>
-                <ul class="menu_list pull-right hidden_phone" >
-                  <li v-for="item in menu_items">
-                    <router-link :to="item.href" active-class="active" exact :id="item.name">
-                       {{ item.name }}
-                    </router-link>
-                  </li>
-                </ul>
-            </div>
-            <hr class="hr_bold"/>
-            <div class="sub_menu_bar page_container relative">
-                <div class="today_hour">
-                    OPEN TODAY
-                    {{todays_hours.open_time | moment("h:mmA", timezone)}} - {{todays_hours.close_time | moment("h:mmA", timezone)}}
+            <div>
+                <div class="menu page_container" id="menu_bar" :class="{sticky : stickyMenu}">
+                    <router-link class="store_logo pull-left" to="/" >{{property.name}}</router-link>
+                    <ul class="menu_list pull-right hidden_phone" >
+                      <li v-for="item in menu_items">
+                        <router-link :to="item.href" active-class="active" exact :id="item.name">
+                           {{ item.name }}
+                        </router-link>
+                      </li>
+                    </ul>
                 </div>
-                
-                <div class="social_links pull-right hidden_phone">
-                    <span class="social_link_box pinterest_link"></span>
-                    <span class="social_link_box twitter_link"></span>
-                    <span class="social_link_box facebook_link"></span>
-                    <span class="social_link_box gplus_link"></span>
-                    <span class="social_link_box instagram_link"></span>
+                <hr class="hr_bold"/>
+                <div class="sub_menu_bar page_container relative">
+                    <div class="today_hour">
+                        OPEN TODAY
+                        {{todays_hours.open_time | moment("h:mmA", timezone)}} - {{todays_hours.close_time | moment("h:mmA", timezone)}}
+                    </div>
+                    
+                    <div class="social_links pull-right hidden_phone">
+                        <span class="social_link_box pinterest_link"></span>
+                        <span class="social_link_box twitter_link"></span>
+                        <span class="social_link_box facebook_link"></span>
+                        <span class="social_link_box gplus_link"></span>
+                        <span class="social_link_box instagram_link"></span>
+                    </div>
+                    <div class="search pull-right hidden_phone">
+                        <search-component :list="allStores" placeholder="Search For Stores" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect">
+                            <template slot="item" scope="option">
+                                <article class="media">
+                                    <p>
+                                        <strong>{{ option.data.name }}</strong>
+                                    </p>
+                                </article>
+                            </template>
+                        </search-component>
+                    </div>
+                    <img @click="show_menu = !show_menu ; " src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/menu Button 2x.png" class="open_menu visible_phone menu-icon" alt="open menu" id="menu-icon">
+                    
                 </div>
-                <div class="search pull-right hidden_phone">
-                    <search-component :list="allStores" placeholder="Search For Stores" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect">
-                        <template slot="item" scope="option">
-                            <article class="media">
-                                <p>
-                                    <strong>{{ option.data.name }}</strong>
-                                </p>
-                            </article>
-                        </template>
-                    </search-component>
-                </div>
-                <img @click="show_menu = !show_menu ; " src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/menu Button 2x.png" class="open_menu visible_phone menu-icon" alt="open menu" id="menu-icon">
-                
             </div>
             <div id="menu_page" v-if="show_menu" class="visible_phone">
                 <div class="menu_page_content">
