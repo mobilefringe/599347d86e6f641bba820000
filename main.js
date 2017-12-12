@@ -243,7 +243,17 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             toggleBanner (payload) {
                 console.log("received emit");
                 //  = payload[0];
+            },
+            enableStickyNavbar (e) {
+            // console.log("scrolling");
+            // console.log(window.pageYOffset,this.isSticky,window.pageYOffset >= this.isSticky );
+            if (window.pageYOffset >= this.isSticky) {
+                this.stickyMenu = true;
+            } else {
+                this.stickyMenu = false;
             }
+
+        }
         },
         router: router,
         store,
