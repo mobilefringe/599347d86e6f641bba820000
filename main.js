@@ -87,7 +87,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 bannerSearch : "",
                 search : "",
                 menuSearch : "",
-                show_menu: false
+                show_menu: false,
+                stickyMenu : false,
+                isSticky : 125,
             }
         },
         created() {
