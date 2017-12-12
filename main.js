@@ -109,6 +109,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 console.log("in parent on banner emit",value);
             });
             window.addEventListener('scroll', this.enableStickyNavbar);
+            console.log(this.isSticky);
         },
         mounted () {
             this.$nextTick(function() {
