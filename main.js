@@ -106,6 +106,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.$on('switchBanner', function(value){
                 console.log("in parent on banner emit",value);
             });
+            window.addEventListener('scroll', this.enableStickyNavbar);
         },
         mounted () {
             this.$nextTick(function() {
