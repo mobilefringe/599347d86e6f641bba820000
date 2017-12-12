@@ -148,7 +148,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 else {
                     this.show_hero_banner = false;
                     
-                    this.isSticky = 200;
+                    this.isSticky = 0;
                 }
             },
             show_menu : function () {
