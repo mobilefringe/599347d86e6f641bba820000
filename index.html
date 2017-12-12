@@ -53,7 +53,7 @@
             </div>
         </transition>
         <div class="">
-            <div class="menu page_container" id="menu_bar">
+            <div class="menu page_container" id="menu_bar" :class="{sticky : stickyMenu}">
                 <router-link class="store_logo pull-left" to="/" >{{property.name}}</router-link>
                 <ul class="menu_list pull-right hidden_phone" >
                   <li v-for="item in menu_items">
