@@ -142,9 +142,19 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 this.show_menu = false;
                 if(this.$route.path == "/") {
                     this.show_hero_banner = true;
+                     //sticky_menu options 
+                     this.isSticky = 800;
                 }
                 else {
                     this.show_hero_banner = false;
+                }
+                
+               
+                if(this.$route.path == "/") {
+                    
+                }
+                else {
+                    this.isSticky = 200;
                 }
             },
             show_menu : function () {
