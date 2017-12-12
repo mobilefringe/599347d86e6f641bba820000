@@ -150,14 +150,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                     
                     this.isSticky = 200;
                 }
-                
-               
-                if(this.$route.path == "/") {
-                    
-                }
-                else {
-                    
-                }
             },
             show_menu : function () {
                 if(this.$route.path == "/") {
