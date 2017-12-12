@@ -255,6 +255,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     
             }
         },
+        destroyed: function () {
+            window.removeEventListener('scroll', this.enableStickyNavbar);
+        },
         router: router,
         store,
         i18n
