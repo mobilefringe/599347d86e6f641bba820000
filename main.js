@@ -30,7 +30,7 @@ require.config({
     }
 });
 
-require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'vue!search-component','vue-moment','jquery''vue!vue-pdf-preview'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, SearchComponent, vueMoment, $) {
+require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'vue!search-component','vue-moment','jquery','vue!vue-pdf-preview'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, SearchComponent, vueMoment, $) {
     Vue.use(Meta);
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
