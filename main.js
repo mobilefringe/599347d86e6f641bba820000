@@ -26,7 +26,7 @@ require.config({
         'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
         'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext',
         'svg-map': 'https://crimson.codecloudapp.com/svg_map.vue?noext',
-        'vue=pdf-preview' : 'https://cdn.jsdelivr.net/npm/vue-pdf-preview@0.0.2/pdf-preview.vue'
+        'vue=pdf-preview' : 'https://cdn.jsdelivr.net/npm/vue-pdf-preview@0.0.2/pdf-preview.vue?noext'
     }
 });
 
