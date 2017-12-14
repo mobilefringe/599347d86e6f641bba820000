@@ -1,5 +1,5 @@
 <template>
-    <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
+    <div class=" page_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across padding_top_40">
             <div class="row">
                 <div class="col-md-5">
