@@ -65,6 +65,17 @@ define([], function () {
       ]
     },
     {
+      path: '/contact_us',
+      component: view('default'),
+      children: [
+        {
+          path: '',
+          component: view('contact_us'),
+          name: 'contactUs'
+        }
+      ]
+    },
+    {
       path: '/404',
       name: '404',
       component: view('notfoundcomponent')
