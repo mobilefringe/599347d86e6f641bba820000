@@ -8,7 +8,7 @@
                         <div class="promo_list_img_container">
                             <!--<a :href="promo.image_url" target="_blank">-->
                             <img :src="promo.image_url" class="promo_list_img" v-if="_.includes(promo.image_url,'missing')">
-                            <img :src="promo.image_url" class="promo_list_img" >
+                            <img :src="promo.image_url" class="promo_list_img" v-else>
                                 
                             <!--</a>-->
                         </div>
