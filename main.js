@@ -191,8 +191,8 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 'processedStores',
             ]),
             getBanners () {
-                console.log(this.$store.banners);
-                return this.$store.banners;
+                console.log(this.banners);
+                return this.banners;
             },
             getMainBanner () {
                 console.log( _.filter(this.getBanners, { 'position': 1})[0]);
@@ -211,7 +211,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 return this.getTodayHours;
             },
             allStores() {
-                return this.$store.processedStores;
+                return this.processedStores;
             }
         },
         methods: {
