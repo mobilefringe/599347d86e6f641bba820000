@@ -127,6 +127,9 @@
 						</div>
 					</div>
 					<router-view v-cloak v-if="!show_menu"></router-view>
+					<transition name="custom-classes-transition" enter-active-class="fadeIn">
+					    <router-view class="router_content" :locale="locale"></router-view>
+				    </transition>
 					<section class="copyright_footer main_container">
 						<div class="text-center">
 							<div class="footer_menu hidden_phone">
