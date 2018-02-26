@@ -202,9 +202,9 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 return moment().year();
             },
             hours(){
-                var hours = 
-                _.filter(this.hours, function(o) { return o.store_ids==null && o.is_holiday==0 })
-                console.log(hours);
+                // var hours = 
+                // _.filter(this.hours, function(o) { return o.store_ids==null && o.is_holiday==0 })
+                // console.log(hours);
                 return this.getPropertyHours;
             },
             todays_hours () {
