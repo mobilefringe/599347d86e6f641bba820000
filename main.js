@@ -264,8 +264,6 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 //  = payload[0];
             },
             enableStickyNavbar (e) {
-                // console.log("scrolling");
-                // console.log(window.pageYOffset,this.isSticky,window.pageYOffset >= this.isSticky );
                 if (window.pageYOffset >= this.isSticky) {
                     this.stickyMenu = true;
                 } else {
