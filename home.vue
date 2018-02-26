@@ -153,59 +153,59 @@
 </template>
 
 <script>
-  define(["Vue", "vue!today_hours", "vue!search-component"], function(Vue, TodayHoursComponent, SearchComponent) {
-    return Vue.component("home-component", {
-      template: template, // the variable template will be injected
-      data: function() {
-        return {
-          suggestionAttribute: 'name',
-          search: '',
-          success_subscribe : false
-        }
-      },
-      mounted () {
-          this.feature_items;
-          
-      },
-      computed: {
-        ...Vuex.mapGetters([
+    define(["Vue", "vue!today_hours", "vue!search-component"], function(Vue, TodayHoursComponent, SearchComponent) {
+        return Vue.component("home-component", {
+            template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    suggestionAttribute: 'name',
+                    search: '',
+                    success_subscribe: false
+                }
+            },
+            mounted() {
+                this.feature_items;
+
+            },
+            computed: {
+                ...Vuex.mapGetters([
                     'property',
                     'timezone',
                     'processedStores'
                 ]),
-        feature_items(){
-            console.log(this.$store.state.results);
-            var features = _.slice(this.$store.state.results.feature_items, [start=0], [end=3]);
-            // _.forEach(features, function(value, key) {
-            // //   console.log(key);
-            // if(key == 1){
-            //     value.padding_class = "padding_30 col-md-4 home_shortcut"
-            // }
-            // else {
-            //     value.padding_class = "padding_tb_30 col-md-4 home_shortcut"
-            // }
-            // });
-            return features;
-        },
-        full_address() {
-            return this.property.address1 +''+this.property.city +''+ this.property.country +''+this.property.province_state +''+this.property.province_state
-            
-        }
-      },
-      methods: {
-        loadData: async function() {
-            try {
-                // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                let results = await Promise.all([this.$store.dispatch("getData", "feature_items"), this.$store.dispatch("getData", "popups")]);
-                return results;
-            } catch (e) {
-                console.log("Error loading data: " + e.message);
+                feature_items() {
+                    console.log(this.$store.state.results);
+                    var features = _.slice(this.$store.state.results.feature_items, [start = 0], [end = 3]);
+                    // _.forEach(features, function(value, key) {
+                    // //   console.log(key);
+                    // if(key == 1){
+                    //     value.padding_class = "padding_30 col-md-4 home_shortcut"
+                    // }
+                    // else {
+                    //     value.padding_class = "padding_tb_30 col-md-4 home_shortcut"
+                    // }
+                    // });
+                    return features;
+                },
+                full_address() {
+                    return this.property.address1 + '' + this.property.city + '' + this.property.country + '' + this.property.province_state + '' + this.property.province_state
+
+                }
+            },
+            methods: {
+                loadData: async function() {
+                    try {
+                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        let results = await Promise.all([this.$store.dispatch("getData", "feature_items"), this.$store.dispatch("getData", "popups")]);
+                        return results;
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
+                onOptionSelect(option) {
+                    console.log('Selected option:', option)
+                }
             }
-        },
-        onOptionSelect(option) {
-          console.log('Selected option:', option)
-        }
-      }
+        })
     })
-  })
 </script>
