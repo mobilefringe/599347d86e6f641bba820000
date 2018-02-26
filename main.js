@@ -1,6 +1,6 @@
 require.config({
     paths: {
-        'Vue': 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.1/vue',
+        'Vue': 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue',
         'vue_router': 'https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.7.0/vue-router.min',
         'axios': 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min',
         'jquery': 'https://code.jquery.com/jquery-3.2.1.min',
@@ -16,17 +16,31 @@ require.config({
         'js-cookie': 'https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min',
         'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
         'Fuse': 'https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min',
-        'store': 'https://mmvue.codecloudapp.com/store',
+        'datastore_mutation_types': 'https://mmvue.codecloudapp.com/datastore_mutation_types',
+        'datastore_getters': 'https://mmvue.codecloudapp.com/datastore_getters',
+        'datastore_actions': 'https://mmvue.codecloudapp.com/datastore_actions',
+        'datastore_mutations': 'https://mmvue.codecloudapp.com/datastore_mutations',
+        'datastore': 'https://mmvue.codecloudapp.com/datastore',
         'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
-        'Raphael': 'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min', //'http://mallmaverick.com/javascripts/mapsvg/raphael',
-        'mousewheel': 'https://mallmaverick.com/javascripts/mapsvg/jquery.mousewheel',
-        'mapsvg': 'https://mallmaverick.com/javascripts/mapsvg/mapsvg',
-        'mm_mapsvg': 'https://mmvue.codecloudapp.com/mallmaverick_svgmap',
-    'Fuse': 'https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min',
         'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
         'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext',
-        'svg-map': 'https://crimson.codecloudapp.com/svg_map.vue?noext',
-        'vee-validate' : 'https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate'
+        'slick': 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min',
+        'vue-slick': 'https://mmvue.codecloudapp.com/slick.vue?noext',
+        'vue-select': 'https://cdn.jsdelivr.net/npm/vue-select@2.3.0/dist/vue-select.min',
+        'vue-social-sharing': 'https://cdn.jsdelivr.net/npm/vue-social-sharing@2.3.1/dist/vue-social-sharing.min',
+        'vee-validate' : 'https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate',
+        'v-calendar': 'https://unpkg.com/v-calendar@0.5.1/lib/v-calendar.min',
+        'lightbox': 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min',
+        //png-map dependencies
+        'smooth-zoom' : 'https://codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24',
+        'png-map' : 'https://preview-mmvue.codecloudapp.com/png-map.vue?noext',
+        'vue-simple-spinner': 'https://cdn.jsdelivr.net/npm/vue-simple-spinner@1.2.8/dist/vue-simple-spinner.min',
+        'vue-lazy-load': 'https://unpkg.com/vue-lazyload/vue-lazyload',
+        'masonry' : 'https://cdnjs.cloudflare.com/ajax/libs/masonry/4.0.0/masonry.pkgd.min',
+        'vue-masonry-plugin' : 'https://cdn.jsdelivr.net/npm/vue-masonry@0.10.16/dist/vue-masonry-plugin',
+        'vue-paginate': 'https://cdnjs.cloudflare.com/ajax/libs/vue-paginate/3.5.1/vue-paginate',
+        'loader': 'https://mmvue.codecloudapp.com/loader.vue?noext',
+        
     }
 });
 
