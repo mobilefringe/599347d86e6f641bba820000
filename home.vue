@@ -168,12 +168,7 @@
           
       },
       computed: {
-        property(){
-          return this.$store.getters.getProperty;
-        },
-        processedStores() {
-          return this.$store.getters.processedStores;
-        },
+       
         feature_items(){
             console.log(this.$store.state.results);
             var features = _.slice(this.$store.state.results.feature_items, [start=0], [end=3]);
@@ -195,14 +190,14 @@
       },
       methods: {
         loadData: async function() {
-                try {
-                    // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                    let results = await Promise.all([this.$store.dispatch("getData", "banners"), this.$store.dispatch("getData", "feature_items"), this.$store.dispatch("getData", "promotions"), this.$store.dispatch("getData", "popups"), this.$store.dispatch('LOAD_PAGE_DATA', {url: "http://bonniedoon.mallmaverick.com/api/v2/bonniedoon/social.json"})]);
-                    return results;
-                } catch (e) {
-                    console.log("Error loading data: " + e.message);
-                }
-            },
+            try {
+                // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                let results = await Promise.all([this.$store.dispatch("getData", "banners"), this.$store.dispatch("getData", "feature_items"), this.$store.dispatch("getData", "promotions"), this.$store.dispatch("getData", "popups"), this.$store.dispatch('LOAD_PAGE_DATA', {url: "http://bonniedoon.mallmaverick.com/api/v2/bonniedoon/social.json"})]);
+                return results;
+            } catch (e) {
+                console.log("Error loading data: " + e.message);
+            }
+        },
         onOptionSelect(option) {
           console.log('Selected option:', option)
         }
