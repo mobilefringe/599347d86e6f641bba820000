@@ -1,5 +1,5 @@
 <template>
-	<div class="home_page_container">
+	<div class="home_page_container" v-if="dataLoaded">
 		<div class=" hidden_phone">
 			<div class="row page_container">
 				<div class=" col-md-4 col-xs-4 home_shortcut" v-for="item in feature_items">
