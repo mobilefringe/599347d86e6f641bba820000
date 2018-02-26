@@ -109,21 +109,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 isSticky : 125,
             }
         },
-        created() {
-            // make an async call to the data store to initialize the locale (i.e. it will check if there is a locale value saved in cookie, otherwise it will default to EN)
-          
-            this.$store.dispatch('INITIALIZE_LOCALE');
-          
-            this.$store.dispatch('LOAD_META_DATA');
-    
-            // make an async call to load mall data
-            this.$store.dispatch('LOAD_MALL_DATA', {url:"https://www.mallmaverick.com/api/v4/twinpines/all.json"}).then(response => {
+       created() {
+            this.loadData().then(response => {
                 this.dataLoaded = true;
-            }, error => {
-                console.error("Could not retrieve data from server. Please check internet connection and try again.");
-            });
-            this.$on('switchBanner', function(value){
-                console.log("in parent on banner emit",value);
+                this.locale = "en-ca";
             });
             window.addEventListener('scroll', this.enableStickyNavbar);
         },
