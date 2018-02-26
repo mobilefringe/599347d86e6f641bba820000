@@ -205,7 +205,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 var hours = 
                 _.filter(this.hours, function(o) { return o.store_ids==null && o.is_holiday==0 })
                 console.log(hours);
-                return hours;
+                return this.getPropertyHours;
             },
             todays_hours () {
                 return this.getTodayHours;
