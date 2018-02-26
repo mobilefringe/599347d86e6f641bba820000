@@ -190,8 +190,8 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 'processedStores',
             ]),
             getBanners () {
-                console.log(this.banners);
-                return this.banners;
+                console.log(this.$store.state.);
+                return this.$store.state.;
             },
             getMainBanner () {
                 console.log( _.filter(this.getBanners, { 'position': 1})[0]);
