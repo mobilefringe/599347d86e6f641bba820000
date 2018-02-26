@@ -191,8 +191,8 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 'processedStores',
             ]),
             getBanners () {
-                console.log(this.$store.state.results.banners);
-                return this.$store.state.results.banners;
+                console.log(this.$store.banners);
+                return this.$store.banners;
             },
             getMainBanner () {
                 console.log( _.filter(this.getBanners, { 'position': 1})[0]);
@@ -201,23 +201,17 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             copyright_year() {
                 return moment().year();
             },
-            property(){
-                return this.$store.getters.getProperty;
-            },
             hours(){
                 var hours = 
-                _.filter(this.$store.state.results.hours, function(o) { return o.store_ids==null && o.is_holiday==0 })
+                _.filter(this.hours, function(o) { return o.store_ids==null && o.is_holiday==0 })
                 console.log(hours);
                 return hours;
             },
             todays_hours () {
-                return this.$store.getters.getTodayHours;
-            },
-            timezone () {
-                return this.$store.getters.getTimezone;
+                return this.$store.getTodayHours;
             },
             allStores() {
-                return this.$store.getters.processedStores;
+                return this.$store.processedStores;
             }
         },
         methods: {
