@@ -152,7 +152,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue!today_hours", "vue!search-component"], function(Vue,Vuex, TodayHoursComponent, SearchComponent) {
+    define(["Vue", "vuex","vue!search-component"], function(Vue,Vuex, SearchComponent) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             data: function() {
