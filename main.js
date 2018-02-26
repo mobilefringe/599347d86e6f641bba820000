@@ -208,7 +208,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 return hours;
             },
             todays_hours () {
-                return this.$store.getTodayHours;
+                return this.getTodayHours;
             },
             allStores() {
                 return this.$store.processedStores;
