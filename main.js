@@ -46,7 +46,7 @@ require.config({
     }
 });
 
-require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'vue!search-component','vue-moment','jquery'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, SearchComponent, vueMoment, $) {
+require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vue-i18n', 'locales', 'moment', 'vue-meta', "moment-timezone", "vue-moment", 'vue-social-sharing', 'vue-select', "vue!search-component", 'vue-fullcalendar','vue-simple-spinner','vue!loader.vue'], function(Vue, Vuex, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, tz, VueMoment, SocialSharing, VueSelect, SearchComponent, FullCalendar, Spinner, Loader) {
     Vue.use(Meta);
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
