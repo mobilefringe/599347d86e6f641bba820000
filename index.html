@@ -51,173 +51,171 @@
 						</div>
 					</div>
 				</transition>
-				<div class="">
-					<div :class="{sticky : stickyMenu}">
-						<div class="menu page_container" id="menu_bar">
-							<router-link class="store_logo pull-left" to="/" >{{property.name}}</router-link>
-							<ul class="menu_list pull-right hidden_phone" >
-								<li v-for="item in menu_items">
-									<router-link :to="item.href" active-class="active" exact :id="item.name">
-										{{ item.name }}
-									</router-link>
-								</li>
-							</ul>
-						</div>
-						<hr class="hr_bold"/>
-						<div class="sub_menu_bar page_container relative">
-							<div class="today_hour">
-								OPEN TODAY
-								{{todays_hours.open_time | moment("h:mmA", timezone)}} - {{todays_hours.close_time | moment("h:mmA", timezone)}}
-							</div>
-							<div class="social_links pull-right hidden_phone">
-								<span class="social_link_box pinterest_link"></span>
-								<span class="social_link_box twitter_link"></span>
-								<span class="social_link_box facebook_link"></span>
-								<span class="social_link_box gplus_link"></span>
-								<span class="social_link_box instagram_link"></span>
-							</div>
-							<div class="search pull-right hidden_phone">
-								<search-component :list="allStores" placeholder="Search For Stores" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect">
-									<template slot="item" scope="option">
-										<article class="media">
-											<p>
-												<strong>{{ option.data.name }}</strong>
-											</p>
-										</article>
-									</template>
-								</search-component>
-							</div>
-							<img @click="show_menu = !show_menu ; " src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/menu Button 2x.png" class="open_menu visible_phone menu-icon" alt="open menu" id="menu-icon">
-						</div>
-						<hr/>
+				<div :class="{sticky : stickyMenu}">
+					<div class="menu page_container" id="menu_bar">
+						<router-link class="store_logo pull-left" to="/" >{{property.name}}</router-link>
+						<ul class="menu_list pull-right hidden_phone" >
+							<li v-for="item in menu_items">
+								<router-link :to="item.href" active-class="active" exact :id="item.name">
+									{{ item.name }}
+								</router-link>
+							</li>
+						</ul>
 					</div>
-					<div id="menu_page" v-if="show_menu" class="visible_phone">
-						<div class="menu_page_content">
-							<div class="menu_btn_holder">
-								<div v-for="item in menu_items" class="relative menu_btns">
-									<router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
-										<a>
-										<label :class="item.class_list" @click="show_menu = !show_menu" :id="item.name">{{ item.name }}</label>
-										</a>
-									</router-link>
-									<hr class="menu_hover"/>
-								</div>
+					<hr class="hr_bold"/>
+					<div class="sub_menu_bar page_container relative">
+						<div class="today_hour">
+							OPEN TODAY
+							{{todays_hours.open_time | moment("h:mmA", timezone)}} - {{todays_hours.close_time | moment("h:mmA", timezone)}}
+						</div>
+						<div class="social_links pull-right hidden_phone">
+							<span class="social_link_box pinterest_link"></span>
+							<span class="social_link_box twitter_link"></span>
+							<span class="social_link_box facebook_link"></span>
+							<span class="social_link_box gplus_link"></span>
+							<span class="social_link_box instagram_link"></span>
+						</div>
+						<div class="search pull-right hidden_phone">
+							<search-component :list="allStores" placeholder="Search For Stores" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect">
+								<template slot="item" scope="option">
+									<article class="media">
+										<p>
+											<strong>{{ option.data.name }}</strong>
+										</p>
+									</article>
+								</template>
+							</search-component>
+						</div>
+						<img @click="show_menu = !show_menu ; " src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/menu Button 2x.png" class="open_menu visible_phone menu-icon" alt="open menu" id="menu-icon">
+					</div>
+					<hr/>
+				</div>
+				<div id="menu_page" v-if="show_menu" class="visible_phone">
+					<div class="menu_page_content">
+						<div class="menu_btn_holder">
+							<div v-for="item in menu_items" class="relative menu_btns">
+								<router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
+									<a>
+									<label :class="item.class_list" @click="show_menu = !show_menu" :id="item.name">{{ item.name }}</label>
+									</a>
+								</router-link>
+								<hr class="menu_hover"/>
 							</div>
-							<div class="search">
-								<search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="menuSearch" @select="onOptionSelect" class="large">
-									<template slot="item" scope="option">
-										<article class="media">
-											<p>
-												<strong>{{ option.data.name }}</strong>
-											</p>
-										</article>
-									</template>
-								</search-component>
-							</div>
-							<div class="mobile_contact">
-								<p class="menu_content text_center "> <i class="fa fa-phone" aria-hidden="true"></i> {{property.contact_phone}}</p>
-							</div>
-							<div class="social_links">
-								<span class="social_link_box pinterest_link white"></span>
-								<span class="social_link_box twitter_link white"></span>
-								<span class="social_link_box facebook_link white"></span>
-								<span class="social_link_box gplus_link white"></span>
-								<span class="social_link_box instagram_link white"></span>
-							</div>
+						</div>
+						<div class="search">
+							<search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="menuSearch" @select="onOptionSelect" class="large">
+								<template slot="item" scope="option">
+									<article class="media">
+										<p>
+											<strong>{{ option.data.name }}</strong>
+										</p>
+									</article>
+								</template>
+							</search-component>
+						</div>
+						<div class="mobile_contact">
+							<p class="menu_content text_center "> <i class="fa fa-phone" aria-hidden="true"></i> {{property.contact_phone}}</p>
+						</div>
+						<div class="social_links">
+							<span class="social_link_box pinterest_link white"></span>
+							<span class="social_link_box twitter_link white"></span>
+							<span class="social_link_box facebook_link white"></span>
+							<span class="social_link_box gplus_link white"></span>
+							<span class="social_link_box instagram_link white"></span>
 						</div>
 					</div>
-					<transition name="custom-classes-transition" enter-active-class="fadeIn">
-					    <router-view class="router_content"> </router-view>
-				    </transition>
-					<section class="copyright_footer main_container">
-						<div class="text-center">
-							<div class="footer_menu hidden_phone">
-								<div class="row page_container">
-									<div class="col-md-4 col-xs-4">
-										<p class="menu_header text_left">{{property.name}}</p>
-										<ul class="menu_content text_left">
-											<li v-for="item in menu_items">
-												<router-link :to="item.href" active-class="active" exact :id="item.name">
-													{{ item.name }}
-												</router-link>
-											</li>
-										</ul>
-									</div>
-									<!--<div class="col-md-1 hidden_phone" height="200px" style="margin: 20px 0px;"><div class="vertical_line_left"></div></div>-->
-									<div class="col-md-4 col-xs-4 hidden_phone footer_hours_container">
-										<p class="menu_content text_center">REGULAR HOURS</p>
-										<ul class="menu_content text_center">
-											<li v-for="hour in hours">
-												<span class="pull-left col-md-6"> 
-												{{day_of_the_week(hour.day_of_week)}}
-												</span>
-												<span class="pull-right col-md-6 text-left">
-												{{hour.open_time | moment("h:mma", timezone)}} - {{hour.close_time | moment("h:mma", timezone)}}
-												</span>
-											</li>
-										</ul>
-									</div>
-									<!--<div class="col-md-1 hidden_phone" height="200px" style="margin: 20px 0px;"><div class="vertical_line_right"></div></div>-->
-									<div class="col-md-4 col-xs-4 hidden_phone">
-										<p class="menu_header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
-										<p class="menu_header text_center ">{{property.contact_phone}}</p>
-										<p class="menu_header text_center"><i class="fa fa-map-marker" aria-hidden="true"></i></p>
-										<div class="address">
-											<p class="menu_content text_center">{{property.address1}}</p>
-											<p class="menu_content text_center">{{property.address2}}</p>
-											<p class="menu_content text_center">{{property.city}}, {{property.province_state}}</p>
-											<p class="menu_content text_center">{{property.postal_code}} , {{property.country}}</p>
-										</div>
+				</div>
+				<transition name="custom-classes-transition" enter-active-class="fadeIn">
+				    <router-view class="router_content"> </router-view>
+			    </transition>
+				<section class="copyright_footer main_container">
+					<div class="text-center">
+						<div class="footer_menu hidden_phone">
+							<div class="row page_container">
+								<div class="col-md-4 col-xs-4">
+									<p class="menu_header text_left">{{property.name}}</p>
+									<ul class="menu_content text_left">
+										<li v-for="item in menu_items">
+											<router-link :to="item.href" active-class="active" exact :id="item.name">
+												{{ item.name }}
+											</router-link>
+										</li>
+									</ul>
+								</div>
+								<!--<div class="col-md-1 hidden_phone" height="200px" style="margin: 20px 0px;"><div class="vertical_line_left"></div></div>-->
+								<div class="col-md-4 col-xs-4 hidden_phone footer_hours_container">
+									<p class="menu_content text_center">REGULAR HOURS</p>
+									<ul class="menu_content text_center">
+										<li v-for="hour in hours">
+											<span class="pull-left col-md-6"> 
+											{{day_of_the_week(hour.day_of_week)}}
+											</span>
+											<span class="pull-right col-md-6 text-left">
+											{{hour.open_time | moment("h:mma", timezone)}} - {{hour.close_time | moment("h:mma", timezone)}}
+											</span>
+										</li>
+									</ul>
+								</div>
+								<!--<div class="col-md-1 hidden_phone" height="200px" style="margin: 20px 0px;"><div class="vertical_line_right"></div></div>-->
+								<div class="col-md-4 col-xs-4 hidden_phone">
+									<p class="menu_header text_center phone"><i class="fa fa-phone" aria-hidden="true"></i></p>
+									<p class="menu_header text_center ">{{property.contact_phone}}</p>
+									<p class="menu_header text_center"><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+									<div class="address">
+										<p class="menu_content text_center">{{property.address1}}</p>
+										<p class="menu_content text_center">{{property.address2}}</p>
+										<p class="menu_content text_center">{{property.city}}, {{property.province_state}}</p>
+										<p class="menu_content text_center">{{property.postal_code}} , {{property.country}}</p>
 									</div>
 								</div>
 							</div>
-							<div class="footer_menu_mobile visible_phone">
-								<div class="row page_container">
-									<div class="col-md-12 col-xs-12">
-										<p class="menu_header text_center">{{property.name}}</p>
-										<ul class="menu_content text_left">
-											<li v-for="item in menu_items">
-												<router-link :to="item.href" active-class="active" exact :id="item.name">
-													{{ item.name }}
-												</router-link>
-											</li>
-										</ul>
-										<div class="social_links">
-											<span class="social_link_box pinterest_link white"></span>
-											<span class="social_link_box twitter_link white"></span>
-											<span class="social_link_box facebook_link white"></span>
-											<span class="social_link_box gplus_link white"></span>
-											<span class="social_link_box instagram_link white"></span>
-										</div>
-										<div class="mobile_contact">
-											<p class="menu_content text_center "> <i class="fa fa-phone" aria-hidden="true"></i> {{property.contact_phone}}</p>
-											<p class="menu_content text_center">{{property.address1}}</p>
-										</div>
+						</div>
+						<div class="footer_menu_mobile visible_phone">
+							<div class="row page_container">
+								<div class="col-md-12 col-xs-12">
+									<p class="menu_header text_center">{{property.name}}</p>
+									<ul class="menu_content text_left">
+										<li v-for="item in menu_items">
+											<router-link :to="item.href" active-class="active" exact :id="item.name">
+												{{ item.name }}
+											</router-link>
+										</li>
+									</ul>
+									<div class="social_links">
+										<span class="social_link_box pinterest_link white"></span>
+										<span class="social_link_box twitter_link white"></span>
+										<span class="social_link_box facebook_link white"></span>
+										<span class="social_link_box gplus_link white"></span>
+										<span class="social_link_box instagram_link white"></span>
+									</div>
+									<div class="mobile_contact">
+										<p class="menu_content text_center "> <i class="fa fa-phone" aria-hidden="true"></i> {{property.contact_phone}}</p>
+										<p class="menu_content text_center">{{property.address1}}</p>
 									</div>
 								</div>
 							</div>
-							<div class="footer_text hidden_phone">
-								<p class=" page_container ">
-									<span class="pull-left center_vertical"> 
-									&copy; {{copyright_year}} {{property.name | uppercase}}. All rights reserved. <a>Privacy Policy</a> | <a>Terms & Conditions</a></span>
-									<span class="pull-right center_vertical"> 
-									Powered by <a href="http://mallmaverick.com/" targer="_blank">Mall Maverick</a>
-									</span>
-								</p>
-							</div>
-							<div class="footer_text visible_phone">
-								<!--<p class=" page_container ">-->
-								<span class="center_vertical"> 
+						</div>
+						<div class="footer_text hidden_phone">
+							<p class=" page_container ">
+								<span class="pull-left center_vertical"> 
 								&copy; {{copyright_year}} {{property.name | uppercase}}. All rights reserved. <a>Privacy Policy</a> | <a>Terms & Conditions</a></span>
-								<br/>
-								<span class="center_vertical"> 
+								<span class="pull-right center_vertical"> 
 								Powered by <a href="http://mallmaverick.com/" targer="_blank">Mall Maverick</a>
 								</span>
-								<!--</p>-->
-							</div>
+							</p>
 						</div>
-					</section>
-				</div>
+						<div class="footer_text visible_phone">
+							<!--<p class=" page_container ">-->
+							<span class="center_vertical"> 
+							&copy; {{copyright_year}} {{property.name | uppercase}}. All rights reserved. <a>Privacy Policy</a> | <a>Terms & Conditions</a></span>
+							<br/>
+							<span class="center_vertical"> 
+							Powered by <a href="http://mallmaverick.com/" targer="_blank">Mall Maverick</a>
+							</span>
+							<!--</p>-->
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 		<script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
