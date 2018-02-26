@@ -224,6 +224,20 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             }
         },
         methods: {
+            loadData: async function() {
+                try {
+                    await this.$store.dispatch('initializeApi', {
+                        site: "bonniedoon",
+                        version: "v4"
+                    });
+                    await Promise.all([this.$store.dispatch("getData", "property")]);
+                    // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                    let results = await Promise.all([this.$store.dispatch("INITIALIZE_LOCALE"), this.$store.dispatch("getData", "hours"), this.$store.dispatch("getData", "stores")]);
+                    return results;
+                } catch (e) {
+                    console.log("Error loading data: " + e.message);
+                }
+            },
             // utility method to allow user to change locale value
             changeLocale: function(val) {
                 this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
