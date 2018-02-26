@@ -185,7 +185,6 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             ...Vuex.mapGetters([
                 'property',
                 'timezone',
-                'banners',
                 'getPropertyHours',
                 'getTodayHours',
                 'processedStores',
