@@ -186,7 +186,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 'property',
                 'timezone',
                 'banners',
-                'hours',
+                'getPropertyHours',
                 'getTodayHours',
                 'processedStores',
             ]),
