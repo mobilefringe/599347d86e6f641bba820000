@@ -193,6 +193,14 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                     this.$store.commit('SET_LOCALE', { lang: value })
                 }
             },
+            ...Vuex.mapGetters([
+                'property',
+                'timezone',
+                'banners',
+                'hours',
+                'getTodayHours',
+                'processedStores',
+            ]),
             getBanners () {
                 console.log(this.$store.state.results.banners);
                 return this.$store.state.results.banners;
