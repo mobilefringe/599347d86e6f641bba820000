@@ -168,7 +168,11 @@
           
       },
       computed: {
-       
+        ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedStores'
+                ]),
         feature_items(){
             console.log(this.$store.state.results);
             var features = _.slice(this.$store.state.results.feature_items, [start=0], [end=3]);
