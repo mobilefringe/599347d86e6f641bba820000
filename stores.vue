@@ -74,7 +74,7 @@
                     listMode: "alphabetical",
                     suggestionAttribute: 'name',
                     storeSearch : "",
-                    // filteredStores : [],
+                    /filteredStores : [],
                     map : null
                 }
             },
