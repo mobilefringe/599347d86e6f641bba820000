@@ -167,7 +167,7 @@
                     this.dataLoaded = true;
                     this.popup = this.$store.state.popups[0];
                     
-                    console.log(response);
+                    console.log("response is",response);
                 });
             },
             computed: {
