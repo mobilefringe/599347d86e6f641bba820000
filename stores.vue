@@ -47,10 +47,10 @@
                        
                     </div>
                     <div class="store_list_container">
-                        <div class="store-section" v-for="store in processedStores">
+                        <div class="store-section" v-for="store in filteredStores">
                             <a @click="dropPin(store)">{{store.name}}</a>
                         </div>
-                        <div v-if="processedStores.length <= 0">
+                        <div v-if="filteredStores.length <= 0">
                             No stores avalaible.
                         </div>
                     </div>
