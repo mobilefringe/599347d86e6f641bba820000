@@ -157,7 +157,6 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    suggestionAttribute: 'name',
                     success_subscribe: false
                 }
             },
