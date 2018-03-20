@@ -74,7 +74,7 @@
                     listMode: "alphabetical",
                     suggestionAttribute: 'name',
                     storeSearch : "",
-                    // processedStores : [],
+                    // filteredStores : [],
                     map : null
                 }
             },
@@ -124,10 +124,10 @@
                 },
                 filterStores (letter) {
                     if(letter == "#"){
-                        this.processedStores = _.filter(this.allStores, function(o) { return _.inRange(_.toNumber(o.name[0]), -1, 10); });
+                        this.filteredStores = _.filter(this.processedStores, function(o) { return _.inRange(_.toNumber(o.name[0]), -1, 10); });
                     }
                     else {
-                        this.processedStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
+                        this.filteredStores = _.filter(this.processedStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
                     }
                     // console.log(this.processedStores);
                 },
