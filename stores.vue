@@ -110,7 +110,7 @@
                 onOptionSelect(option) {
                     console.log('Selected option:', option);
                     this.dropPin(option);
-                    this.processedStores = this.allStores;
+                    // this.processedStores = this.allStores;
                     
                 },
                 updateSVGMap (map) {
