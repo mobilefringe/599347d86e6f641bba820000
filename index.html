@@ -30,7 +30,7 @@
 										{{ item.name }}
 									</router-link>
 								</div>
-								<search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="bannerSearch" @select="onOptionSelect" class="bannerSearch large">
+								<search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="bannerSearch" @select="onOptionSelect" class="bannerSearch large" :key="01">
 									<template slot="item" scope="option" class="manual">
 										<article class="media">
 											<p>
