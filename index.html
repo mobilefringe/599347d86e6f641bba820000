@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="/style.css">
 	</head>
 	<body>
-		<div id="app" v-cloak v-if="dataLoaded" @resize="checkWidth()">
+		<div id="app" v-cloak @resize="checkWidth()">
 			<loader v-if="!dataLoaded"></loader>
 			<div class="main_content_container" v-if="dataLoaded">
 				<transition name="custom-classes-transition" enter-active-class="animated slideInDown">
