@@ -152,13 +152,12 @@
 </template>
 
 <script>
-    define(["Vue", "vuex","vue!search-component"], function(Vue, Vuex, SearchComponent) {
+    define(["Vue", "vuex"], function(Vue, Vuex) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
                     suggestionAttribute: 'name',
-                    search: '',
                     success_subscribe: false
                 }
             },
@@ -203,9 +202,6 @@
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-                },
-                onOptionSelect(option) {
-                    console.log('Selected option:', option)
                 }
             }
         })
