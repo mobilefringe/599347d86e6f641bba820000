@@ -74,7 +74,7 @@
                     listMode: "alphabetical",
                     suggestionAttribute: 'name',
                     storeSearch : "",
-                    processedStores : [],
+                    // processedStores : [],
                     map : null
                 }
             },
@@ -82,7 +82,7 @@
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
             },
             mounted () {
-                this.processedStores = this.allStores;
+                // this.processedStores = this.allStores;
             },
             computed: {
                 ...Vuex.mapGetters([
