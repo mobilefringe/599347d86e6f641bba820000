@@ -149,7 +149,6 @@
                     'storesByCategoryName',
                     'findCategoryById',
                     'findCategoryByName',
-                    'findRepoByName'
 
                 ]),
                 getSVGurl () {
