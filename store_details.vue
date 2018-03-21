@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-6">
                 <div class="map_container ">
-                    <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl" ></svg-map>
+                    <mapplic-map ref="mapplic_ref" :height="300" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="[currentStore]" :floorlist="floorList" :svgWidth="2000" :svgHeight="2000" tooltiplabel="Info" action="none" :showPin="true" @updateMap="updateMap" :key="currentStore.id"></mapplic-map>
                 </div>
             </div>
             <div class="col-md-3">
