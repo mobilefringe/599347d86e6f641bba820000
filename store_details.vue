@@ -129,16 +129,25 @@
                 }
             },
             methods: {
-                updateSVGMap (map) {
-                    this.map = map;
-                    console.log("this",this);
+                loadData: async function() {
+                    try {
+                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        let results = await Promise.all([this.$store.dispatch("getData","promotions"), this.$store.dispatch("getData", "jobs")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
                 },
-                dropPin () {
-                    console.log(this.currentStore.svgmap_region);
-                    // this.svgMapRef.hideMarkers();
-                    this.svgMapRef.addMarker(this.currentStore,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
-                    this.svgMapRef.setViewBox(this.currentStore)
-                }   
+                updateCurrentStore (id) {
+                    this.currentStore = this.findStoreBySlug(id);
+                    if (this.currentStore === null || this.currentStore === undefined){
+                        this.$router.replace({ name: '404'});
+                    }
+                },
+                updateMap () {
+                    console.log("store details update", this.$refs.mapplic_ref);
+                    this.$refs.mapplic_ref.showLocation(this.currentStore.svgmap_region);
+                    this.$refs.mapplic_ref.addActiveClass(this.currentStore.svgmap_region);
+                }
             }
         });
     });
