@@ -93,11 +93,8 @@
                 });
             },
             watch : {
-                map : function (){
-                    setTimeout(function () {
-                        console.log(this);
-                        this.dropPin();
-                      }, 500);
+                $route : function () {
+                    this.updateCurrentStore(this.$route.params.id);
                 },
                 currentStore : function (){
                     console.log("currentStore promo",this.currentStore );
