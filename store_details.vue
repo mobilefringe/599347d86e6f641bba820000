@@ -86,27 +86,11 @@
                     success_subscribe : false
                 }
             },
-            beforeRouteEnter (to, from, next) {
-                next(vm => {
-                    // access to component instance via `vm`
-                    vm.currentStore = vm.findStoreBySlug(to.params.id);
-                    if (vm.currentStore === null || vm.currentStore === undefined){
-                        vm.$router.replace({ name: '404'});
-                    }
-                })
-            },
-            beforeRouteUpdate (to, from, next) {
-                console.log(this);
-                this.currentStore = this.findStoreBySlug(to.params.id);
-                if (this.currentStore === null || this.currentStore === undefined){
-                    this.$router.replace({ name: '404'});
-                }
-            },
             created (){
-                window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
-            },
-            mounted () {
-                
+                this.loadData().then(response => {
+                    this.dataLoaded = true;
+                    this.updateCurrentStore(this.id);
+                });
             },
             watch : {
                 map : function (){
