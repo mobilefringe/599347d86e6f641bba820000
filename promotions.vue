@@ -84,7 +84,7 @@
             //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
             //     }
             // });
-          return this.$store.getters.processedPromos;
+          return this.processedPromos;
         },
         timezone () {
           return this.$store.getters.getTimezone;
