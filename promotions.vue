@@ -70,6 +70,12 @@
     return Vue.component("promos-component", {
       template: template, // the variable template will be injected
       computed: {
+          ...Vuex.mapGetters([
+                'property',
+                'timezone',
+                'processedPromos',
+                'findRepoByName',
+            ]),
         promotions() {
             // var promos = this.$store.getters.processedPromos;
             // console.log(promos);
