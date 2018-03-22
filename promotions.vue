@@ -69,6 +69,18 @@
     Vue.use(Meta);
     return Vue.component("promos-component", {
       template: template, // the variable template will be injected
+      created() {
+                this.loadData().then(response => {
+                    this.dataloaded = true;
+                    
+                    var temp_repo = this.findRepoByName('Promos Banner');
+                    if(temp_repo) {
+                        this.promoBanner = temp_repo.images[0];
+                    }
+                    console.log(this.promoBanner);
+                    this.promos = this.promotions;
+                });
+            },
       computed: {
           ...Vuex.mapGetters([
                 'property',
