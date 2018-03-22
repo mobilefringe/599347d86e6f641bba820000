@@ -85,13 +85,30 @@
                     'processedPromos'
                 ]),
                 promotions() {
-                    // var promos = this.$store.getters.processedPromos;
-                    // console.log(promos);
-                    // _.forEach(promos, function (val) {
-                    //     if(val.description.length >50) {
-                    //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
-                    //     }
-                    // });
+                    var vm = this;
+                    var temp_promo = [];
+                    _.forEach(this.processedPromos, function(value, key) {
+                        today = moment().tz(vm.timezone);
+                        webDate = moment(value.show_on_web_date).tz(vm.timezone)
+                        if (today.format('DMY') >= webDate.format('DMY')) {
+                            value.description_short = _.truncate(value.description, {
+                                'length': 150
+                            });
+                            value.description_short_2 = _.truncate(value.description_2, {
+                                'length': 150
+                            });
+                            if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
+                                value.store.image_url = vm.operty.default_logo_url;
+                            }
+                            else if (value.store == null || value.store == undefined) {
+                                value.store = {};
+                                value.store.image_url =  vm.property.default_logo_url;
+                            }
+                            temp_promo.push(value);
+                        }
+                    });
+                    _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
+                    return temp_promo;
                     return this.processedPromos;
                 }
             },
