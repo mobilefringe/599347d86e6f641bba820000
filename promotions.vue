@@ -11,7 +11,7 @@
                                 
                             <!--</a>-->
                         </div>
-                        <div>
+                        <div class="promo_info_container">
                             <p class="sub_title">{{ promo.store.name }}</p>
                             <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
                             <p class="description_text">{{ promo.name }}</p>
