@@ -73,8 +73,7 @@
           ...Vuex.mapGetters([
                 'property',
                 'timezone',
-                'processedPromos',
-                'findRepoByName',
+                'processedPromos'
             ]),
         promotions() {
             // var promos = this.$store.getters.processedPromos;
