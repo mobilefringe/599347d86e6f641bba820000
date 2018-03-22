@@ -68,43 +68,43 @@
 </style>
 
 <script>
-  define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, Vuex, moment, tz, VueMoment, Meta) {
-    Vue.use(Meta);
-    return Vue.component("promos-component", {
-      template: template, // the variable template will be injected
-      created() {
-            this.loadData().then(response => {
-                this.dataloaded = true;
-                
-            });
-        },
-      computed: {
-          ...Vuex.mapGetters([
-                'property',
-                'timezone',
-                'processedPromos'
-            ]),
-        promotions() {
-            // var promos = this.$store.getters.processedPromos;
-            // console.log(promos);
-            // _.forEach(promos, function (val) {
-            //     if(val.description.length >50) {
-            //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
-            //     }
-            // });
-          return this.processedPromos;
-        }
-      },
-      methods: {
-        loadData: async function() {
-            try {
-                // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                let results = await Promise.all([this.$store.dispatch("getData", "promotions")]);
-            } catch (e) {
-                console.log("Error loading data: " + e.message);
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, Vuex, moment, tz, VueMoment, Meta) {
+        Vue.use(Meta);
+        return Vue.component("promos-component", {
+            template: template, // the variable template will be injected
+            created() {
+                this.loadData().then(response => {
+                    this.dataloaded = true;
+
+                });
+            },
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedPromos'
+                ]),
+                promotions() {
+                    // var promos = this.$store.getters.processedPromos;
+                    // console.log(promos);
+                    // _.forEach(promos, function (val) {
+                    //     if(val.description.length >50) {
+                    //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
+                    //     }
+                    // });
+                    return this.processedPromos;
+                }
+            },
+            methods: {
+                loadData: async function() {
+                    try {
+                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        let results = await Promise.all([this.$store.dispatch("getData", "promotions")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
             }
-        },
-      }
+        });
     });
-  });
 </script>
