@@ -79,16 +79,39 @@
         }
       },
       computed: {
-        findPromoBySlug () {
-          return this.$store.getters.findPromoBySlug;
-        },
-        timezone() {
-          return this.$store.getters.getTimezone;
-        },
-        property (){
-            return this.$store.getters.getProperty;
-        }
-      }
+                ...Vuex.mapGetters([
+                    'property',
+                    'processedPromos',
+                    'findPromoBySlug',
+                    'findPromoById',
+                    'timezone',
+                    'findRepoByName',
+                    'findHourById'
+                ]),
+                allPromos() {
+                    return this.processedPromos;
+                },
+            },
+            methods: {
+                updateCurrentPromo (id) {
+                    this.currentPromo = this.findPromoBySlug(id);
+                    if (this.currentPromo === null || this.currentPromo === undefined){
+                        this.$router.replace('/');
+                    }
+                },
+                loadData: async function() {
+                    try {
+                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        let results = await Promise.all([this.$store.dispatch("getData", "promotions"), this.$store.dispatch("getData", "repos")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
+                shareURL(slug){
+                    var share_url = "http://bramaleacitycentre.com/promotions/" + slug;
+                    return share_url;
+                },
+            }
     });
   });
 </script>
