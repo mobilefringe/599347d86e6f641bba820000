@@ -54,49 +54,48 @@
 </template>
 
 <script>
-  define(["Vue", "vuex","moment", "moment-timezone", "vue-moment"], function(Vue, Vuex, moment, tz, VueMoment) {
-    return Vue.component("promo-details-component", {
-      template: template, // the variable template will be injected,
-      data: function() {
-        return {
-          currentPromo: null,
-          success_subscribe : false
-        }
-      },
-      beforeRouteUpdate(to, from, next) {
-          
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment"], function(Vue, Vuex, moment, tz, VueMoment) {
+        return Vue.component("promo-details-component", {
+            template: template, // the variable template will be injected,
+            data: function() {
+                return {
+                    currentPromo: null,
+                    success_subscribe: false
+                }
+            },
+            beforeRouteUpdate(to, from, next) {
+
                 next();
                 this.currentPromo = this.findPromoBySlug(to.params.id);
-                    if (this.currentPromo === null || this.currentPromo === undefined){
-                        this.$router.replace('/');
-                    }
+                if (this.currentPromo === null || this.currentPromo === undefined) {
+                    this.$router.replace('/');
+                }
             },
-            created(){
+            created() {
                 this.loadData().then(response => {
                     this.updateCurrentPromo(this.id);
                     var temp_repo = this.findRepoByName('Promos Banner');
-                    if(temp_repo) {
+                    if (temp_repo) {
                         this.promoBanner = temp_repo.images[0];
                     }
                     console.log(this.promoBanner);
                     this.promos = this.promotions;
                 });
             },
-      watch: {
-                currentPromo : function (){
-                    if(this.currentPromo != null) {
+            watch: {
+                currentPromo: function() {
+                    if (this.currentPromo != null) {
                         console.log(this.currentPromo.store);
                         if (this.currentPromo.store != null && this.currentPromo.store != undefined && _.includes(this.currentPromo.store.image_url, 'missing')) {
                             this.currentPromo.store.image_url = this.property.default_logo_url;
-                        }
-                        else if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
+                        } else if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
                             this.currentPromo.store = {};
                             this.currentPromo.store.image_url = this.property.default_logo_url;
                         }
                     }
                 }
             },
-      computed: {
+            computed: {
                 ...Vuex.mapGetters([
                     'property',
                     'processedPromos',
@@ -111,9 +110,9 @@
                 },
             },
             methods: {
-                updateCurrentPromo (id) {
+                updateCurrentPromo(id) {
                     this.currentPromo = this.findPromoBySlug(id);
-                    if (this.currentPromo === null || this.currentPromo === undefined){
+                    if (this.currentPromo === null || this.currentPromo === undefined) {
                         this.$router.replace('/');
                     }
                 },
@@ -125,11 +124,11 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                shareURL(slug){
+                shareURL(slug) {
                     var share_url = "http://bramaleacitycentre.com/promotions/" + slug;
                     return share_url;
                 },
             }
+        });
     });
-  });
 </script>
