@@ -58,6 +58,29 @@
         Vue.use(Meta);
         return Vue.component("promos-component", {
             template: template, // the variable template will be injected
+            data: {
+                return {
+                    slickOptions: {
+                        dots: false,
+                        arrows: false,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        responsive: [
+                            {
+                              breakpoint: 1024,
+                              settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1
+                              }
+                            },
+                        ]
+                    },
+                }
+            }
             created() {
                 this.loadData().then(response => {
                     this.dataloaded = true;
