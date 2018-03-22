@@ -35,7 +35,6 @@
 				        </router-link>
 				</slick>
 			</div>
-            
         </div>
         <hr/>
         <div class="row go_to_directory text_center">
@@ -69,7 +68,8 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'processedPromos'
+                    'processedPromos',
+                    'processedStores'
                 ]),
                 promotions() {
                     var vm = this;
