@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm-4 ">
                     <div class="promo_img_container">
-                        <img :src="currentPromo.image_url" class="promo_img">
+                        <img :src="currentPromo.image_url" class="promo_img image">
                     </div>
                 </div>
                 <div class="col-sm-8 text_left promo_text_container">
