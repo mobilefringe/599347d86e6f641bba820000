@@ -2,13 +2,13 @@
     <div>
          <div class="page_container padding_30" v-if="currentPromo">
             <div class="row">
-                <div class="col-md-4 ">
+                <div class="col-sm-4 ">
                     <div class="promo_img_container">
                         <img :src="currentPromo.image_url" class="promo_img">
                     </div>
                 </div>
-                <div class="col-md-8 text_left promo_text_container">
-                    <div class="col-md-9">
+                <div class="col-sm-8 text_left promo_text_container">
+                    <div class="col-sm-9">
                         <p class="title all_caps">
                             <router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link>
                         </p>
@@ -17,10 +17,10 @@
                         <p class="promo_dates"> {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
                         <br/>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <img :src="currentPromo.store.store_front_url_abs" class="promo_store_logo" alt="">
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                         <p class="description_text"> {{currentPromo.description}}</p>
                     </div>
                     
@@ -30,14 +30,14 @@
         <hr/>
         <div class="page_container">
             <div class="row  newsletter_subscription" style="margin:30px auto">
-                <div class="col-md-8 text_left">
+                <div class="col-sm-8 text_left">
                     <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
                     <p class="subscribe_text">
                         For Events, Promotions and Shopping Centre News<br/>
                         Disclaimer: You will receive Promotion E-mails.
                     </p>
                 </div>
-                 <div class="newsletter_div col-md-4 ">
+                 <div class="newsletter_div col-sm-4 ">
                     <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form" class="pull-right">
                         <input name="cm-ithdul-ithdul" type="text" placeholder="Enter E-mail Here" class="newsletter_control" required /><br/>
                         <button class="newsletter_btn animated_btn all_caps ">Submit</button>
