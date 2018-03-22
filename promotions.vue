@@ -3,7 +3,7 @@
         <div class="page_container"> 
             <div class="page_title"> Promotions </div>
             <div class="row">
-                <div class="col-md-3" v-for="promo in promotions">
+                <div class="col-sm-3" v-for="promo in promotions">
                     <div class="promo_list_container">
                         <div class="promo_list_img_container">
                             <!--<a :href="promo.image_url" target="_blank">-->
@@ -25,22 +25,22 @@
         <div class="page_container">
             <div class="new_stores page_container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-sm-2">
                         <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100892000/Peoples.png" class="" alt="">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-sm-2">
                         <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100902000/Roots.png" class="" alt="">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-sm-2">
                         <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100908000/AA.png" class="" alt="">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-sm-2">
                         <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100918000/UNQ.png" class="" alt="">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-sm-2">
                         <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100932000/Best Buy.png" class="" alt="">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-sm-2">
                         <img src="http://assets.codecloudapp.com/sites/599347d86e6f641bba820000/image/png/1506100952000/Indigo.png" class="" alt="">
                     </div>
                 </div>
