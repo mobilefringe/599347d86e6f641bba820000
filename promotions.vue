@@ -85,9 +85,6 @@
             //     }
             // });
           return this.processedPromos;
-        },
-        timezone () {
-          return this.$store.getters.getTimezone;
         }
       }
     });
