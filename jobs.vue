@@ -96,7 +96,7 @@
                 jobs() {
                     var vm = this;
                     var temp_promo = [];
-                    _.forEach(this.processedPromos, function(value, key) {
+                    _.forEach(this.processedJobs, function(value, key) {
                         today = moment().tz(vm.timezone);
                         webDate = moment(value.show_on_web_date).tz(vm.timezone)
                         if (today.format('DMY') >= webDate.format('DMY')) {
