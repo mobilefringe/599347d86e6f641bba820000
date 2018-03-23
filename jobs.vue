@@ -3,7 +3,7 @@
         <div class="page_container"> 
             <div class="page_title"> Promotions </div>
             <div class="row">
-                <div class="col-sm-3" v-for="promo in promotions">
+                <div class="col-sm-3" v-for="promo in jobs">
                     <div class="promo_list_container">
                         <div class="promo_list_img_container">
                             <!--<a :href="promo.image_url" target="_blank">-->
