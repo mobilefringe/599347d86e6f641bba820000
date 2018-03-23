@@ -87,7 +87,7 @@
             //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
             //     }
             // });
-          return this.$store.getters.processedEvents;
+          return this.processedEvents;
         },
       },
       methods : {
