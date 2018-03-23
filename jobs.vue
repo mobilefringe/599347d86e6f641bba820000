@@ -93,7 +93,7 @@
                     'timezone',
                     'processedJobs'
                 ]),
-                promotions() {
+                jobs() {
                     var vm = this;
                     var temp_promo = [];
                     _.forEach(this.processedPromos, function(value, key) {
