@@ -94,7 +94,7 @@
             },
             methods: {
                 updatecurrentJob(id) {
-                    this.currentJob = this.findEventBySlug(id);
+                    this.currentJob = this.findJobBySlug(id);
                     if (this.currentJob === null || this.currentJob === undefined) {
                         // this.$router.replace('/');
                     }
