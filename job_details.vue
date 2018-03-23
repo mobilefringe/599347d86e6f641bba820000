@@ -86,9 +86,9 @@
             computed: {
                 ...Vuex.mapGetters([
                     'property',
-                    'processedEents',
-                    'findEventBySlug',
-                    'findEventById',
+                    'processedJobs',
+                    'findJobBySlug',
+                    'findJobById',
                     'timezone',
                     'findRepoByName',
                     'findHourById'
