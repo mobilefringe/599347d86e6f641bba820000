@@ -7,15 +7,18 @@
                     <div class="promo_list_container">
                         <div class="promo_list_img_container">
                             <!--<a :href="promo.image_url" target="_blank">-->
-                            <img src="//via.placeholder.com/250x250" class="promo_list_img" v-if="_.includes(promo.image_url,'missing')">
-                            <img :src="promo.image_url" class="promo_list_img" v-else>
+                            <img :src="promo.store.store_front_url_abs" class="promo_list_img image">
                                 
                             <!--</a>-->
                         </div>
-                            <p class="sub_title" v-if="promo.store">{{ promo.store.name }}</p><p class="sub_title" v-else>{{ property.name}}</p>
+                        <div class="promo_info_container">
+                            <p class="sub_title">{{ promo.store.name }}</p>
                             <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
                             <p class="description_text">{{ promo.name }}</p>
-                             <router-link :to="{ name: 'eventDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
+                            
+                        </div>
+                           <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
+                        
                     </div>
                 </div>
             </div> 
