@@ -24,22 +24,6 @@
             </div> 
             
         </div>
-         <hr/>
-        <div class="page_container">
-            <div class="new_stores page_container">
-				<div class="row">
-				</div>
-				<slick ref="slick" :options="slickOptions">
-				        <router-link :to="'/stores/'+store.slug" v-for="store in processedStores">
-				            <img   :src="store.store_front_url_abs">
-				        </router-link>
-				</slick>
-			</div>
-        </div>
-        <hr/>
-        <div class="row go_to_directory text_center">
-            <button class="newsletter_btn animated_btn all_caps ">Store Directory</button>
-        </div>
     </div>
     
 </template>
