@@ -36,7 +36,7 @@
 </template>
 
 <script>
-  define(["Vue", "moment", "moment-timezone", "vue-moment"], function(Vue, moment, tz, VueMoment) {
+  define(["Vue", "vuex","moment", "moment-timezone", "vue-moment"], function(Vue, moment, tz, VueMoment) {
     return Vue.component("promo-details-component", {
       template: template, // the variable template will be injected,
       data: function() {
