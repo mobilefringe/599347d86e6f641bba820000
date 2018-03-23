@@ -60,14 +60,31 @@
                     'findRepoByName',
                 ]),
                 events() {
-                    // var promos = this.$store.getters.processedEvents;
-                    // console.log(this.$store);
-                    // _.forEach(promos, function (val) {
-                    //     if(val.description.length >50) {
-                    //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
-                    //     }
-                    // });
-                    return this.processedEvents;
+                    var vm = this;
+                    var temp_promo = [];
+                    var temp_job = [];
+                    _.forEach(this.processedEvents, function(value, key) {
+                        today = moment().tz(vm.timezone);
+                        webDate = moment(value.show_on_web_date).tz(vm.timezone)
+                        if (today.format('DMY') >= webDate.format('DMY')) {
+                            value.description_short = _.truncate(value.description, {
+                                'length': 150
+                            });
+                            value.description_short_2 = _.truncate(value.description_2, {
+                                'length': 150
+                            });
+                            if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
+                                value.store.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5a8c43eb6e6f641a29020000/image/png/1518554684072/bonniedoonlogo.png";
+                            }
+                            else if (value.store == null || value.store == undefined) {
+                                value.store = {};
+                                value.store.store_front_url_abs =  "//codecloud.cdn.speedyrails.net/sites/5a8c43eb6e6f641a29020000/image/png/1518554684072/bonniedoonlogo.png";
+                            }
+                            temp_promo.push(value);
+                        }
+                    });
+                    _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
+                    return temp_promo;
                 },
             },
             methods: {
