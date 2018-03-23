@@ -28,7 +28,7 @@ define([], function () {
         {
           path: '',
           component: view('promotions'),
-          name: 'storeList'
+          name: 'promoList'
         },
         {
           path: ':id',
