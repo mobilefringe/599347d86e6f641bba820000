@@ -1,0 +1,137 @@
+<template>
+    <div><!-- for some reason if you do not put an outer container div this component template will not render -->
+        <div class="page_container"> 
+            <div class="page_title"> Promotions </div>
+            <div class="row">
+                <div class="col-sm-3" v-for="promo in promotions">
+                    <div class="promo_list_container">
+                        <div class="promo_list_img_container">
+                            <!--<a :href="promo.image_url" target="_blank">-->
+                            <img :src="promo.store.store_front_url_abs" class="promo_list_img image">
+                                
+                            <!--</a>-->
+                        </div>
+                        <div class="promo_info_container">
+                            <p class="sub_title">{{ promo.store.name }}</p>
+                            <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+                            <p class="description_text">{{ promo.name }}</p>
+                            
+                        </div>
+                           <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
+                        
+                    </div>
+                </div>
+            </div> 
+            
+        </div>
+         <hr/>
+        <div class="page_container">
+            <div class="new_stores page_container">
+				<div class="row">
+				</div>
+				<slick ref="slick" :options="slickOptions">
+				        <router-link :to="'/stores/'+store.slug" v-for="store in processedStores">
+				            <img   :src="store.store_front_url_abs">
+				        </router-link>
+				</slick>
+			</div>
+        </div>
+        <hr/>
+        <div class="row go_to_directory text_center">
+            <button class="newsletter_btn animated_btn all_caps ">Store Directory</button>
+        </div>
+    </div>
+    
+</template>
+
+<style>
+  .center{
+    text-align: center
+  }
+  .store-section a{
+    color: #708090;
+  }
+</style>
+
+<script>
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vue!vue-slick'], function(Vue, Vuex, moment, tz, VueMoment, Meta, slick) {
+        Vue.use(Meta);
+        return Vue.component("promos-component", {
+            template: template, // the variable template will be injected
+            data() {
+                return {
+                    slickOptions: {
+                        dots: false,
+                        arrows: false,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        responsive: [
+                            {
+                              breakpoint: 1024,
+                              settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1
+                              }
+                            },
+                        ]
+                    }
+                }
+            },
+            created() {
+                this.loadData().then(response => {
+                    this.dataloaded = true;
+
+                });
+            },
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedPromos',
+                    'processedStores'
+                ]),
+                promotions() {
+                    var vm = this;
+                    var temp_promo = [];
+                    _.forEach(this.processedPromos, function(value, key) {
+                        today = moment().tz(vm.timezone);
+                        webDate = moment(value.show_on_web_date).tz(vm.timezone)
+                        if (today.format('DMY') >= webDate.format('DMY')) {
+                            value.description_short = _.truncate(value.description, {
+                                'length': 150
+                            });
+                            value.description_short_2 = _.truncate(value.description_2, {
+                                'length': 150
+                            });
+                            if (value.store != null && value.store != undefined && _.includes(value.store.store_front_url_abs, 'missing')) {
+                                value.store.store_front_url_abs = vm.operty.default_logo_url;
+                            }
+                            else if (value.store == null || value.store == undefined) {
+                                value.store = {};
+                                value.store.store_front_url_abs =  vm.property.default_logo_url;
+                            }
+                            temp_promo.push(value);
+                        }
+                    });
+                    _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
+                    return temp_promo;
+                    return this.processedPromos;
+                }
+            },
+            methods: {
+                loadData: async function() {
+                    try {
+                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        let results = await Promise.all([this.$store.dispatch("getData", "promotions")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
+            }
+        });
+    });
+</script>
