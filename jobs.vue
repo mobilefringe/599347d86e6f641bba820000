@@ -1,7 +1,7 @@
 <template>
     <div><!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="page_container"> 
-            <div class="page_title"> Promotions </div>
+            <div class="page_title"> Jobs </div>
             <div class="row">
                 <div class="col-sm-3" v-for="promo in jobs">
                     <div class="promo_list_container">
