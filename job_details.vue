@@ -90,8 +90,6 @@
                     'findJobBySlug',
                     'findJobById',
                     'timezone',
-                    'findRepoByName',
-                    'findHourById'
                 ]),
             },
             methods: {
