@@ -22,9 +22,9 @@
                         <p class="promo_dates"> {{currentJob.start_date | moment("MMM D", timezone)}} - {{currentJob.end_date | moment("MMM D", timezone)}}</p>
                         <br/>
                     </div>
-                    <div class="col-md-3" v-if="currentJob.store">
-                        <img :src="currentJob.store.store_front_url_abs" class="promo_store_logo" alt="">
-                    </div>
+                    <!--<div class="col-md-3" v-if="currentJob.store">-->
+                    <!--    <img :src="currentJob.store.store_front_url_abs" class="promo_store_logo" alt="">-->
+                    <!--</div>-->
                     <div class="col-md-12">
                         <p class="description_text"> {{currentJob.description}}</p>
                     </div>
