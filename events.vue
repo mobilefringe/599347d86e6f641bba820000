@@ -68,6 +68,12 @@
         }
       },
       computed: {
+          ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedEvents',
+                    'findRepoByName',
+                ]),
         events() {
             // var promos = this.$store.getters.processedEvents;
             // console.log(this.$store);
