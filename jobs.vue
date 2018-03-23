@@ -81,8 +81,8 @@
                     var vm = this;
                     var temp_promo = [];
                     _.forEach(this.processedJobs, function(value, key) {
-                        today = moment().tz(vm.timezone).format('MM DD YYYY');
-                        webDate = moment(value.show_on_web_date).tz(vm.timezone).format('MM DD YYYY');
+                        today = moment().tz(vm.timezone);
+                        webDate = moment(value.show_on_web_date).tz(vm.timezone);
                         console.log("compare",today, ">=", webDate, (today >= webDate))
                         if (today >= webDate) {
                             value.description_short = _.truncate(value.description, {
