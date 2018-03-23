@@ -91,8 +91,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'processedPromos',
-                    'processedStores'
+                    'processedJobs'
                 ]),
                 promotions() {
                     var vm = this;
