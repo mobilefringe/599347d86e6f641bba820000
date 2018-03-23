@@ -83,7 +83,7 @@
                     _.forEach(this.processedJobs, function(value, key) {
                         today = moment().tz(vm.timezone);
                         webDate = moment(value.show_on_web_date).tz(vm.timezone)
-                        console.log("compare",today.format('D/M/Y'), "to", webDate.format('D/M/Y'), (today.format('D/M/Y') >= webDate.format('D/M/Y')))
+                        console.log("compare",today.format('DD/MM/YYYY'), "to", webDate.format('DD/MM/YYYY'), (today.format('DD/MM/YYYY') >= webDate.format('DD/MM/YYYY')))
                         if (today.format('DMY') >= webDate.format('DMY')) {
                             value.description_short = _.truncate(value.description, {
                                 'length': 150
