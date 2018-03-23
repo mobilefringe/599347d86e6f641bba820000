@@ -5,7 +5,7 @@
                 <div class="col-md-4 ">
                     <div class="promo_img_container">
                         <!--<img :src="currentJob.image_url" class="promo_img">-->
-                        <img :src="currentJob.image_url" class="promo_list_img" v-else>
+                        <img :src="currentJob.image_url" class="promo_list_img">
                     </div>
                 </div>
                 <div class="col-md-8 text_left promo_text_container">
