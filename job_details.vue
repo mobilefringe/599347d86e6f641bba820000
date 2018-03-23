@@ -1,6 +1,6 @@
 <template>
     <div>
-         <div class="page_container padding_30" v-if="currentJob">
+         <div class="page_container padding_tb_30" v-if="currentJob">
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="promo_img_container">
