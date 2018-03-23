@@ -14,7 +14,56 @@
             </div>
             <hr/>
             <div class="row"> 
-                
+                <div class="col-md-12 contact_contents padding_top_20">
+                    <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
+                        <div class="form-group ">
+                            <div class="col-sm-6 col-xs-12 text-left" :class="{'has-error': errors.has('name')}">
+                                <label class="label" for="name">Name</label>
+                                <input v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Name" data-vv-delay="1000">
+                                <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6 col-xs-12 text-left" :class="{'has-error': errors.has('email')}">
+                                <label class="label" for="email">Email</label>
+                                <input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="1000">
+                                <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6 col-xs-12 text-left" :class="{'has-error': errors.has('phone')}">
+                                <label class="label" for="phone">Phone</label>
+                                <input v-model="form_data.phone" v-validate="'required|alpha_dash'" class="form-control" :class="{'input': true}" name="phone" type="phone" placeholder="Phone" data-vv-delay="1000">
+                                <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12 text-left" :class="{'has-error': errors.has('message')}">
+                                <label class="label" for="message">Message</label>
+                                <input v-model="form_data.message" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Message" data-vv-delay="1000">
+                                <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group account-btn text-left m-t-10">
+                            <div class="col-xs-12 text-left">
+                                <button class="newsletter_btn animated_btn" type="submit" :disabled="formSuccess">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                        <span class="sr-only">Success</span>
+                        Thank you for contacting us. A member from our team will contact you shortly.
+                    </div>
+                    <div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        There was an error when trying to submit your request. Please try again later.
+                    </div>
+                    
+                </div>
             </div>
             <div class="padding_top_40"></div>    
         </div>
