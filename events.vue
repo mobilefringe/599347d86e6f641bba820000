@@ -62,7 +62,6 @@
                 events() {
                     var vm = this;
                     var temp_promo = [];
-                    var temp_job = [];
                     _.forEach(this.processedEvents, function(value, key) {
                         today = moment().tz(vm.timezone);
                         webDate = moment(value.show_on_web_date).tz(vm.timezone)
@@ -74,11 +73,11 @@
                                 'length': 150
                             });
                             if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
-                                value.store.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5a8c43eb6e6f641a29020000/image/png/1518554684072/bonniedoonlogo.png";
+                                value.store.image_url = vm.property.default_logo_url;
                             }
                             else if (value.store == null || value.store == undefined) {
                                 value.store = {};
-                                value.store.store_front_url_abs =  "//codecloud.cdn.speedyrails.net/sites/5a8c43eb6e6f641a29020000/image/png/1518554684072/bonniedoonlogo.png";
+                                value.store.image_url =  vm.property.default_logo_url;
                             }
                             temp_promo.push(value);
                         }
