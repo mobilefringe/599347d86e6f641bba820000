@@ -56,7 +56,7 @@
 <script>
     define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vue!vue-slick'], function(Vue, Vuex, moment, tz, VueMoment, Meta, slick) {
         Vue.use(Meta);
-        return Vue.component("promos-component", {
+        return Vue.component("jobs-component", {
             template: template, // the variable template will be injected
             data() {
                 return {
