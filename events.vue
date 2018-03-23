@@ -58,48 +58,48 @@
 </style>
 
 <script>
-  define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, moment, tz, VueMoment, Meta) {
-    Vue.use(Meta);
-    return Vue.component("events-component", {
-      template: template, // the variable template will be injected
-      data: function() {
-        return {
-          success_subscribe : false
-        }
-      },
-      created() {
-            this.loadData().then(response => {
-                this.dataloaded = true;
-            });
-        },
-      computed: {
-      ...Vuex.mapGetters([
-                'property',
-                'timezone',
-                'processedEvents',
-                'findRepoByName',
-            ]),
-        events() {
-            // var promos = this.$store.getters.processedEvents;
-            // console.log(this.$store);
-            // _.forEach(promos, function (val) {
-            //     if(val.description.length >50) {
-            //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
-            //     }
-            // });
-          return this.processedEvents;
-        },
-      },
-      methods : {
-          loadData: async function() {
-                try {
-                    // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                    let results = await Promise.all([this.$store.dispatch("getData", "events"), this.$store.dispatch("getData", "repos")]);
-                } catch (e) {
-                    console.log("Error loading data: " + e.message);
+    define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, moment, tz, VueMoment, Meta) {
+        Vue.use(Meta);
+        return Vue.component("events-component", {
+            template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    success_subscribe: false
                 }
             },
-      }
+            created() {
+                this.loadData().then(response => {
+                    this.dataloaded = true;
+                });
+            },
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedEvents',
+                    'findRepoByName',
+                ]),
+                events() {
+                    // var promos = this.$store.getters.processedEvents;
+                    // console.log(this.$store);
+                    // _.forEach(promos, function (val) {
+                    //     if(val.description.length >50) {
+                    //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
+                    //     }
+                    // });
+                    return this.processedEvents;
+                },
+            },
+            methods: {
+                loadData: async function() {
+                    try {
+                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        let results = await Promise.all([this.$store.dispatch("getData", "events"), this.$store.dispatch("getData", "repos")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
+            }
+        });
     });
-  });
 </script>
