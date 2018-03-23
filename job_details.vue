@@ -5,7 +5,6 @@
                 <div class="col-md-4 ">
                     <div class="promo_img_container">
                         <!--<img :src="currentJob.image_url" class="promo_img">-->
-                        <img src="//via.placeholder.com/250x250" class="promo_list_img" v-if="_.includes(currentJob.image_url,'missing')">
                         <img :src="currentJob.image_url" class="promo_list_img" v-else>
                     </div>
                 </div>
