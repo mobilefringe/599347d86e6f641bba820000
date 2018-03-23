@@ -67,13 +67,23 @@
           success_subscribe : false
         }
       },
+      created() {
+            this.loadData().then(response => {
+                this.dataloaded = true;
+                
+                var temp_repo = this.findRepoByName('Events Banner');
+                if(temp_repo) {
+                    this.promoBanner = temp_repo.images[0];
+                }
+            });
+        },
       computed: {
-          ...Vuex.mapGetters([
-                    'property',
-                    'timezone',
-                    'processedEvents',
-                    'findRepoByName',
-                ]),
+      ...Vuex.mapGetters([
+                'property',
+                'timezone',
+                'processedEvents',
+                'findRepoByName',
+            ]),
         events() {
             // var promos = this.$store.getters.processedEvents;
             // console.log(this.$store);
