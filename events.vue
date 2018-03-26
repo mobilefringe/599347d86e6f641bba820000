@@ -17,13 +17,14 @@
                             <p class="description_text">{{ promo.name }}</p>
                             
                         </div>
-                           <router-link :to="{ name: 'eventDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
+                        <router-link :to="{ name: 'eventDetails', params: { id: promo.slug }}" class="newsletter_btn animated_btn text_center">Read More</router-link>
                         
                     </div>
                 </div>
             </div> 
             
         </div>
+        <subscription-box></subscription-box>
     </div>
     
 </template>
