@@ -71,113 +71,90 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate'], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', 'utility'], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate,Utility) {
         Vue.use(Meta);
         Vue.use(VeeValidate);
         return Vue.component("contact-us-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    dayOfTheWeek : [
-                        "Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-                    ],
-                    currentPage: null,
                     form_data : {},
-                    loginPending: null,
                     formSuccess : false,
                     formError: false,
-                    time: new Date()
+                    validaNum: '',
+                    correctValNum: null,
+                    validNumError: false,
+                    currentPage : null,
+                    pageBanner: null
                 }
             },
-            beforeRouteEnter (to, from, next) {
-                next(vm => {
-                  // access to component instance via `vm`
-                    vm.$store.dispatch('LOAD_PAGE_DATA', {url:vm.property.mm_host + "/pages/twinpines-contact-us.json"}).then(response => {
-                        
-                        vm.currentPage = response.data;
-                        console.log(vm.currentPage);
-                    }, error => {
-                        console.error("Could not retrieve data from server. Please check internet connection and try again.");
-                        vm.$router.replace({ name: '404'});
-                    });
-                })
-            },
-            beforeRouteUpdate (to, from, next) {
-                this.$store.dispatch('LOAD_PAGE_DATA', {url:this.property.mm_host + "/pages/twinpines-contact-us.json"}).then(response => {
-                    // this.dataLoaded = true;
-                    this.currentPage = response.data;
-                    console.log(this.currentPage);
-                }, error => {
-                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
-                    this.$router.replace({ name: '404'});
+            created(){
+                this.loadData().then(response => {
+                    this.currentPage = response[0].data;
+                    var temp_repo = this.findRepoByName('Contact Us Banner');
+                    if(temp_repo) {
+                        this.pageBanner = temp_repo.images[0];
+                    }
+                    // this.pageBanner = this.findRepoByName('Contact Us Banner').images[0];
+                   console.log(this.pageBanner); 
                 });
             },
             mounted () {
-              console.log(this.hours);
-              console.log(this.holidayHours);
+                //creating random validation num 
+                this.correctValNum = Utility.rannumber();//this.rannumber;
+                //ensuring the variables are created in this order for email
+                this.form_data.name = null;
+                this.form_data.email = null;
+                this.form_data.phone = null;
+                this.form_data.subject = this.property.name + ' Contact Us Form';
+                this.form_data.message = null;
             },
             computed: {
-                timezone () {
-                  return this.$store.getters.getTimezone;
-                },
-                property (){
-                    return this.$store.getters.getProperty;
-                },
-                hours () {
-                    return this.$store.getters.getPropertyHours;
-                },
-                holidayHours () {
-                    return this.$store.getters.getPropertyHolidayHours;
-                },
-                reducedHolidays () {
-                    var holidayHours = this.holidayHours;
-                    return _.filter(holidayHours, function(o) { return !o.is_closed; });
-                },
-                closeHolidays () {
-                    var holidayHours = this.holidayHours;
-                    return _.filter(holidayHours, function(o) { return o.is_closed; });
-                },
-                rannumber () {
-                    var rannumber='';
-                    for(ranNum=1; ranNum<=6; ranNum++){
-                      rannumber+=Math.floor(Math.random()*10).toString();
-                    }
-                    return rannumber;
-                }
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'findRepoByName'
+                ]),
             },
             methods: {
                 validateBeforeSubmit() {
                     this.$validator.validateAll().then((result) => {
-                        if (result) {
-                            let errors = this.errors;
-                            console.log("sending form data", this.form_data);
-                            send_data = {};
-                            send_data.url = this.property.mm_host + '/api/v1/contact_us';
-                            send_data.form_data = this.form_data;
-                            this.$store.dispatch("CONTACT_US", send_data).then(res => {
-                                // this.$router.replace({
-                                //     name: 'home'
-                                // })
-                                this.formSuccess = true;
-                            }).catch(error => {
-                                try {
-                                    if (error.response.status == 401) {
-                                        console.log("Data load error: " + error.message);
-                                        this.formError = true;
-                                    } 
-                                    else {
-                                        console.log("Data load error: " + error.message);
-                                        this.formError = true;
-                                    }
+                    if (result && (this.correctValNum === this.validaNum)) {
+                        this.validNumError = false;
+                        let errors = this.errors;
+                        send_data = {};
+                        send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
+                        this.$store.dispatch("CONTACT_US", send_data).then(res => {
+                            this.formSuccess = true;
+                        }).catch(error => {
+                            try {
+                                if (error.response.status == 401) {
+                                    console.log("Data load error: " + error.message);
+                                    this.formError = true;
                                 } 
-                                catch (e) {
+                                else {
                                     console.log("Data load error: " + error.message);
                                     this.formError = true;
                                 }
-                            })
+                            } 
+                            catch (e) {
+                                console.log("Data load error: " + error.message);
+                                this.formError = true;
+                            }
+                        })
                         }
+                    
                     })
-                }
+                },
+                loadData: async function() {
+                    try {
+                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "	/pages/pinecentre-contact-us.json"}),this.$store.dispatch("getData", "repos")]);
+                        return results;
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
             }
         });
     });
