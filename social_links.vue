@@ -1,9 +1,10 @@
 <template>
     <div>
-        <a href="https://www.twitter.com/pinecentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/pinecentre" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/pine_centre_mall" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-         
+        <a href="#"><i class="fa fa-facebook"></i></a>
+    						    <a href="#"><i class="fa fa-twitter"></i></a>
+    						    <a href="#"><i class="fa fa-pinterest"></i></a>
+    						    <a href="#"><i class="fa fa-instagram"></i></a>
+						        <a href="#"><i class="fa fa-google-plus"></i></a>
     </div>
     
 </template>
