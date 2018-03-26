@@ -24,6 +24,7 @@
             </div> 
             
         </div>
+        <subscription-box></subscription-box>
     </div>
     
 </template>
