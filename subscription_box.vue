@@ -23,7 +23,7 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex"], function(Vue, Vuex, Lightbox) {
+    define(["Vue", "vuex"], function(Vue, Vuex) {
         Vue.use(Lightbox);
         return Vue.component("social-links", {
             template: template, // the variable template will be injected,
