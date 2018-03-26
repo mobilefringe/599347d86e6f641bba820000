@@ -27,15 +27,14 @@
         return Vue.component("social-links", {
             template: template, // the variable template will be injected,
             computed: {
-            
-            ...Vuex.mapGetters([
-                'property',
-                'timezone',
-                'banners',
-                'hours',
-                'getTodayHours',
-                'processedStores',
-            ])
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'banners',
+                    'hours',
+                    'getTodayHours',
+                    'processedStores',
+                ])
             },
         });
     });
