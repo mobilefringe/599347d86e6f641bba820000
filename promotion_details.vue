@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        image_url
+        <subscription-box></subscription-box>
     </div>
 </template>
 
