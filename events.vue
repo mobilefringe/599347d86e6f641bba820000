@@ -24,7 +24,7 @@
             </div> 
             
         </div>
-        <subscription-box></subscription-box>
+        <subscription-box class="hidden_ohone"></subscription-box>
     </div>
     
 </template>
