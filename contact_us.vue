@@ -46,7 +46,7 @@
                         </div>
                     
                         <div class="form-group account-btn text-left m-t-10">
-                            <div class="col-xs-12 text-left">
+                            <div class="col-xs-12 contact_us_submit_btn">
                                 <button class="newsletter_btn animated_btn" type="submit" :disabled="formSuccess">Submit</button>
                             </div>
                         </div>
