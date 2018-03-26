@@ -26,6 +26,11 @@
     define(["Vue", "vuex"], function(Vue, Vuex) {
         return Vue.component("subscription-box", {
             template: template, // the variable template will be injected,
+            data () {
+                return {
+                    success_subscribe : false
+                }
+            }
             computed: {
                 ...Vuex.mapGetters([
                     'property',
