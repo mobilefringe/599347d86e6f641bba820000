@@ -36,7 +36,7 @@
                 'getTodayHours',
                 'processedStores',
             ])
-        },
+            },
         });
     });
 </script>
