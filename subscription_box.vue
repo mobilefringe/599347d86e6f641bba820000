@@ -21,10 +21,9 @@
             </div>
         </div>
     </div>
-    
 </template>
 <script>
-    define(["Vue", "vuex", "lightbox"], function(Vue, Vuex, Lightbox) {
+    define(["Vue", "vuex"], function(Vue, Vuex, Lightbox) {
         Vue.use(Lightbox);
         return Vue.component("social-links", {
             template: template, // the variable template will be injected,
