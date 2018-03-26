@@ -26,6 +26,17 @@
     define(["Vue", "vuex"], function(Vue, Vuex) {
         return Vue.component("social-links", {
             template: template, // the variable template will be injected,
+            computed: {
+            
+            ...Vuex.mapGetters([
+                'property',
+                'timezone',
+                'banners',
+                'hours',
+                'getTodayHours',
+                'processedStores',
+            ])
+        },
         });
     });
 </script>
