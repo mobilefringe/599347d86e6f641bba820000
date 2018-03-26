@@ -24,7 +24,7 @@
 </template>
 <script>
     define(["Vue", "vuex"], function(Vue, Vuex) {
-        return Vue.component("subscription-links", {
+        return Vue.component("subscription-box", {
             template: template, // the variable template will be injected,
             computed: {
                 ...Vuex.mapGetters([
