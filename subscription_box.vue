@@ -30,10 +30,6 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'banners',
-                    'hours',
-                    'getTodayHours',
-                    'processedStores',
                 ])
             },
         });
