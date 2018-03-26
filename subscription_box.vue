@@ -1,5 +1,5 @@
 <template>
-    <div class="newsletter_subscription" v-if="show_subscription">
+    <div class="newsletter_subscription">
         <div class="row page_container">
             <div class="col-sm-8 text_left">
                 <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
