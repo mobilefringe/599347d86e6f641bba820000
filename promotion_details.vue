@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div style="padding:20px 0;"></div>
+        image_url
     </div>
 </template>
 
