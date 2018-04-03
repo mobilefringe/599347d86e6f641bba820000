@@ -97,7 +97,7 @@
                     if(this.$route.path == "/") {
                         if( !this.show_menu){
                             this.show_hero_banner = true;
-                            this.$emit('update_menu', id)
+                            this.$emit('update_menu');
                         }
                         else {
                             this.show_hero_banner = false;
