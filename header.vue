@@ -104,7 +104,8 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'getTodayHours'
+                    'getTodayHours',
+                    'processedStores'
                 ]),
                 todays_hours() {
                     return this.getTodayHours;
