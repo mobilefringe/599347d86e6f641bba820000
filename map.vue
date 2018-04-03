@@ -75,7 +75,7 @@
 					    <v-select :options="filteredStores" label="name" :searchable="false" :on-change="dropPin" id="mobile_alpha_list" placeholder="Select a Store"></v-select>
 				    </div>
                     <div class="map_container full_border">
-                        <mapplic-map ref="mapplic_ref" :height="740" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="processedStores" :floorlist="floorList" :svgWidth="2000" :svgHeight="2000" tooltiplabel="Info"></mapplic-map>
+                        <mapplic-map ref="mapplic_ref" :height="400" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="processedStores" :floorlist="floorList" :svgWidth="2000" :svgHeight="2000" tooltiplabel="Info"></mapplic-map>
                     </div>
                 </div>
             </div>
