@@ -95,6 +95,7 @@
                     
                 },
                 show_menu : function () {
+                    this.$emit('update_showmenu');
                     if(this.$route.path == "/") {
                         if( !this.show_menu){
                             this.show_hero_banner = true;
