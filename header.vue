@@ -111,6 +111,18 @@
                     return this.getTodayHours;
                 }
             },
+            methods: {
+                onOptionSelect(option) {
+                console.log('Selected option:', option);
+                this.$router.push("/stores/"+option.slug);
+                $(".bannerSearch .options-list").hide();
+                this.$nextTick(function() {
+                    //clear search when changing routes
+                    this.search = "";
+                    this.menuSearch = "";
+                });
+            },
+            }
             
         });
     });
