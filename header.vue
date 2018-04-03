@@ -77,6 +77,9 @@
                     show_mobile_menu: false,
                     property_logo: "//codecloud.cdn.speedyrails.net/sites/5a9714046e6f644dc3160000/image/png/1520457420000/whitelogo1@2x.png",
                     menu_items: MenuItems,
+                    suggestionAttribute: 'name',
+                    search : "",
+                    menuSearch : "",
                 }
             },
             watch: {
