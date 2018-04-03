@@ -84,6 +84,22 @@
                     menuSearch : "",
                 }
             },
+            watch: {
+                $route: function() {
+                    // hide dropdown when route changes
+                    _.forEach(this.menu_items, function(value, key) {
+                        value.show_sub_menu = false;
+                    });
+                    this.show_mobile_menu = false; //close menu when navigating to new page
+                },
+                show_mobile_menu: function() {
+                    if(this.show_mobile_menu === true){
+                        document.body.classList.add("no-scroll");
+                    } else if (this.show_mobile_menu === false) {
+                        document.body.classList.remove("no-scroll");
+                    }
+                }
+            },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
