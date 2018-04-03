@@ -21,7 +21,7 @@
     			    <social-links></social-links>
     			</div>
     			<div class="search pull-right hidden_phone">
-    				<search-component :list="allStores" placeholder="Search For Stores" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect" :key="02">
+    				<search-component :list="processedStores" placeholder="Search For Stores" :suggestion-attribute="suggestionAttribute" v-model="search" @select="onOptionSelect" :key="02">
     					<template slot="item" scope="option">
     						<article class="media">
     							<p>
