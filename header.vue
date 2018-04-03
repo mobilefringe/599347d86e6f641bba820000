@@ -92,6 +92,7 @@
                         value.show_sub_menu = false;
                     });
                     this.show_mobile_menu = false; //close menu when navigating to new page
+                    this.$emit('update_showmenu');
                 },
                 show_menu : function () {
                     if(this.$route.path == "/") {
