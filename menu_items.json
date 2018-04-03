@@ -1,32 +1,32 @@
 [
     {
-        name: "Stores",
-        id: "stores",
-        class_list: " menu_btn_label",
-        href: "/stores"
+        "name": "Stores",
+        "id": "stores",
+        "class_list": " menu_btn_label",
+        "href": "/stores"
     },
     {
-        name: "Promotions",
-        id: "promotions",
-        class_list: " menu_btn_label",
-        href: "/promotions"
+        "name": "Promotions",
+        "id": "promotions",
+        "class_list": " menu_btn_label",
+        "href": "/promotions"
     },
     {
-        name: "Events",
-        id: "events",
-        class_list: " menu_btn_label",
-        href: "/events"
+        "name": "Events",
+        "id": "events",
+        "class_list": " menu_btn_label",
+        "href": "/events"
     },
     {
-        name: "Jobs",
-        id: "jobs",
-        class_list: " menu_btn_label",
-        href: "/jobs"
+        "name": "Jobs",
+        "id": "jobs",
+        "class_list": " menu_btn_label",
+        "href": "/jobs"
     },
     {
-        name: "Contact Us",
-        id: "contact_us",
-        class_list: " menu_btn_label",
-        href: "/contact_us"
+        "name": "Contact Us",
+        "id": "contact_us",
+        "class_list": " menu_btn_label",
+        "href": "/contact_us"
     }
 ]
