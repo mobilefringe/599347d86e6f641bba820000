@@ -9,12 +9,11 @@
                 </div>
                 <div class="col-md-7 col-sm-7 hidden_phone">
                     <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">
-                </div> 
+            <!--    </div> -->
                 <!--<vue-datepicker-local v-model="time" type="inline"></vue-datepicker-local>-->
-            </div>
-            <hr/>
-            <div class="row"> 
-                <div class="col-md-12 contact_contents padding_top_20">
+            <!--</div>-->
+            <!--<div class="row"> -->
+            <!--    <div class="col-md-12 contact_contents padding_top_20">-->
                     <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12 text-left" :class="{'has-error': errors.has('name')}">
