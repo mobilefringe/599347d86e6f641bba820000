@@ -82,6 +82,7 @@
                     suggestionAttribute: 'name',
                     search : "",
                     menuSearch : "",
+                    show_menu: false,
                 }
             },
             watch: {
