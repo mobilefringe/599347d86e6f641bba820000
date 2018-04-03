@@ -46,17 +46,17 @@
                     <!--        </template>-->
                     <!--    </search-component>-->
                     <!--</div>-->
-                    <div class="search_container ">
-                        <search-component :list="processedStores" placeholder="Search Stores" :suggestion-attribute="suggestionAttribute" v-model="storeSearch" @select="onOptionSelectPhone">
-                            <template slot="item" scope="option">
-                                <article class="media">
-                                    <p>
-                                        <strong>{{ option.data.name }}</strong>
-                                    </p>
-                                </article>
-                            </template>
-                        </search-component>
-                    </div>
+                    <!--<div class="search_container ">-->
+                    <!--    <search-component :list="processedStores" placeholder="Search Stores" :suggestion-attribute="suggestionAttribute" v-model="storeSearch" @select="onOptionSelectPhone">-->
+                    <!--        <template slot="item" scope="option">-->
+                    <!--            <article class="media">-->
+                    <!--                <p>-->
+                    <!--                    <strong>{{ option.data.name }}</strong>-->
+                    <!--                </p>-->
+                    <!--            </article>-->
+                    <!--        </template>-->
+                    <!--    </search-component>-->
+                    <!--</div>-->
                     <div class="store_list_container">
                         <div class="store-section hidden_phone" v-for="store in filteredStores">
                             <a @click="dropPin(store)">{{store.name}}</a>
