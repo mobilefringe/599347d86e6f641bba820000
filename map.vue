@@ -46,10 +46,7 @@
                             </template>
                         </search-component>
                     </div>
-                    <div class=" ">
-                        <router-link to="/map"></router-link>
-                    </div>
-                    <div class="search_container visible_phone">
+                    <div class="search_container ">
                         <search-component :list="processedStores" placeholder="Search Stores" :suggestion-attribute="suggestionAttribute" v-model="storeSearch" @select="onOptionSelectPhone">
                             <template slot="item" scope="option">
                                 <article class="media">
