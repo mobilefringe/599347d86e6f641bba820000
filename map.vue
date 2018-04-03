@@ -35,17 +35,17 @@
             </div>
             <div class="stores_container">
                 <div class="col-md-4 col-sm-4">
-                    <div class="search_container hidden_phone">
-                        <search-component :list="processedStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="storeSearch" @select="onOptionSelect">
-                            <template slot="item" scope="option">
-                                <article class="media">
-                                    <p>
-                                        <strong>{{ option.data.name }}</strong>
-                                    </p>
-                                </article>
-                            </template>
-                        </search-component>
-                    </div>
+                    <!--<div class="search_container hidden_phone">-->
+                    <!--    <search-component :list="processedStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="storeSearch" @select="onOptionSelect">-->
+                    <!--        <template slot="item" scope="option">-->
+                    <!--            <article class="media">-->
+                    <!--                <p>-->
+                    <!--                    <strong>{{ option.data.name }}</strong>-->
+                    <!--                </p>-->
+                    <!--            </article>-->
+                    <!--        </template>-->
+                    <!--    </search-component>-->
+                    <!--</div>-->
                     <div class="search_container ">
                         <search-component :list="processedStores" placeholder="Search Stores" :suggestion-attribute="suggestionAttribute" v-model="storeSearch" @select="onOptionSelectPhone">
                             <template slot="item" scope="option">
