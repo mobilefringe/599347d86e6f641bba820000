@@ -33,7 +33,7 @@
             <!--        <a @click="filterStores('Z')">Z</a>-->
             <!--    </div>-->
             <!--</div>-->
-            <div class="stores_container">
+            <div class="map_container">
                 <!--<div class="col-md-4 col-sm-4">-->
                     <!--<div class="search_container hidden_phone">-->
                     <!--    <search-component :list="processedStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="storeSearch" @select="onOptionSelect">-->
