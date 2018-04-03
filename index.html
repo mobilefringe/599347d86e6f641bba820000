@@ -50,7 +50,7 @@
 						</div>
 					</div>
 				</transition>
-				<header-component @pdate-show-menu="updateShowMenu"></header-component>
+				<header-component @update-show-menu="updateShowMenu"></header-component>
 				<header-component :class="{sticky : stickyMenu}" class="hidden_now"></header-component>
 				<transition name="custom-classes-transition" enter-active-class="fadeIn">
 					<router-view class="router_content"> </router-view>
