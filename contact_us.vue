@@ -61,8 +61,8 @@
                         <span class="sr-only">Error:</span>
                         There was an error when trying to submit your request. Please try again later.
                     </div>
-                    
-                <!--</div>-->
+                    </div>
+                </div>
             </div>
             <div class="padding_top_40"></div>    
         </div>
