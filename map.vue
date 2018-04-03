@@ -72,7 +72,7 @@
                     <!--    </div>-->
                     <!--</div>-->
                     <div class="alphabet-dd visible_phone" >
-					    <v-select :options="filteredStores" label="name" :searchable="false" :on-change="dropPin" id="mobile_alpha_list" :placeholder="$t('stores_page.select_a_store')"></v-select>
+					    <v-select :options="filteredStores" label="name" :searchable="false" :on-change="dropPin" id="mobile_alpha_list" :placeholder="Search Store"></v-select>
 				    </div>
                     <div class="map_container full_border">
                         <mapplic-map ref="mapplic_ref" :height="740" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="processedStores" :floorlist="floorList" :svgWidth="2000" :svgHeight="2000" tooltiplabel="Info"></mapplic-map>
