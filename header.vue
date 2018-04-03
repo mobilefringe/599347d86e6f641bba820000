@@ -96,19 +96,7 @@
                 },
                 show_menu : function () {
                     this.$emit('update_showmenu');
-                    // if(this.$route.path == "/") {
-                    //     if( !this.show_menu){
-                    //         this.show_hero_banner = true;
-                            
-                    //     }
-                    //     else {
-                    //         this.show_hero_banner = false;
-                    //     }
-                    // }
-                    // else {
-                    //     this.show_hero_banner = false;
-                        
-                    // }
+                   
                     if(this.show_menu === true){
                             document.body.classList.add("no-scroll");
                     } else if (this.show_menu === false) {
