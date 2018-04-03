@@ -60,17 +60,20 @@
                     
                 <!--</div>-->
                 <div class="col-sm-12">
-                    <div class="store_list_container">
-                        <div class="store-section hidden_phone" v-for="store in filteredStores">
-                            <a @click="dropPin(store)">{{store.name}}</a>
-                        </div>
-                        <div class="store-section visible_phone" v-for="store in filteredStores">
-                            <a @click="onOptionSelectPhone(store)">{{store.name}}</a>
-                        </div>
-                       <div class="store-section" v-if="filteredStores.length <= 0">
-                            No stores avalaible.
-                        </div>
-                    </div>
+                    <!--<div class="store_list_container">-->
+                    <!--    <div class="store-section hidden_phone" v-for="store in filteredStores">-->
+                    <!--        <a @click="dropPin(store)">{{store.name}}</a>-->
+                    <!--    </div>-->
+                    <!--    <div class="store-section visible_phone" v-for="store in filteredStores">-->
+                    <!--        <a @click="onOptionSelectPhone(store)">{{store.name}}</a>-->
+                    <!--    </div>-->
+                    <!--   <div class="store-section" v-if="filteredStores.length <= 0">-->
+                    <!--        No stores avalaible.-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <div class="alphabet-dd visible_phone" >
+					    <v-select :options="allStores" label="name" :searchable="false" :on-change="addLandmark" id="mobile_alpha_list" :placeholder="$t('stores_page.select_a_store')"></v-select>
+				    </div>
                     <div class="map_container full_border">
                         <mapplic-map ref="mapplic_ref" :height="740" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="processedStores" :floorlist="floorList" :svgWidth="2000" :svgHeight="2000" tooltiplabel="Info"></mapplic-map>
                     </div>
