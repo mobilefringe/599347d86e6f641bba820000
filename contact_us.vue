@@ -13,7 +13,7 @@
                 <!--<vue-datepicker-local v-model="time" type="inline"></vue-datepicker-local>-->
             <!--</div>-->
             <!--<div class="row"> -->
-            <!--    <div class="col-md-12 contact_contents padding_top_20">-->
+                <div class=" contact_contents padding_top_20">
                     <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12 text-left" :class="{'has-error': errors.has('name')}">
