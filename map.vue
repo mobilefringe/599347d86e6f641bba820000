@@ -85,7 +85,7 @@
 
 <script>
     define(["Vue", "vuex","vue!mapplic-map","vue!search-component"], function(Vue, Vuex, MapplicComponent, SearchComponent) {
-        return Vue.component("stores-component", {
+        return Vue.component("map-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
