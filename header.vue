@@ -97,7 +97,7 @@
                     if(this.$route.path == "/") {
                         if( !this.show_menu){
                             this.show_hero_banner = true;
-                            this.$emit('delete-todo', id)
+                            this.$emit('update_menu', id)
                         }
                         else {
                             this.show_hero_banner = false;
