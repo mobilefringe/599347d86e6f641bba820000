@@ -1,5 +1,5 @@
 <template>
-    <div :class="{sticky : stickyMenu}">
+    <div>
 		<div class="menu page_container" id="menu_bar">
 			<router-link class="store_logo pull-left" to="/" >{{property.name}}</router-link>
 			<ul class="menu_list pull-right hidden_phone" >
