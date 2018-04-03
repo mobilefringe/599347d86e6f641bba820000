@@ -51,7 +51,7 @@
 					</div>
 				</transition>
 				<header-component></header-component>
-				<header-component :class="{sticky : stickyMenu}"></header-component>
+				<header-component :class="{sticky : stickyMenu}" class="hidden_now"></header-component>
 				<transition name="custom-classes-transition" enter-active-class="fadeIn">
 					<router-view class="router_content"> </router-view>
 				</transition>
