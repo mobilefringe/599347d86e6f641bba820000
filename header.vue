@@ -94,24 +94,25 @@
                     this.show_mobile_menu = false; //close menu when navigating to new page
                 },
                 show_menu : function () {
-                if(this.$route.path == "/") {
-                    if( !this.show_menu){
-                        this.show_hero_banner = true;
+                    if(this.$route.path == "/") {
+                        if( !this.show_menu){
+                            this.show_hero_banner = true;
+                            this.$emit('delete-todo', id)
+                        }
+                        else {
+                            this.show_hero_banner = false;
+                        }
                     }
                     else {
                         this.show_hero_banner = false;
+                        
+                    }
+                    if(this.show_menu === true){
+                            document.body.classList.add("no-scroll");
+                    } else if (this.show_menu === false) {
+                        document.body.classList.remove("no-scroll");
                     }
                 }
-                else {
-                    this.show_hero_banner = false;
-                    
-                }
-                if(this.show_menu === true){
-                        document.body.classList.add("no-scroll");
-                } else if (this.show_menu === false) {
-                    document.body.classList.remove("no-scroll");
-                }
-            }
             },
             computed: {
                 ...Vuex.mapGetters([
