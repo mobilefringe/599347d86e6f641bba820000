@@ -109,10 +109,7 @@
                     'timezone',
                     'getTodayHours',
                     'processedStores'
-                ]),
-                todays_hours() {
-                    return this.getTodayHours;
-                }
+                ])
             },
             methods: {
                 onOptionSelect(option) {
