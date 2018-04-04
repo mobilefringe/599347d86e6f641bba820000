@@ -15,7 +15,7 @@
     		<div class="sub_menu_bar page_container relative">
     			<div class="today_hour">
     				OPEN TODAY
-    				{{todays_hours.open_time | moment("h:mmA", timezone)}} - {{todays_hours.close_time | moment("h:mmA", timezone)}}
+    				{{getTodayHours.open_time | moment("h:mmA", timezone)}} - {{getTodayHours.close_time | moment("h:mmA", timezone)}}
     			</div>
     			<div class="social_links pull-right hidden_phone">
     			    <social-links></social-links>
