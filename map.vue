@@ -68,8 +68,6 @@
                 onOptionSelect(option) {
                     console.log('Selected option:', option);
                     this.dropPin(option);
-                    // this.processedStores = this.allStores;
-                    
                 },
                 onOptionSelectPhone(option) {
                     console.log('Selected option:', option);
