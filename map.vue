@@ -69,9 +69,7 @@
                     this.dropPin(option);
                 },
                 onOptionSelectPhone(option) {
-                    console.log('Selected option:', option);
                     this.$router.push("/stores/"+option.slug);
-                    
                 },
                 dropPin(store) {
                     this.$refs.mapplic_ref.showLocation(store.svgmap_region);
