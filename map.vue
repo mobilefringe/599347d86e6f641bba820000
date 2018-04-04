@@ -66,7 +66,6 @@
             },
             methods: {
                 onOptionSelect(option) {
-                    console.log('Selected option:', option);
                     this.dropPin(option);
                 },
                 onOptionSelectPhone(option) {
