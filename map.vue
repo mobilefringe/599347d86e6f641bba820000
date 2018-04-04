@@ -3,7 +3,7 @@
         <div class="">
             <div class="map_container">
                 <div class="col-sm-12">
-                    <div class="alphabet-dd visible_phone" >
+                    <div class="stores_dd visible_phone" >
 					    <v-select :options="filteredStores" label="name" :searchable="false" :on-change="dropPin" id="mobile_alpha_list" placeholder="Select a Store"></v-select>
 				    </div>
                     <div class="map_container full_border">
