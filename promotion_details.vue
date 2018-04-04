@@ -43,7 +43,6 @@
                 }
             },
             beforeRouteUpdate(to, from, next) {
-
                 next();
                 this.currentPromo = this.findPromoBySlug(to.params.id);
                 if (this.currentPromo === null || this.currentPromo === undefined) {
