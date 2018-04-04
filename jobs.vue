@@ -66,7 +66,6 @@
             created() {
                 this.loadData().then(response => {
                     this.dataloaded = true;
-
                 });
             },
             computed: {
