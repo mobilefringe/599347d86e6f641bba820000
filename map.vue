@@ -84,7 +84,6 @@
                     else {
                         this.filteredStores = _.filter(this.processedStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
                     }
-                    // console.log(this.processedStores);
                 },
                 loadData: async function() {
                     try {
