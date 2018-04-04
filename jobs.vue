@@ -6,7 +6,6 @@
                 <div class="col-sm-3" v-for="promo in jobs">
                     <div class="promo_list_container">
                         <div class="promo_list_img_container">
-                            <!--<a :href="promo.image_url" target="_blank">-->
                             <img :src="promo.store.store_front_url_abs" class="promo_list_img image">
                                 
                             <!--</a>-->
