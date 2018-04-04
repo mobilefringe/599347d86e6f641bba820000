@@ -66,7 +66,7 @@
 									<ul class="menu_content text_center">
 										<li v-for="hour in hours">
 											<span class="pull-left col-md-6"> 
-											{{day_of_the_week(hour.day_of_week)}}
+											{{hour.day_of_week | moment("dddd", timezone)}}
 											</span>
 											<span class="pull-right col-md-6 text-left">
 											{{hour.open_time | moment("h:mma", timezone)}} - {{hour.close_time | moment("h:mma", timezone)}}
@@ -123,7 +123,7 @@
 							    &copy; {{copyright_year}} {{property.name | uppercase}}. All rights reserved. <br class="visible_phone"><a>Privacy Policy</a> | <a>Terms & Conditions</a></span>
 							<br/>
 							<span class="center_vertical"> 
-							Powered by <a href="http://mallmaverick.com/" targer="_blank">Mall Maverick</a>
+						    	Powered by <a href="http://mallmaverick.com/" targer="_blank">Mall Maverick</a>
 							</span>
 						</div>
 					</div>
