@@ -4,7 +4,6 @@
             <div class="page_title" v-html="currentPage.title">  </div>
             <div class="row">
                 <div class="description_text text_left" v-html="currentPage.body">
-                    
                 </div>
             </div>
         </div>
