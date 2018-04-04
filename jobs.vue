@@ -7,8 +7,6 @@
                     <div class="promo_list_container">
                         <div class="promo_list_img_container">
                             <img :src="promo.store.store_front_url_abs" class="promo_list_img image">
-                                
-                            <!--</a>-->
                         </div>
                         <div class="promo_info_container">
                             <p class="sub_title">{{ promo.store.name }}</p>
