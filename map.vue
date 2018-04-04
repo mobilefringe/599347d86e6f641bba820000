@@ -71,7 +71,6 @@
                 },
                 onOptionSelectPhone(option) {
                     console.log('Selected option:', option);
-                    // this.dropPin(option);
                     this.$router.push("/stores/"+option.slug);
                     
                 },
