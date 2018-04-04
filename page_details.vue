@@ -45,8 +45,6 @@
       },
       beforeRouteEnter (to, from, next) {
         next(vm => {
-          // access to component instance via `vm`
-          
             vm.$store.dispatch('LOAD_PAGE_DATA', {url:vm.property.mm_host + "/pages/"+ to.params.id +".json"}).then(response => {
                 
                 vm.currentPage = response.data;
