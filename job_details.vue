@@ -93,7 +93,7 @@
                 updatecurrentJob(id) {
                     this.currentJob = this.findJobBySlug(id);
                     if (this.currentJob === null || this.currentJob === undefined) {
-                        // this.$router.replace('/');
+                        this.$router.replace('/');
                     }
                 },
                 loadData: async function() {
