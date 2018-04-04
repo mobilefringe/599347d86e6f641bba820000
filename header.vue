@@ -116,7 +116,6 @@
                     console.log('Selected option:', option);
                     this.$router.push("/stores/"+option.slug);
                     this.$nextTick(function() {
-                        //clear search when changing routes
                         this.search = "";
                         this.menuSearch = "";
                     });
