@@ -64,7 +64,7 @@
 								<div class="col-md-4 col-xs-4 hidden_phone footer_hours_container">
 									<p class="menu_content text_center">REGULAR HOURS</p>
 									<ul class="menu_content text_center">
-										<li v-for="hour in hours">
+										<li v-for="hour in getPropertyHours">
 											<span class="pull-left col-md-6"> 
 											{{hour.day_of_week | moment("dddd", timezone)}}
 											</span>
